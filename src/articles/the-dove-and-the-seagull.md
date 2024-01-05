@@ -10,7 +10,8 @@ tags:
 categories:
 - E-commerce
 layout: post
-
+featured: "True"
+status: "Active"
 ---
 
 The Dove & The Seagull is an Etsy store I run, offering high-quality reproductions of vintage prints, posters and botanical art. I source and re-touch public domain artwork, including works by Karl Blossfeld, Kandinsky, Anna Atkins, Hilma af Klint, Paul Nash, Works Progress Administration and more.

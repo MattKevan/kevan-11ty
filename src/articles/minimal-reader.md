@@ -1,9 +1,9 @@
 ---
-title: The Illustration Gallery
-date: 2011-09-01
-description: An online gallery dedicated to contemporary illustration.
+title: Minimal Reader
+date: 2023-08-01
+description: Simple browser-based ePub reader with an emphasis on clean typography.
 image: "/images/tig/gallery.png"
-logo: "/images/tig-logo.jpg"
+logo: "/images/minimal-logo.jpg"
 theme: dark
 tags:
 - Project
@@ -13,7 +13,7 @@ categories:
 - Web development
 layout: post
 featured: "False"
-status: "Finished"
+status: "Active"
 ---
 
 ## Background

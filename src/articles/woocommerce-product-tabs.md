@@ -1,7 +1,7 @@
 ---
-title: The Illustration Gallery
-date: 2011-09-01
-description: An online gallery dedicated to contemporary illustration.
+title: Woocommerce Product Tabs
+date: 2023-09-01
+description: Take control of your Woocommerce product page tabs.
 image: "/images/tig/gallery.png"
 logo: "/images/tig-logo.jpg"
 theme: dark
@@ -13,7 +13,7 @@ categories:
 - Web development
 layout: post
 featured: "False"
-status: "Finished"
+status: "Active"
 ---
 
 ## Background

@@ -7,9 +7,10 @@ permalink: /projects/
 eleventyExcludeFromCollections: true
 ---
 
-<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 py-12">
+<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 mb-16">
 	{% assign gallery-sorted = collections.Project | sort: 'date' | reverse %}
 	{% for item in gallery-sorted %}
+		{% if item.data.featured == "True" %}
 	<div class="col-6 col-lg-4 mb-4">
 		<a href="{{ item.url }}">
 		  {% assign imgsplit = item.data.image | split: '/' %}
@@ -17,11 +18,32 @@ eleventyExcludeFromCollections: true
 			src="{{ item.data.logo}}"
 			alt="{{ item.data.title }}"
 			class="mb-4 w-24 h-24 rounded-full"></a>
-		<h4 class="text-2xl">
+		<h4 class="text-xl mb-2">
 		  <a href="{{ item.url }}" class="hover:underline">{{ item.data.title }}</a>
 		</h4>
-		<p class="text-gray-700">{{ item.data.description }}</p>
+		<p class="text-gray-700 mb-2">{{ item.data.description }}</p>
+		{% include 'status' %}
 	  </div>
+	  {% endif %}
+	{% endfor %}
+</div>
+<div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+	{% for item in gallery-sorted %}
+		{% if item.data.featured == "False" %}
+	<div class="col-6 col-lg-4 mb-4">
+		<a href="{{ item.url }}">
+		  {% assign imgsplit = item.data.image | split: '/' %}
+		  <img
+			src="{{ item.data.logo}}"
+			alt="{{ item.data.title }}"
+			class="mb-4 w-12 h-12 rounded-full"></a>
+		<h4 class="text-lg mb-1">
+		  <a href="{{ item.url }}" class="hover:underline">{{ item.data.title }}</a>
+		</h4>
+		<p class="text-gray-700 text-sm mb-2">{{ item.data.description }}</p>
+		{% include 'status' %}
+	  </div>
+	  {% endif %}
 	{% endfor %}
 </div>
 

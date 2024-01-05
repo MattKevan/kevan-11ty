@@ -27,7 +27,7 @@ slides:
       - c: "The full site map, showing how the four different retreat centre microsites are integrated into the wider site."
 link: https://www.pathwaystogod.org
 layout: post
-
+category: IA
 tags:
 - Work
 categories:

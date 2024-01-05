@@ -3,7 +3,7 @@ title: Fellowship Afloat
 date: 2018-10-01
 description: Bringing 'the spirit of adventure' to the Web.
 layout: post
-
+category: Dev
 banner: "/images/fact/fact-banner2.jpg"
 image: "/images/fact-thumb.jpg"
 logo: "/images/fact.png"

@@ -1,7 +1,7 @@
 ---
-title: The Illustration Gallery
-date: 2011-09-01
-description: An online gallery dedicated to contemporary illustration.
+title: Django HTMX & Tailwind
+date: 2023-12-01
+description: Starter project for Django, with HTMX, Tailwind and Alpine.js.
 image: "/images/tig/gallery.png"
 logo: "/images/tig-logo.jpg"
 theme: dark
@@ -13,7 +13,7 @@ categories:
 - Web development
 layout: post
 featured: "False"
-status: "Finished"
+status: "Active"
 ---
 
 ## Background

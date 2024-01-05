@@ -9,7 +9,7 @@ categories:
 description: 'An quick guide to StyleGAN and how to train it to generate your own images.'
 author: Matt Kevan
 image: /images/content.jpg
-banner: IMG_5184.JPG
+banner: /images/IMG_5184.JPG
 type: article
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: Illustrators
+title: Illustrators.co
 date: 2012-09-01
-description: Creating a curated marketplace for contemporary illustration.
+description: A curated marketplace for contemporary illustration.
 image: "/images/illustrators-thumb.jpg"
 logo: "/images/illo-logo.jpg"
 tags:
@@ -11,7 +11,8 @@ categories:
 - Web development
 
 layout: post
-
+featured: "False"
+status: "Finished"
 ---
 
 ## Background

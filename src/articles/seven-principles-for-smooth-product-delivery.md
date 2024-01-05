@@ -10,7 +10,7 @@ categories:
 description: 'Common problems and pitfalls that happen to all projects and ways to avoid them.'
 author: Matt Kevan
 image: /images/content.jpg
-cover: content-banner.jpg
+banner: /images/content-banner.jpg
 type: article
 ---
 

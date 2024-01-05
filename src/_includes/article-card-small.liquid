@@ -1,0 +1,14 @@
+<div class="article-card-small">
+  <a href="{{ item.url }}">
+    <img
+      src="{{ item.data.image }}?tr=w-600,h-400"
+      alt="{{ item.data.title }}"
+      class="mb-3"></a>
+  <h5 class="text-xl mb-2 hover:underline">
+    <a href="{{ item.url }}">{{ item.data.title }}</a>
+  </h5>
+  <p class="meta text-xs text-gray-700 mb-4">
+    {{ item.data.date | date: "%-d %B %Y" }}
+  </p>
+  {% include 'tags' %}
+</div>

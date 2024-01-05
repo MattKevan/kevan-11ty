@@ -10,7 +10,7 @@ categories:
 - User experience 
 - Design
 layout: post
-
+category: UX
 ---
 
 ## Background

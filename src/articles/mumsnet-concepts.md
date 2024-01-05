@@ -9,7 +9,7 @@ categories:
 - Product design
 - UI design
 layout: post
-
+category: UX
 ---
 
 ## Millennial branding

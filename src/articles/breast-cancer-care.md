@@ -6,8 +6,7 @@ image: "/images/bcc-thumb.jpg"
 link: http://www.breastcancercare.org.uk
 tags:
 - Work
-categories:
-- User experience
+category: IA
 layout: post
 
 ---

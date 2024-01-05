@@ -6,7 +6,7 @@ permalink: /about/
 eleventyExcludeFromCollections: true
 ---
 
-I'm fascinated by whatI'm interested in exploring the crossovers between art and technology, including deep learning, generative art and artificial intelligence. Since 2021 I've been working with generative adversarial networks (GANs), combining human and machine creativity to create something new and unexpected.
+I'm fascinated by what I'm interested in exploring the crossovers between art and technology, including deep learning, generative art and artificial intelligence. Since 2021 I've been working with generative adversarial networks (GANs), combining human and machine creativity to create something new and unexpected.
 
 Please do send me an [email](mailto:hello@unlimiteddreamco.xyz) or contact me on [Twitter](https://twitter.com/unltd_dream_co) or [Mastodon](https://sigmoid.social/@unlimiteddreamco) if you want to get in touch, it'd be great to hear from you.
 

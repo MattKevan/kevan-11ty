@@ -1,0 +1,17 @@
+<div class="max-w-6xl mx-auto mt-12 mb-16 px-6">
+  <h1 itemprop="name headline" class="text-4xl md:text-5xl lg:text-6xl mb-6">{{ title }}</h1>
+
+  {% if description %}
+    <p class="text-xl md:text-2xl text-gray-700">{{ description }}</p>
+  {% endif %}
+
+  {% if page.collection == 'articles' %}
+    <p class="date xs">
+      {% for tag in page.tags %}
+        {{ tag }}
+      {% endfor %}
+      • {{ page.date | date: "%-d %B %Y" }}
+
+    </p>
+  {% endif %}
+</div>

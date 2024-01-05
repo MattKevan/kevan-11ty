@@ -7,11 +7,12 @@ logo: "/images/UnltdDreamCo.png"
 link: https://www.unlimiteddreamco.xyz
 tags:
 - Project
+featured: "True"
 categories:
 - Design
 - Web development
 layout: post
-
+status: "Active"
 ---
 
 I launched UX Lift as a way to organise the huge collection of UX and design links I'd built over the years.

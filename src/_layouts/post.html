@@ -1,32 +1,11 @@
 ---
 layout: default
 ---
-<article class="post  row mt-5" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="max-w-6xl mx-auto mb-5 px-6">
-	<h1 itemprop="name headline" class=" text-5xl md:text-6xl lg:text-7xl">{{ title }}</h1>
-	<p class="text-xl md:text-2xl text-gray-700 py-6">{{ description }}</p>	
-
-	{% if page.collection == 'articles' %}	
-		<p class="date xs">{% for tag in page.tags %}{{ tag }} {% endfor %} • {{ page.date | date: "%-d %B %Y"}}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	
-		</p>
-	{% endif %}
-	
-	<p class="tags xs">
-
-			
-		{% if page.type == 'link' %}
-			<span>Link</span>
-		{% endif %}
-	</p>
-	</div>
-
-
-	
-		<div class="collection page-banner mb-5 py-10 mt-5 bg-cover h-96 bg-center" style="background-image: url('{{ cover }}');">
-		</div>
-	
-
+	{% include 'page-title' %}
+	{% include 'page-banner' %}
+		
 	<div itemprop="articleBody" class="content prose md:prose-lg mx-auto px-6">	
 		{{ content }}
 	</div>

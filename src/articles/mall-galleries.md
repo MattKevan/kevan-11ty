@@ -9,7 +9,7 @@ categories:
 - User experience 
 link: https://www.mallgalleries.org.uk
 layout: post
-
+category: IA
 ---
 
 ## Background

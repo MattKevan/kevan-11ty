@@ -1,10 +1,10 @@
 ---
 title: "Lineup: Illustrators at the Mall"
 date: 2013-05-01
-description: Organising an exhibition for contemporary illustration in the centre of London.
+description: An exhibition for contemporary illustration in the centre of London.
 image: "/images/lineup.jpg"
 logo: "/images/lineup-logo.jpg"
-cover: /images/lineup-cover.jpg
+banner: /images/lineup-cover.jpg
 tags:
 - Project
 - Self-initiated
@@ -12,7 +12,8 @@ categories:
 - Event
 
 layout: post
-
+featured: "False"
+status: "Finished"
 ---
 
 In 2013 I was invited by the Federation of British Artists to stage an exhibition of contemporary illustration at the Mall Galleries, their prestigious central London venue. 

@@ -6,8 +6,7 @@ image: "/images/cocreate-thumb.jpg"
 link: https://www.cocreateconsultancy.com
 tags:
 - Work
-categories:
-- Wordpress
+category: Dev
 layout: post
 
 ---

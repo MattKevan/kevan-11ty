@@ -11,7 +11,8 @@ categories:
 - Design
 - Web development
 layout: post
-
+featured: "True"
+status: "Active"
 ---
 
 I launched UX Lift as a way to organise the huge collection of UX and design links I'd built over the years.

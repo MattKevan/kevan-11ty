@@ -6,15 +6,7 @@
   <body hx-boost="true">
 
     {% include 'header' %}
-
-
-
-    <div class="page-wrapper {{layout}} {% unless page.banner and page.banner != '' %} {% endunless %}" id="wrapper_id">
-
-      {{ content }}
-
-    </div>
-
+    {{ content }}
     {% include 'footer' %}
 
   </body>

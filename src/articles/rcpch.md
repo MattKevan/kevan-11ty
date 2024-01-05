@@ -11,6 +11,7 @@ categories:
 - User research
 - User experience
 layout: post
+category: IA
 ---
 ### Overview
 

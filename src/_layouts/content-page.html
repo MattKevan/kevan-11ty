@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-<div class="container">
 <article class="post row mt-5" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="col-12 col-md-8 offset-md-2">
+	{% include 'page-title' %}
+	{% include 'page-banner' %}
 
-	<h1 itemprop="name headline">{{ title }}</h1>
-	<p class="lead pt-2">{{ description }}</p>	
+		
 
 	{% if page.collection == 'articles' %}	
 		<p class="date xs">{% for tag in page.tags %}{{ tag }} {% endfor %} • {{ page.date | date: "%-d %B %Y"}}
@@ -21,7 +20,6 @@ layout: default
 			<span>Link</span>
 		{% endif %}
 	</p>
-</div>
 <div class="col-12 col-md-8 offset-md-2">
 
 {% if banner%}
@@ -32,7 +30,7 @@ layout: default
 
 
 
-<div itemprop="articleBody" class="content prose md:prose-xl mx-auto">	
+<div itemprop="articleBody" class="content prose md:prose-lg mx-auto px-6">	
 
 		
 		{{ content }}
@@ -57,6 +55,5 @@ layout: default
 </div>
 </article>
 
-</div>
   
 
