@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="container">
+<article class="post row mt-5" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="col-12 col-md-8 offset-md-2">
+
+	<h1 itemprop="name headline">{{ title }}</h1>
+	<p class="lead pt-2">{{ description }}</p>	
+
+	{% if page.collection == 'articles' %}	
+		<p class="date xs">{% for tag in page.tags %}{{ tag }} {% endfor %} • {{ page.date | date: "%-d %B %Y"}}
+	
+		</p>
+	{% endif %}
+	
+	<p class="tags xs">
+
+			
+		{% if page.type == 'link' %}
+			<span>Link</span>
+		{% endif %}
+	</p>
+</div>
+<div class="col-12 col-md-8 offset-md-2">
+
+{% if banner%}
+	<div class="collection page-banner mb-5 mt-5" style="background-image: url('https://ik.imagekit.io/dreamco/{{ banner }}?tr=w-1200');">
+
+	</div>
+{% endif %}
+
+
+
+<div itemprop="articleBody" class="content prose md:prose-xl mx-auto">	
+
+		
+		{{ content }}
+	</div>
+
+
+	{% if page.type == 'link' %}
+		<a href="{{ page.link }}" target="_blank">Visit site »</a>
+
+		<hr>
+
+		<h4>More links</h4>
+
+		{% assign sort = site.posts | where: 'type','link' | sort: 'date' | reverse %}
+		{% for item in sort limit:5 %}		
+		{% include link.html %}
+		{% endfor %}
+		
+	{% endif %}
+
+
+</div>
+</article>
+
+</div>
+  
+

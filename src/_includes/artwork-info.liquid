@@ -1,0 +1,32 @@
+<div class="artwork-info">
+  
+  <p>{{ page.description }}</p>
+      <div class="tags">
+        <p class="s">
+          {% assign tag = page.tags | split: ", " %}
+          {% for t in tag %}
+            <span class="tag">{{ t }}</span>
+          {% endfor %}
+        </p>
+      </div>
+  <hr>
+  <h5>About the artwork</h5>
+  <ul class="mb-4">
+  <li><strong>Size:</strong> {{ page.size }} {% if page.size == 'A3' %} (297 x 420mm){% endif %}.</li>
+  <li><strong>Quantity:</strong>      {% if page.editions-total == 'Open' %}
+        Unlimited edition.
+      {% else %}
+        {{ page.editions-remaining }} prints available from a limited edition of {{ page.editions-total }}.
+      {% endif%}</li>
+  <li><strong>Printing:</strong> Archival-grade Gicleé print on 200gsm enhanced matte art paper.</li>
+  <li><strong>Frame:</strong> Unframed.</li>
+</ul>
+  
+
+  <h5>Shipping and returns</h5>
+  <ul>
+  <li><strong>Delivery time:</strong> Dispatched within 3 working days.</li>
+  <li><strong>Delivery cost:</strong> Free shipping to the UK.</li>
+  <li><strong>Returns:</strong> Return within 30 days for full refund if not completely satisfied.</li>
+</ul>
+</div>

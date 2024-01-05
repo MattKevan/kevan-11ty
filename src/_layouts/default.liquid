@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include 'head' %}
+
+  <body hx-boost="true">
+
+    {% include 'header' %}
+
+
+
+    <div class="page-wrapper {{layout}} {% unless page.banner and page.banner != '' %} {% endunless %}" id="wrapper_id">
+
+      {{ content }}
+
+    </div>
+
+    {% include 'footer' %}
+
+  </body>
+
+</html>

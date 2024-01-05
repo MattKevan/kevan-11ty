@@ -1,0 +1,97 @@
+---
+layout: default
+title: Home
+menu: false
+eleventyExcludeFromCollections: true
+---
+<div class="container mt-5 max-w-6xl mx-auto px-6">
+<div class="row mb-4">
+	<div class="col-12 mb-5">
+		<h1 class="text-4xl font-bold">Art, design & code.</h1>
+	</div>
+</div>
+<div class="grid gap-6 sm:grid-cols-2 ">
+	<div class="teaser">
+		{% assign sort = collections.Article | sort: 'date' | reverse %}
+		{% for item in sort limit:1%}
+		<img src="{{ item.data.image }}" alt="{{ item.data.title }}" class="">
+			<h3 class="text-4xl py-3"><a href="{{ item.url | prepend: site.baseurl }}">{{ item.data.title }}</a></h3>
+			<p class="date"></p>
+			<p class="intro">{{ item.data.description }}</p>
+			<p class="meta xs">
+				{{ item.data.date | date: "%-d %B %Y"}} 
+			</p>
+			<p class="tags xs">
+				{% for tag in item.data.tags %} 
+					<span>{{ tag }}</span>
+				{% endfor %}
+			</p>
+		{% endfor %}
+	</div>
+	<div class="teaser col-12 col-md-6">
+		<div class="grid gap-6 sm:grid-cols-2 ">
+			{% assign sort = collections.Article | sort: 'date' | reverse %}
+			{% for item in sort limit: 4 offset: 1 %}
+				<div class="col-6 mb-5">
+					<a href="{{ item.data.url | prepend: site.baseurl }}">
+					<img src="{{ item.data.image }}?tr=w-600,h-400" alt="{{ item.data.title }}" class=""></a>
+					<h5 class="text-xl py-3"><a href="{{ item.data.url | prepend: site.baseurl }}">{{ item.data.title }}</a></h5>
+					<p class="meta xs">
+						{{ item.data.date | date: "%-d %B %Y"}} 
+					</p>
+					<p class="tags xs">
+						{% for tag in item.data.tags %} 
+							<span>{{ tag }}</span>
+						{% endfor %}
+					</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<a href="/articles">See all articles »</a>
+
+</div>
+</div>
+
+
+{% assign sort = collections.Article | sort: 'date' | reverse %}
+
+{% for item in sort limit: 1 %}
+	<div class="feature mt-5 mb-5" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
+		<div class="container">
+			<div class="row">
+				<div class="col-10 col-md-6">
+					<div class="feature-card bg-white">
+						<h3 class="card-title"><a href="{{ item.data.url | prepend: site.data.baseurl }}">{{ item.data.title }}</a></h3>
+						<p class="date"></p>
+						<p class="intro">{{ item.data.description }}</p>
+				<p class="meta xs">
+							{{ item.data.date | date: "%-d %B %Y"}} 
+						</p>
+						<p class="tags xs">
+							{% for tag in item.data.tags %} 
+								<span>{{ tag }}</span>
+							{% endfor %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+<div class="container mt-5 max-w-6xl mx-auto px-6 py-6">
+	<div class="col-12">
+		<h2 class="title mb-4">Artwork</h2>
+	</div>
+	<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+
+	{% assign gallery-sorted = collections.Artwork | sort: 'date' | reverse %}
+	{% for item in gallery-sorted limit: 6 %}
+		{% include 'gallery-teaser' %}
+	{% endfor %}
+<div class="col-12">
+		<p><a href="/artwork">See all artwork »</a></p>
+	</div>
+</div>
+
+</div>

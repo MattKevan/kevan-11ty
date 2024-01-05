@@ -1,0 +1,190 @@
+---
+layout: default
+---
+{% assign has-categories = 'no' %}
+{% assign has-software = 'no' %}
+{% assign has-inspiration = 'no' %}
+{% assign has-guides = 'no' %}
+{% assign has-research = 'no' %}
+
+{% if page.banner%}
+	<div class="collection page-banner mb-5 mt-5" style="background-image: url('https://ik.imagekit.io/dreamco/{{ page.banner }}?tr=w-1200');">
+	</div>
+{% endif %}
+
+<div class="inner">
+	<div class="row">
+		<div class="col-12">
+			<p class="sm"><a href="/resources/">Resources</a> » {% if page.category %} <a href="/resources/{{ page.category | slugify }}">{{ page.category }}</a> » {% endif %} </p>
+
+			<h1 class="{% unless page.description %} mb-5 {% endunless %}">{{ page.title }}</h1>
+			{% if page.description %}
+				<p class="lead mb-5">{{ page.description }}</p>
+			{% endif %}
+
+			{% if page.tags %}
+				<p class="tags xs">
+					{% for tag in page.tags %}
+						<span>{{ tag }}</span>
+					{% endfor %}
+				</p>	
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{{ content }}
+
+<!-- Categories -->
+{% for item in site.categories %}
+	{% if item.category == page.title %}
+		{% assign has-categories = 'yes' %}
+	{% endif %}
+{% endfor %}
+
+{% if has-categories == 'yes' %}
+	<div class="row">
+		{% assign sorted-categories = site.categories | sort: 'title' %}
+			{% for item in sorted-categories %}
+			{% if item.category == page.title %}
+				<div class="col-xs-12 col-md-4 h-100 mb-5 card category">
+							<div class="image mb-3" 
+					{% if item.image and item.image != '' %}
+						style="background-image: url(/assets/resources/{{ item.image }});"
+					{% endif %}
+			>
+			</div>		
+				<h4><a href="{{ item.url}}">{{ item.title }}</a></h4>
+				<p>{{ item.description }}</p>
+				</div>
+
+			{% endif %}
+		{% endfor %}
+	</div>
+	<hr>
+{% endif %}
+
+<!-- Software -->
+
+{% for item in site.resources %}
+		{% if item.medium == page.title and item.type == 'Software' %}
+			{% assign has-software = 'yes' %}
+		{% endif %}
+{% endfor %}
+
+{% if has-software == 'yes' %}
+	<hr>
+	<div class="col-xs-12">
+		<h2>Software</h2>
+	</div>
+
+	<div class="row">
+		{% assign sorted-resources = site.resources | sort: 'title' %}
+		{% for item in sorted-resources %}
+			{% assign media = item.medium | split: ', ' %}
+			{% for object in media %}
+				{% if object == page.title and item.type == 'Software' %}
+					<div class="col-xs-12 col-md-4 mb-5">
+						{% include resource-card.html %}
+					</div>
+				{% endif %}
+			{% endfor%}
+		{% endfor %}
+	</div>
+	
+{% endif %}
+
+<!-- Guides -->
+
+{% for item in site.resources %}
+	{% assign models = item.model | split: ', ' %}
+	{% for thing in models %}
+		{% if thing == page.title and item.type == 'Guide' %}
+			{% assign has-guides = 'yes' %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if has-guides == 'yes' %}
+	<hr>
+	<div class="col-xs-12">
+		<h2>Guides</h2>
+	</div>
+	<div class="row">
+		{% assign sorted-resources = site.resources | sort: 'title' %}
+		{% for item in sorted-resources %}
+			{% assign models = item.model | split: ', ' %}
+			{% for thing in models %}
+				{% if thing == page.title and item.type == 'Guide' %}
+					<div class="col-xs-12 col-md-4 mb-5">
+						{% include resource-card.html %}
+					</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+
+{% endif %}
+
+<!-- Inspiration -->
+
+{% for item in site.resources %}
+	{% assign models = item.model | split: ', ' %}
+	{% for thing in models limit: 1 %}
+		{% if thing == page.title and item.type == 'Inspiration' %}
+			{% assign has-inspiration = 'yes' %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if has-inspiration == 'yes' %}
+	<hr>
+	<div class="col-xs-12">
+		<h2>Inspiration</h2>
+	</div>
+	<div class="row">
+		{% assign sorted-resources = site.resources | sort: 'title' %}
+		{% for item in sorted-resources %}
+			{% assign models = item.model | split: ', ' %}
+			{% for thing in models %}
+				{% if thing == page.title and item.type == 'Inspiration' %}
+					<div class="col-xs-12 col-md-4 mb-5">
+						{% include resource-card.html %}
+					</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+{% endif %}
+
+<!-- Research -->
+
+{% for item in site.resources %}
+	{% assign models = item.model | split: ', ' %}
+	{% for thing in models limit: 1 %}
+		{% if thing == page.title and item.type == 'Research' %}
+			{% assign has-research = 'yes' %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if has-research == 'yes' %}
+
+	<hr>
+	<div class="col-xs-12">
+		<h2>Inspiration</h2>
+	</div>
+	<div class="row">
+		{% assign sorted-resources = site.resources | sort: 'title' %}
+		{% for item in sorted-resources %}
+			{% assign models = item.model | split: ', ' %}
+			{% for thing in models %}
+				{% if thing == page.title and item.type == 'Research' %}
+					<div class="col-xs-12 col-md-4 mb-5">
+						{% include resource-card.html %}
+					</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+{% endif %}

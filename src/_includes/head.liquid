@@ -1,0 +1,67 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if title %}
+      {{ title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/main.css" }}">
+
+
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta
+    property="og:image"
+    content='
+  {% if image %}
+    {% assign imagefile = image | split: '/' | last | split: '.' | first %}
+    https://res.cloudinary.com/dk3qvmifd/image/upload/c_scale,w_1200/c_crop,g_auto,h_630,w_1200/l_gradient/fl_layer_apply,g_north_west/co_rgb:FFFFFF,c_fit,l_text:usqlhc7oqbzps6kcdnba.otf_75_normal_left:{{ title }},w_1100/fl_layer_apply,g_north_west,x_40,y_50/l_udclogo_xq2tj6/c_scale,w_140/fl_layer_apply,g_south_west,x_40,y_100/co_rgb:ffffff,l_text:usqlhc7oqbzps6kcdnba.otf_40_normal_left:unlimiteddreamco.xyz/fl_layer_apply,g_south_west,x_40,y_40/{{ imagefile }}.jpg
+  {% else %}
+    {{ site.image }}
+  {% endif %}'>
+  <meta property="og:type" content="{{ tags }}" />
+  <meta name="author" content="{{ site.author }}">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ site.twitter }}">
+  <meta name="twitter:creator" content="{{ site.twitter }}">
+  <meta name="twitter:url" content=" {{ site.url }}">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta
+    name="twitter:image"
+    content='
+  {% if image %}
+    {% assign imagefile = image | split: '/' | last | split: '.' | first %}
+    https://res.cloudinary.com/dk3qvmifd/image/upload/c_scale,w_1200/c_crop,g_auto,h_630,w_1200/l_gradient/fl_layer_apply,g_north_west/co_rgb:FFFFFF,c_fit,l_text:usqlhc7oqbzps6kcdnba.otf_75_normal_left:{{ title }},w_1100/fl_layer_apply,g_north_west,x_40,y_50/l_udclogo_xq2tj6/c_scale,w_140/fl_layer_apply,g_south_west,x_40,y_100/co_rgb:ffffff,l_text:usqlhc7oqbzps6kcdnba.otf_40_normal_left:unlimiteddreamco.xyz/fl_layer_apply,g_south_west,x_40,y_40/{{ imagefile }}.jpg
+  {% else %}
+    {{ site.image }}
+  {% endif %}'>
+  <meta name="twitter:image:alt" content="{{ title }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'/index.html','' | prepend: site.url }}">
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ site.title }}"
+    href="{{ "/feed.xml" | prepend: site.url }}">
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="{{ "/assets/favicon.png" | prepend: site.baseurl }}">
+
+
+</head>

@@ -1,0 +1,12 @@
+<div class="card jekyll-linkpreview-wrapper mb-4">
+	<div class="jekyll-linkpreview-wrapper-inner">
+
+		<a href="{{ link_url }}" target="_blank">
+			<img src="{{ link_image }}" class="jekyll-linkpreview-image">
+		</a>
+		
+		<p class="link-title mt-0 mb-2"><a href="{{ link_url }}" target="_blank">{{ link_title  | truncatewords: 12, "..." }}</a></p>
+		<p class="xs mt-2 mb-0">{{ link_domain }}</p>
+
+	</div>
+</div>

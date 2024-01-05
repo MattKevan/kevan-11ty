@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dk3qvmifd
+    api_key: 894983382813212
+
+collections:
+  - name: "article" # Used in routes, e.g., /admin/collections/blog
+    label: "Article" # Used in the UI
+    folder: "articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Banner", name: "banner", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "string", default: "Article"}
+      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "string", default: "post"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "artwork" # Used in routes, e.g., /admin/collections/blog
+    label: "Artwork" # Used in the UI
+    folder: "artwork" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Image"
+        name: "image"
+        widget: "image"
+      - {label: "Tags", name: "tags", widget: "string", default: "Artwork"}
+      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "string", default: "post"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        summary: "{{ fields.gallery }} - {{fields.size}}"
+        fields:
+          - { label: "Image", name: "gallery", widget: "image" }
+          - { label: "Size", name: "size", widget: "string" }
+      

@@ -1,0 +1,36 @@
+<div class="card resource h-100">
+	<a href="{{ item.link }}" target="_blank">		
+			
+		<div class="image mb-3" 
+			{% if item.image and item.image != '' %}
+				style="background-image: url('/assets/resources/{{ item.image }}');"
+			{% else %}
+				{% assign jekyll_linkpreview_page = item.link %}
+				style="background-image: url('{% linkpreview jekyll_linkpreview_page %}');"
+			{% endif %}
+			>
+			</div>		
+	</a>
+			
+	<h5><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h5>
+	<p>{{ item.description }}</p>
+	<p class="tags xs">
+		{% if item.medium %}
+			{% assign media = item.medium | split: ', ' %}
+			{% for medium in media %}
+				<a href="/resources/{{ medium | slugify }}"><span>{{ medium }}</span></a>
+			{% endfor %}
+		{% endif %}
+		{% assign models = item.model | split: ', ' %}
+		{% for model in models %}
+			<a href="/resources/{{ model | slugify }}"><span>{{ model }}</span></a>
+		{% endfor %}
+
+		<!--<a href="/resources/{{ item.type | slugify }}">--><span>{{ item.type }}</span>
+		
+
+		{% if item.status%}
+			<!--<a href="/resources/{{ item.status | slugify }}">--><span>{{ item.status }}</span>
+		{% endif %}
+	</p>
+</div>
