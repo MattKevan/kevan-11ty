@@ -8,11 +8,11 @@ eleventyExcludeFromCollections: true
 </div>
 {% assign sort = collections.Artwork | sort: 'date' | reverse %}
 {% for item in sort %}
-	<div class="feature py-36 bg-cover bg-center" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
+	<div class="feature pb-16 pt-64 bg-cover bg-center" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
 		<div class="max-w-6xl mx-auto px-6">
-		<div class="feature-card bg-white p-10 w-1/2">
-			<h3 class="text-4xl mb-3"><a href="{{ item.url }}" class="hover:underline">{{ item.data.title }}</a></h3>
-			<p class="=mb-3 text-gray-700 ">{{ item.data.description }}</p>
+		<div class="feature-card bg-white p-8 md:p-10 md:w-1/2">
+			<h3 class="text-3xl md:text-4xl mb-2 md:mb-3"><a href="{{ item.url }}" class="hover:underline">{{ item.data.title }}</a></h3>
+			<p class=" text-lg text-gray-700 ">{{ item.data.description }}</p>
 
 
 		</div>
