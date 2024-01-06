@@ -3,7 +3,7 @@ title: Surface Detail
 date: 2020-3-20 00:00:00
 description: "Highly detailed drawings with iPad and Pencil."
 image: "/images/sd.jpg"
-banner: sd-banner.jpg
+banner: /images/sd-banner.jpg
 tags:
 - Drawing
 - Artwork
@@ -13,7 +13,9 @@ layout: post
 
 ---
 
-Created with ProCreate on the iPad, each one of these drawings took me between six months to nearly two years to complete. 
+I've always loved to doodle as a way to help me focus, covering whatever paper I have at that moment with abstract shapes and lines.
+
+However, thanks to Procreate on the iPad I've been able to take doodling to the next level. Each of these drawings took between six months and three years to complete. 
 
 <img src="/images/surface-detail-5.jpg" class="wide mb">
 <img src="/images/surface-detail-4.jpg" class="wide mb">

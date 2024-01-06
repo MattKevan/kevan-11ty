@@ -1,0 +1,50 @@
+---
+title: "Spectrum"
+date: 2020-12-19 00:00:00
+description: Cycling through the RGB colour space with geometric shapes.
+image: "/images/slc-2020.png"
+banner: /images/slc2-cover.jpg
+tags:
+- Abstract art
+- Artwork
+layout: post
+
+---
+
+<p> For this series I set myself the challenge of creating an abstract image per day using only lines and two colours: a dark grey background and a contrasting colour.</p>
+<p>This colour should start with red and increment through the RGB colour space by three points for each picture.</p>
+<p>I've currently created 255 of a possible 510 images, cycling from red to cyan through yellow and green.</p>
+</div>
+
+<div class="sticky-container lg:max-w-4xl mx-auto sm:max-w-3xl my-12 px-6" style="height: 2500px;">
+    <div id="animation-container" class="sticky top-0"></div>
+</div>
+
+<div itemprop="articleBody" class="content prose md:prose-lg mx-auto px-6">	
+    <p>I created each piece on an iPhone using Graphic, a vector drawing app.</p>
+
+<script src="/js/scrollAnimate.min.js" type="text/javascript"></script>
+<script>
+
+var $aContainer = document.getElementById("animation-container");
+      var aContainerRect = $aContainer.getBoundingClientRect();
+      var start = aContainerRect.top;
+      var length = (aContainerRect.height + 200) * 8; //Height of the container plus a offset for better presentation
+      scrollAnimate({
+        frames: {
+          path: "/images/slc2/",
+          prefix: "",
+          extension: "jpeg",
+          amount: 255,
+          pad: ""
+        },
+        parent: $aContainer,
+        scroll: {
+          start: start,
+          length: length
+        }
+      });
+    
+
+</script>
+

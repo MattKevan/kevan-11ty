@@ -6,7 +6,7 @@ image: "/images/slc.png"
 tags:
 - Abstract art
 - Artwork
-banner: slc1-cover.jpg
+banner: /images/slc1-cover.jpg
 theme: dark
 layout: post
 

@@ -1,0 +1,28 @@
+<div class="grid md:grid gap-8 mb-9 md:grid-cols-2">
+  <div class="">
+    <a href="{{ item.url | prepend: site.baseurl }}">
+      {% if item.data.image contains "cloudinary" %}
+        {% assign imgsplit = item.data.image | split: '/' %}
+        <img
+          src="https://res.cloudinary.com/dk3qvmifd/image/upload/c_fill,g_auto,h_400,w_600/{{ imgsplit | last }}"
+          alt="{{ item.data.title }}"
+          class="w-full">
+      {% else %}
+        <img
+          src="{{ item.data.image }}"
+          alt="{{ item.data.title }}"
+          class="w-full">
+      {% endif %}
+    </a>
+  </div>
+
+  <div class="">
+    <h4 class="text-lg mb-2 hover:underline">
+      <a href="{{ item.url | prepend: site.baseurl }}">{{ item.data.title }}</a>
+    </h4>
+
+    <p class="mb-3 text-gray-700">{{ item.data.description }}</p>
+    <p class="meta text-xs text-gray-700 mb-4">{{ item.date | date: "%-d %B %Y" }}</p>
+    {% include 'tags' %}
+  </div>
+</div>

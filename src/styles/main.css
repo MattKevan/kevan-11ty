@@ -9,4 +9,7 @@
   .wide {
     @apply lg:max-w-5xl md:max-w-3xl lg:-ml-[210px] md:-ml-[80px];
   }
+  #animation-container canvas {
+    width: 100% !important;
+  }
 }

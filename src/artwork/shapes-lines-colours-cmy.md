@@ -3,7 +3,7 @@ title: "Shapes Lines Colours – CMY"
 date: 2021-03-19 00:00:00
 description: Abstract artworks with cyan, magenta and yellow.
 image: "/images/cmy.jpg"
-cover: cmy-banner.jpg
+banner: /images/cmy-banner.jpg
 tags:
 - Abstract art
 - Artwork

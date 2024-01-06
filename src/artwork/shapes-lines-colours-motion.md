@@ -3,7 +3,7 @@ title: "Shapes Lines Colours – CMY motion"
 date: 2021-04-01 00:00:00
 description: Minimal motion graphics made with an iPhone.
 image: "/images/cmy-motion.jpg"
-cover: motion-banner.jpg
+banner: /images/motion-banner.jpg
 tags:
 - Motion graphics
 - Artwork

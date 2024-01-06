@@ -3,6 +3,7 @@ title: Black & white photography
 date: 2019-03-24
 description: 
 image: "/images/photo-thumb.jpg"
+banner: "/images/photo-thumb.jpg"
 theme: dark
 tags:
 - Photography

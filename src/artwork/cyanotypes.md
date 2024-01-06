@@ -1,5 +1,5 @@
 ---
-title: Cyanotype photography
+title: Cyanotypes
 date: 2015-3-24 00:00:00
 description: "Hand-printed cyanotype photographs."
 image: "/images/cyan2.png"
@@ -7,7 +7,7 @@ theme: dark
 tags:
 - Photography
 - Artwork
-banner: cyan-cover.jpg
+banner: /images/cyan-cover.jpg
 layout: post
 
 ---

@@ -3,7 +3,7 @@ title: Django HTMX & Tailwind
 date: 2023-12-01
 description: Starter project for Django, with HTMX, Tailwind and Alpine.js.
 image: "/images/tig/gallery.png"
-logo: "/images/tig-logo.jpg"
+logo: "/images/djx.jpg"
 theme: dark
 tags:
 - Project

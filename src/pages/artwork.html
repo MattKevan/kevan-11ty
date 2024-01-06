@@ -5,11 +5,19 @@ permalink: /artwork/
 description: 
 eleventyExcludeFromCollections: true
 ---
-
-<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-	{% assign gallery-sorted = collections.Artwork | sort: 'date' | reverse %}
-	{% for item in gallery-sorted %}
-	{% include 'gallery-teaser' %}
-	{% endfor %}
 </div>
+{% assign sort = collections.Artwork | sort: 'date' | reverse %}
+{% for item in sort %}
+	<div class="feature py-36 bg-cover bg-center" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
+		<div class="max-w-6xl mx-auto px-6">
+		<div class="feature-card bg-white p-10 w-1/2">
+			<h3 class="text-4xl mb-3"><a href="{{ item.url }}" class="hover:underline">{{ item.data.title }}</a></h3>
+			<p class="=mb-3 text-gray-700 ">{{ item.data.description }}</p>
+
+
+		</div>
+		</div>
+	</div>
+{% endfor %}
+
 

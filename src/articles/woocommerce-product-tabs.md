@@ -3,7 +3,7 @@ title: Woocommerce Product Tabs
 date: 2023-09-01
 description: Take control of your Woocommerce product page tabs.
 image: "/images/tig/gallery.png"
-logo: "/images/tig-logo.jpg"
+logo: "/images/woo.jpg"
 theme: dark
 tags:
 - Project

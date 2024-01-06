@@ -4,20 +4,16 @@ layout: page
 permalink: /articles/
 eleventyExcludeFromCollections: true
 ---
-
-<div class="row">
-	{% assign sort = collections.Article | sort: 'date' | reverse %}
-	{% for item in sort limit: 1%}
-		{% include 'teaser-large' %}
-	{% endfor %}
-</div>
+<div class="mb-16">
+{% assign sort = collections.Article | sort: 'date' | reverse %}
+{% for item in sort limit: 1%}
+	{% include 'article-list-large' %}
+{% endfor %}
 <hr>
 
-<div class="row">
-	<div class="col-12 col-md-8 offset-md-2">
-			{% assign sort = collections.Article | sort: 'date' | reverse %}
-		{% for item in sort  offset: 1%}
-			{% include 'teaser-small' %}			
-		{% endfor %}
-	</div>
+<div class="max-w-3xl mx-auto mt-16">
+	{% assign sort = collections.Article | sort: 'date' | reverse %}
+	{% for item in sort  offset: 1%}
+		{% include 'article-list-small' %}			
+	{% endfor %}
 </div>

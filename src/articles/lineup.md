@@ -16,7 +16,7 @@ featured: "False"
 status: "Finished"
 ---
 
-In 2013 I was invited by the Federation of British Artists to stage an exhibition of contemporary illustration at the Mall Galleries, their prestigious central London venue. 
+In 2013 Illustrators\.co were invited by the Federation of British Artists to stage an exhibition of contemporary illustration at the Mall Galleries, their prestigious central London venue. 
 
 With just six weeks to prepare, we exhibited a wide range of illustrators, from the world-famous to the up-and-coming, including the artists featured on our site, students from the University of Brighton and some of the UK's best graffiti writers. 
 
@@ -31,4 +31,4 @@ This was the first time the Mall Galleries had exhibitied such contemporary artw
 <img src="/images/lineup2.jpg" class="wide">
 <p class="caption">↑ Exhibition postcard.</p>
 
-Sadly we weren't able to feature Mr Sausage, a 20 foot inflatable sausage wearing a hat, as he was too big for the building.
+My one regret was that we weren't able to feature [Mr Sausage](http://www.woostercollective.com/kuldo.jpg), a 50ft tall inflatable sausage wearing a hat, as we couldn't fit him in the building.

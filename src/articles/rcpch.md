@@ -87,3 +87,5 @@ Once development was complete, RCPCH had the substantial task  of publishing the
 ### Outcome
 
 The project took over three years, from pitch to launch. The UX phase took about nine months and the site was launched in March 2018.
+
+[**Visit the site »**](https://www.rcpch.org.uk)
