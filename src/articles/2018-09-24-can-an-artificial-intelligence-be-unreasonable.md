@@ -12,7 +12,7 @@ image: /images/aibu.jpg
 cover: aibu-banner.jpg
 type: article
 ---
-If you’ve not heard of it, [AIBU](https://www.mumsnet.com/Talk/am_i_being_unreasonable) is a place where you can ask the Mumsnet hivemind whether you’re being unreasonable about a particular issue or circumstance (quick tip: if you have to ask, you are). Favourite topics include the neighbours, shoddy parking, mothers in law, parents at school and the DH’s general uselessness. Swears abound.
+If you’ve not heard of it, Mumsnet's [AIBU](https://www.mumsnet.com/Talk/am_i_being_unreasonable) is a place where you can ask the hivemind whether you’re being unreasonable about a particular issue or circumstance (quick tip: if you have to ask, you are). Favourite topics include the neighbours, shoddy parking, mothers in law, parents at school and the DH’s general uselessness. Swears abound.
 
 Top AIBU threads at the time of writing include:
 
@@ -22,7 +22,7 @@ Top AIBU threads at the time of writing include:
 
 Like most communities, Mumsnetters have developed their own particular slang and abbreviations, the knowledge of which is vital to fully understand what’s going on. Here's a quick primer: DH is ‘dear husband’, OH is ‘other half’, DD is ‘dear daughter’, DS is ‘dear son’, MIL is ‘mother in law’, CF is ‘cheeky fucker’. You get the idea.
 
-The question was: could an AI be just as unreasonable as an angry sleep-deprived parent? 
+Inspired by Janelle Shane's [AI Wierdness blog]([Title](https://www.aiweirdness.com/)), I wondered: could an AI be just as unreasonable as an angry sleep-deprived parent? 
 
 After training a neural network on around 35,000 AIBU thread titles, it turns out that yes, yes it can.
 
@@ -120,7 +120,7 @@ I used [textgenrnn](https://github.com/minimaxir/textgenrnn) a character-based P
 
 I tried running the training locally on my laptop, setting the training to three epochs. This took ages – around an hour for each epoch – and didn't give particularly good results.
 
-For the next attempt, I discovered it was possible to run the training with [Google's Colaboratory](https://drive.google.com/file/d/1mMKGnVxirJnqDViH7BDJxFqWrsXlPSoK/view), basically Google Docs for code. With Colaboratory it took about 45 minutes to run 10 epochs. Apparently Google's servers are faster than a three-year-old MacBook Pro. 
+For the next attempt I used [Google Colab](https://drive.google.com/file/d/1mMKGnVxirJnqDViH7BDJxFqWrsXlPSoK/view), basically Google Docs for code. With Colab it took about 45 minutes to run 10 epochs. Apparently Google's servers are faster than a three-year-old MacBook Pro. Who knew?
 
 Once done, I downloaded the trained models to run locally.
 

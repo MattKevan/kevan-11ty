@@ -5,13 +5,13 @@ backend:
 media_library:
   name: cloudinary
   config:
-    cloud_name: dk3qvmifd
-    api_key: 894983382813212
+    cloud_name: dhcgic4ld
+    api_key: 926691857685869
 
 collections:
   - name: "article" # Used in routes, e.g., /admin/collections/blog
     label: "Article" # Used in the UI
-    folder: "articles" # The path to the folder where the documents are stored
+    folder: "_src/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -26,7 +26,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "artwork" # Used in routes, e.g., /admin/collections/blog
     label: "Artwork" # Used in the UI
-    folder: "artwork" # The path to the folder where the documents are stored
+    folder: "_src/artwork" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
