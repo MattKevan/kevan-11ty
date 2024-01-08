@@ -1,45 +1,24 @@
 ---
-title: Minimal Reader
-date: 2023-08-01
-description: Simple browser-based ePub reader with an emphasis on clean typography.
-image: "/images/tig/gallery.png"
-logo: "/images/minimal-logo.jpg"
 theme: dark
+description: Simple browser-based ebook reader with an emphasis on clean typography.
+image: /images/tig/gallery.png
 tags:
-- Project
-categories:
-- Branding
-- Print design
-- Web development
+  - Project
+categories: List [ "Vue", "Web app" ]
 layout: post
+logo: /images/minimal-logo.jpg
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704725031/slc/311_awdmwf.png
 featured: "False"
-status: "Active"
+date: 2023-08-01
+status: Active
+title: Minimal Reader
 ---
+I love ebooks for their portability and convenience, but I've never been happy with the actual experience of reading one. They just don't provide the same level of enjoyment that a well-designed physical book does. 
 
-## Background
+That's why I've never liked the Kindle – it's just not a nice reading experience: the device is plasticky and cheap and the book typesetting is often dreadful. I try and look past it and focus on the content, but even after tweaking the settings as much as possible it still doesn't feel right.
 
-Founded by Oliver Jelf in 2007, The Illustration Gallery was one of the first galleries in the UK to focus on contemporary illustration and exhibited the work of some of the world's top illustrators, including Tom Gauld, Rob Ryan, Yuko Shimizu, eBoy and Sam Weber. In 2010 Oliver and I teamed up to turn the gallery into an online experience, building an online art gallery and shop.
+I've also tried every single ebook reading app available for iOS and iPadOS and it's a similar thing. Either they're old, badly designed or just don't work how I'd like them to. For example, the page swipe.
 
-## Challenge
+Page turns are great for physical books (there's a reason we don't use scrolls any more), but for digital books it doesn't make sense. It's a skeuomorphism that can be safely ditched. On a digital device, where scrolling is a natural interaction, I'd much rather scroll as I read, rather than having to break focus and swipe the screen the next page. Some book readers, like Apple Books, doesn't support vertical scrolling at all.
 
-The brief was to create a striking, instantly recognisable brand, with the same quality and feel as a national contemporary art gallery, such as the Barbican and Tate Modern. As the gallery was to be a showcase for contemporary illustration, the brand needed to work well with any style of artwork, without overshadowing or clashing with it.
-
-## Solution
-
-I designed the logo to sit at the top-right corner of the page, either by itself or on top of artwork, to act rather like a quality mark. I deliberately kept the identity minimal, to act as a neutral container for the artwork and not favour a particular artist or style.
-
-<img src="/images/illogallery1.jpg" class="wide">
-
-<p class="caption">↑ The Illustration Gallery logo and visual identity.</p>
-
-## Implementation
-
-As well as the brand, I created the gallery's publications, signage, flyers and built an e-commerce website with Drupal 6 and Ubercart.
-
-<img src="/images/illogallery2.jpg" class="wide">
-
-<p class="caption">↑ Exhibition flyers and other brochures.</p>
-
-<img src="/images/illogallery3.jpg" class="wide">
-
-<p class="caption">↑ The Illustration Gallery website as it appeared at first launch in 2010.</p>
+So I decided to make my own book reader. How hard can it be, I thought, when ebooks are basically just a bundle of HTML and CSS anyway?
