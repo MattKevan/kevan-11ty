@@ -15,31 +15,25 @@ layout: post
 featured: "False"
 status: "Active"
 ---
+A simple plugin to create manage and manage tabs on WooCommerce product pages. I decided to write my own plugin after I realised such basic functionality wasn't included in Woocommerce and a third-party plugin would be yet another annual licencing fee.
 
-## Background
+The plugin adds a new post type – each custom tab is a post and therefore fully supports the block editor, though some blocks may not be relevant. There's also a UI to manage the order and set visibility. This works on both default and custom tabs, though currently changes are applied to every product.
 
-Founded by Oliver Jelf in 2007, The Illustration Gallery was one of the first galleries in the UK to focus on contemporary illustration and exhibited the work of some of the world's top illustrators, including Tom Gauld, Rob Ryan, Yuko Shimizu, eBoy and Sam Weber. In 2010 Oliver and I teamed up to turn the gallery into an online experience, building an online art gallery and shop.
+ I'm planning to support tab groups by category or specific products, as well as a bunch of other improvements and features.
 
-## Challenge
 
-The brief was to create a striking, instantly recognisable brand, with the same quality and feel as a national contemporary art gallery, such as the Barbican and Tate Modern. As the gallery was to be a showcase for contemporary illustration, the brand needed to work well with any style of artwork, without overshadowing or clashing with it.
+<img alt="A screenshot of a Woocommerce product page showing the custom tabs" src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1704732688/custom-tabs_szagu4.jpg" class="wide shadow-md">
 
-## Solution
 
-I designed the logo to sit at the top-right corner of the page, either by itself or on top of artwork, to act rather like a quality mark. I deliberately kept the identity minimal, to act as a neutral container for the artwork and not favour a particular artist or style.
+<p class="caption">↑ Custom product tabs in action.</p>
 
-<img src="/images/illogallery1.jpg" class="wide">
 
-<p class="caption">↑ The Illustration Gallery logo and visual identity.</p>
+### Features
 
-## Implementation
 
-As well as the brand, I created the gallery's publications, signage, flyers and built an e-commerce website with Drupal 6 and Ubercart.
+* Add and edit custom product tabs.
+* Draggable admin interface to reorder tabs.
+* Toggle tab visibility, showing or hiding tabs as required.
 
-<img src="/images/illogallery2.jpg" class="wide">
 
-<p class="caption">↑ Exhibition flyers and other brochures.</p>
-
-<img src="/images/illogallery3.jpg" class="wide">
-
-<p class="caption">↑ The Illustration Gallery website as it appeared at first launch in 2010.</p>
+[View on Github »](https://github.com/MattKevan/WooCommerce-custom-tabs)
