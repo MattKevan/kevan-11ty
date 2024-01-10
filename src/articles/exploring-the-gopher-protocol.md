@@ -52,6 +52,4 @@ I was surprised at how much content is actually available. Most Gopher sites are
 
 **[Floodgap's list of known servers](gopher://gopher.floodgap.com/1/world)** – All servers found by the Veronica-2 search engine.
 
-**[Kevan.tv](gopher://gopher.kevan.tv)** – A work-in-progress Gopher version of this site.
-
 **See the next post on [how to set up your own Gopher server](/articles/how-to-set-up-a-gopher-server-on-a-raspberry-pi/).**

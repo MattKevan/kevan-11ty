@@ -9,8 +9,8 @@ categories:
 - Product management
 description: 'Common problems and pitfalls that happen to all projects and ways to avoid them.'
 author: Matt Kevan
-image: /images/content.jpg
-banner: /images/content-banner.jpg
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833850/download-1_kwkvqk.png
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833850/download-1_kwkvqk.png
 type: article
 ---
 

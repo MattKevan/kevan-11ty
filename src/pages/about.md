@@ -4,6 +4,7 @@ description: "Hi, I'm Matt Kevan, a designer and artist based in Manchester."
 layout: content-page
 permalink: /about/
 eleventyExcludeFromCollections: true
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833577/Deep_Glass2_r8pl0b.jpg
 ---
 
 Throughout my career I've focused on building and growing high-performing creative teams, developing processes and ways of working that deliver real value while also providing a creative and supportive environment.
