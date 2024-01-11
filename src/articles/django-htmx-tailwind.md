@@ -1,22 +1,24 @@
 ---
-title: Django HTMX
-date: 2023-12-01
-description: Starter project for Django, with HTMX, Tailwind and Alpine.js.
-image: "/images/tig/gallery.png"
-logo: "/images/djx.jpg"
 theme: dark
+description: Starter project for Django, with HTMX, Tailwind and Alpine.js.
+image: /images/tig/gallery.png
 tags:
-- Project
+  - Project
 categories:
-- Branding
-- Print design
-- Web development
+  - Branding
+  - Print design
+  - Web development
 layout: post
+logo: /images/djx.jpg
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833577/Deep_Glass2_r8pl0b.jpg
 featured: "False"
-status: "Active"
+date: 2023-12-01
+status: Active
+title: Django HTMX
 ---
-
 A starter project for Django based on [DjangoX](https://github.com/wsvincent/djangox) by Will Vincent. This adds a few extra features I found I was adding for every project, as well as switching the front-end framework from Bootstrap and jQuery to Tailwind, HTMX and Alpine.js.
+
+<img alt="Homepage" src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705010973/Screenshot_2024-01-11_at_21.08.38_le0jjd.png" class="wide">
 
 ### Features
 
@@ -36,34 +38,40 @@ A starter project for Django based on [DjangoX](https://github.com/wsvincent/dja
 ### Installation
 
 Clone the project and move into the directory.
+
 ```
 $ git clone https://github.com/MattKevan/djangox-tailwind.git
 $ cd djangox-tailwind
 ```
 
 Create a new virtual environment and activate it.
-```
+
+```python
 $ python -m venv .venv
 $ source .venv/bin/activate 
 ```
 
 Rename env-sample to .env and add your site key as well as any other variables. If necessary, you can generate a site key here.
-```
+
+```python
 mv env-sample .env
 ```
 
 Install the requirements and set up the database. The site will use SQLite by default, but it's straightforward to use Postgres instead.
+
 ```
 $ pip install -r requirements.txt
 $ python manage.py migrate
 ```
 
 Set up the superuser, entering your email, username and password.
+
 ```
 $ python manage.py createsuperuser
 ```
 
 Launch the site at http://127.0.0.1:8000
+
 ```
 python manage.py runserver
 ```
@@ -75,9 +83,11 @@ Open a new terminal tab, ensuring your virtual environment venv is activated. St
 ```
 python manage.py tailwind start
 ```
+
 This will watch for changes in your template and theme files and use browsersync to refresh the browser.
 
 Create a build optimised for production:
+
 ```
 python manage.py tailwind build
 ```
