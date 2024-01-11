@@ -16,24 +16,70 @@ featured: "False"
 status: "Active"
 ---
 
-A starter project for Django with lots of handy features. Based on DjangoX by Will Vincent, it adds features I found I was regularly adding to projects.
+A starter project for Django based on [DjangoX](https://github.com/wsvincent/djangox) by Will Vincent. This adds a few extra features I found I was adding for every project, as well as switching the front-end framework from Bootstrap and jQuery to Tailwind, HTMX and Alpine.js.
 
 ### Features
 
-* Modern front-end experience with HTMX.
-* Styling with Tailwind.
-* Interactivity with Alpine.js.
-* Environment variables with python-dotenv.
-* Media file support via Cloudinary.
 * Django 4.2 & Python 3.11.
-* Install via Pip or Docker.
-* User log in/out, sign up, password reset via django-allauth.
-* Static files configured with Whitenoise.
-* Debugging with django-debug-toolbar.
-* DRY forms with django-crispy-forms.
+* Modern front-end experience with [HTMX](https://htmx.org/) and [django-htmx](https://django-htmx.readthedocs.io/en/latest/).
+* Front-end styling with [Tailwind](https://tailwindcss.com/) and [django-tailwind](https://django-tailwind.readthedocs.io/).
+* Interactivity with [Alpine.js](https://alpinejs.dev/).
+* Environment variables with [python-dotenv](https://saurabh-kumar.com/python-dotenv/).
+* Media management support via [Cloudinary](https://cloudinary.com/).
+* User log in/out, sign up, password reset via [django-allauth](https://allauth.org/).
+* Static files configured with [Whitenoise](https://whitenoise.readthedocs.io/en/stable/index.html).
+* Debugging with [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/).
+* DRY forms with [django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms).
+* Live reloading with [django-browser-reload](https://pypi.org/project/django-browser-reload/).
 * Custom 404, 500, and 403 error pages.
-* Live reloading with django-livereload.
 
-### Getting started
+### Installation
+
+Clone the project and move into the directory.
+```
+$ git clone https://github.com/MattKevan/djangox-tailwind.git
+$ cd djangox-tailwind
+```
+
+Create a new virtual environment and activate it.
+```
+$ python -m venv .venv
+$ source .venv/bin/activate 
+```
+
+Rename env-sample to .env and add your site key as well as any other variables. If necessary, you can generate a site key here.
+```
+mv env-sample .env
+```
+
+Install the requirements and set up the database. The site will use SQLite by default, but it's straightforward to use Postgres instead.
+```
+$ pip install -r requirements.txt
+$ python manage.py migrate
+```
+
+Set up the superuser, entering your email, username and password.
+```
+$ python manage.py createsuperuser
+```
+
+Launch the site at http://127.0.0.1:8000
+```
+python manage.py runserver
+```
+
+### Tailwind
+
+Open a new terminal tab, ensuring your virtual environment venv is activated. Start the Tailwind development server with:
+
+```
+python manage.py tailwind start
+```
+This will watch for changes in your template and theme files and use browsersync to refresh the browser.
+
+Create a build optimised for production:
+```
+python manage.py tailwind build
+```
 
 [View on Github »](https://github.com/MattKevan/django-htmx)
