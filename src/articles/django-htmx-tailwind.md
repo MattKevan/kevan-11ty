@@ -1,7 +1,7 @@
 ---
 theme: dark
 description: Starter project for Django, with HTMX, Tailwind and Alpine.js.
-image: /images/tig/gallery.png
+image: ""
 tags:
   - Project
 categories:
@@ -10,7 +10,7 @@ categories:
   - Web development
 layout: post
 logo: /images/djx.jpg
-banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833577/Deep_Glass2_r8pl0b.jpg
+banner: ""
 featured: "False"
 date: 2023-12-01
 status: Active
@@ -18,7 +18,7 @@ title: Django HTMX
 ---
 A starter project for Django based on [DjangoX](https://github.com/wsvincent/djangox) by Will Vincent. This adds a few extra features I found I was adding for every project, as well as switching the front-end framework from Bootstrap and jQuery to Tailwind, HTMX and Alpine.js.
 
-<img alt="Homepage" src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705010973/Screenshot_2024-01-11_at_21.08.38_le0jjd.png" class="wide">
+<img alt="Homepage" src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705010973/Screenshot_2024-01-11_at_21.08.38_le0jjd.png" class="wide shadow-md">
 
 ### Features
 
