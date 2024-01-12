@@ -39,48 +39,48 @@ A starter project for Django based on [DjangoX](https://github.com/wsvincent/dja
 
 Clone the project and move into the directory.
 
-```
-$ git clone https://github.com/MattKevan/djangox-tailwind.git
-$ cd djangox-tailwind
+```shell
+git clone https://github.com/MattKevan/djangox-tailwind.git
+cd djangox-tailwind
 ```
 
 Create a new virtual environment and activate it.
 
-```python
-$ python -m venv .venv
-$ source .venv/bin/activate 
+```shell
+python -m venv .venv
+source .venv/bin/activate 
 ```
 
 Rename env-sample to .env and add your site key as well as any other variables. If necessary, you can generate a site key here.
 
-```python
+```shell
 mv env-sample .env
 ```
 
 Install the requirements and set up the database. The site will use SQLite by default, but it's straightforward to use Postgres instead.
 
-```
-$ pip install -r requirements.txt
-$ python manage.py migrate
+```shell
+pip install -r requirements.txt
+python manage.py migrate
 ```
 
 Set up the superuser, entering your email, username and password.
 
-```
+```shell
 $ python manage.py createsuperuser
 ```
 
 Launch the site at http://127.0.0.1:8000
 
-```
-python manage.py runserver
+```shell
+$ python manage.py runserver
 ```
 
 ### Tailwind
 
 Open a new terminal tab, ensuring your virtual environment venv is activated. Start the Tailwind development server with:
 
-```
+```shell
 python manage.py tailwind start
 ```
 
@@ -88,7 +88,7 @@ This will watch for changes in your template and theme files and use browsersync
 
 Create a build optimised for production:
 
-```
+```shell
 python manage.py tailwind build
 ```
 
