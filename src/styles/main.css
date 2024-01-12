@@ -12,4 +12,7 @@
   #animation-container canvas {
     width: 100% !important;
   }
+  .copy-to-clipboard-button {
+    @apply bg-white text-sm;
+  }
 }
