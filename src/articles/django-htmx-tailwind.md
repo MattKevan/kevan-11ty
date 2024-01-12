@@ -19,7 +19,7 @@ title: Django HTMX
 A starter project for Django based on [DjangoX](https://github.com/wsvincent/djangox) by Will Vincent. This adds a few extra features I found I was adding for every project, as well as switching the front-end framework from Bootstrap and jQuery to Tailwind, HTMX and Alpine.js.
 
 <img alt="Homepage" src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705010973/Screenshot_2024-01-11_at_21.08.38_le0jjd.png" class="wide shadow-md">
-
+<p class="caption">↑ Django HTMX index page, showing the logged-in user menu.</p>
 ### Features
 
 * Django 4.2 & Python 3.11.
