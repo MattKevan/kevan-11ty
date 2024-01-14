@@ -1,15 +1,17 @@
 ---
-title: "The best writing apps for iOS - updated"
+title: The best writing apps for iOS - updated
+description: Focusing on the best writing apps, this is the first in a series
+  exploring the best tools to get stuff done using iOS.
 date: 2018-06-17
-layout: post
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724877/slc/210_hox18z.png
 tags:
-- Article
-- Best of
-- Productivity
-description: Focusing on the best writing apps, this is the first in a series exploring the best tools to get stuff done using iOS. 
+  - Article
+  - Best of
+  - Productivity
+layout: post
 author: Matt Kevan
-image: /images/writing.jpg
 type: article
+categories: Best of
 ---
 
 With a full-time job and young child I don’t have a lot of time to work on personal projects. The only time I really have is when commuting on the Tube. So my challenge is to design, develop and write content for a website – this one – almost entirely on an iPad and iPhone.
