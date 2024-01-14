@@ -4,7 +4,7 @@
       {% if item.data.image contains "cloudinary" %}
         {% assign imgsplit = item.data.image | split: '/' %}
         <img
-          src="https://res.cloudinary.com/dk3qvmifd/image/upload/c_fill,g_auto,h_400,w_600/{{ imgsplit | last }}"
+          src="{{item.data.image}}"
           alt="{{ item.data.title }}"
           class="w-full">
       {% else %}
