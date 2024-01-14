@@ -11,7 +11,7 @@ tags:
 layout: post
 author: Matt Kevan
 type: article
-categories: Best of
+categories: Tools
 ---
 
 With a full-time job and young child I don’t have a lot of time to work on personal projects. The only time I really have is when commuting on the Tube. So my challenge is to design, develop and write content for a website – this one – almost entirely on an iPad and iPhone.
