@@ -1,16 +1,18 @@
 ---
-title: "Can an artificial intelligence be unreasonable?"
+title: Can an artificial intelligence be unreasonable?
+description: Mumsnet’s Am I being unreasonable? forum is famous for the
+  hilarious, disturbing and hilariously disturbing topics discussed. I wondered,
+  what would happen if I used it to train a neural network?
 date: 2018-09-24
-layout: post
 tags:
-- Article
+  - Article
 categories:
-- Artificial intelligence
-description: Mumsnet’s Am I being unreasonable? forum is famous for the hilarious, disturbing and hilariously disturbing topics discussed. I wondered, what would happen if I used it to train a neural network?
+  - Artificial intelligence
+layout: post
 author: Matt Kevan
-image: /images/aibu.jpg
 cover: aibu-banner.jpg
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724941/slc/250_gtheil.png
 ---
 If you’ve not heard of it, Mumsnet's [AIBU](https://www.mumsnet.com/Talk/am_i_being_unreasonable) is a place where you can ask the hivemind whether you’re being unreasonable about a particular issue or circumstance (quick tip: if you have to ask, you are). Favourite topics include the neighbours, shoddy parking, mothers in law, parents at school and the DH’s general uselessness. Swears abound.
 
