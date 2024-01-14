@@ -1,18 +1,16 @@
 ---
 title: Using tree testing to validate your information architecture
+description: Developing a site structure is one of the most difficult and
+  important parts of creating information architecture. And the larger the site,
+  the harder it gets.
 date: 2016-10-10
+banner: ""
+tags: List [ "Article" ]
+categories: Information architecture
 layout: post
-tags:
-- Article
-- Usability testing
-- UX tools
-- Information architecture
-description: Developing a site structure is one of the most difficult and important parts
-  of creating information architecture. And the larger the site, the harder it gets.
-image: '/images/tree.jpg'
-banner: ''
 author: Matt Kevan
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724791/slc/156_tzxoju.png
 ---
 How content is organised and how it’s labelled it can make a big difference to a site’s overall usability, so it’s important to get feedback from users as early as possible.
 
