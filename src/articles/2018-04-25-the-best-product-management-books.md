@@ -1,17 +1,15 @@
 ---
-layout: post
 title: Six great books to be a better product manager
-description: Product management is an evolving field. These are books I've found useful as
-  a product manager and I hope you will too.
+description: Product management is an evolving field. These are books I've found
+  useful as a product manager and I hope you will too.
+tags: List [ "Article" ]
+categories: Product management
+layout: post
 author: Matt Kevan
-date: 2018-04-25
-tags:
-- Article
-- Product management
-- Reading list
-image: /images/product.jpg
-type: article
 published: true
+date: 2018-04-25
+type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724729/slc/115_io8ioe.png
 ---
 
 [<img src="/images/books/making.jpg" alt="" class="book-cover" />](https://www.amazon.co.uk/Making-Right-Product-Management-Startup-ebook/dp/B00M0KTVTO)
