@@ -1,17 +1,16 @@
 ---
 title: The double diamond design process – putting the whys before the whats
+description: It’s easy as creatives or developers - or anyone really - to start
+  with the ‘whats’. What can we do? What should we do? What is it we’re going to
+  do?
 date: 2016-09-26
+banner: ""
+tags: List [ "Article" ]
+categories: Design process
 layout: post
-description: It’s easy as creatives or developers - or anyone really - to start with the
-  ‘whats’. What can we do? What should we do? What is it we’re going to do?
-image: '/images/dd.jpg'
-banner: ''
-tags:
-- Article
-- Design process
-- How to
 author: Matt Kevan
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724570/slc/9_kue6ug.png
 ---
 Thinking about these things is fun - I love starting new projects because I’ve had an idea about what I could do. And for companies it’s easy to prioritise delivery of a thing over the strategic impact that it may have. But by starting with ‘what’, we miss out some vital questions which must be answered first.
 
