@@ -11,7 +11,7 @@ layout: post
 author: Matt Kevan
 cover: cactus-banner.jpg
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705277378/slc1/412.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_681,w_908,x_140,y_254/c_scale,h_681,w_908/v1705278288/slc1/428.png
 ---
 
 It's complicated. But thanks to some services which have appeared over the last few months and some specific features of Sketch, it's now possible.
