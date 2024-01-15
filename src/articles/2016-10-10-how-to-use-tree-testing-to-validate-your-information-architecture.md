@@ -10,7 +10,7 @@ categories: Information architecture
 layout: post
 author: Matt Kevan
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724791/slc/156_tzxoju.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705276944/slc1/398.png
 ---
 How content is organised and how it’s labelled it can make a big difference to a site’s overall usability, so it’s important to get feedback from users as early as possible.
 
