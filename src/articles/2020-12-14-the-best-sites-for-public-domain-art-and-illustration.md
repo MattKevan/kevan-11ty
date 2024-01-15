@@ -1,15 +1,15 @@
 ---
-title: "The best places to find high-resolution public domain art and illustration"
+title: The best places to find high-resolution public domain art and illustration
+description: Finding public domain images at a good enough resolution to print
+  can be challenging, but here’s a list of the best places to source
+  high-quality art and illustration.
 date: 2020-12-14
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_670,w_894,x_147,y_262/c_scale,h_670,w_894/v1705278640/slc1/434.png
+banner: wave-banner.jpg
+tags: Article
 layout: post
-tags:
-- Article
-- Open culture
-- Public domain
-description: Finding public domain images at a good enough resolution to print can be challenging, but here’s a list of the best places to source high-quality art and illustration.
-image: /images/open.jpg
-banner: 'wave-banner.jpg'
 type: article
+categories: Public domain
 ---
 
 ### Updates
