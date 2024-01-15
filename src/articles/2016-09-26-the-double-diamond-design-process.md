@@ -10,7 +10,7 @@ categories: Design process
 layout: post
 author: Matt Kevan
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724570/slc/9_kue6ug.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,w_900,h_900,ar_1:1/v1705276953/slc1/404.png
 ---
 Thinking about these things is fun - I love starting new projects because I’ve had an idea about what I could do. And for companies it’s easy to prioritise delivery of a thing over the strategic impact that it may have. But by starting with ‘what’, we miss out some vital questions which must be answered first.
 
