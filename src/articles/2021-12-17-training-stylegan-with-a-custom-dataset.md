@@ -1,16 +1,16 @@
 ---
 title: Training StyleGAN2 ADA with a custom dataset
+description: An quick guide to StyleGAN and how to train it to generate your own images.
 date: 2021-12-17
-layout: post
-tags:
-- Article
-categories:
-- Artificial intelligence
-description: 'An quick guide to StyleGAN and how to train it to generate your own images.'
-author: Matt Kevan
-image: /images/content.jpg
 banner: /images/IMG_5184.JPG
+tags:
+  - Article
+categories:
+  - Artificial intelligence
+layout: post
+author: Matt Kevan
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_658,w_877,x_157,y_267/c_scale,h_658,w_877/v1705279786/slc1/501.png
 ---
 
 Fascinated by the artistic opportunities of machine learning and the incredibly realistic images that can be generated, I decided to learn how to use it to create my own images. Here's the results of my exploration.
