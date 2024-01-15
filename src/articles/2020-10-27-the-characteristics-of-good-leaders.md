@@ -1,16 +1,15 @@
 ---
 title: The characteristics of good leaders
+description: Thirteen qualities of good leaders, focusing on yourself, others
+  and the organisation.
 date: 2020-10-27
+tags: Article
+categories: Leadership
 layout: post
-tags:
-- Article
-- Leadership basics
-- Characteristics
-image: /images/characteristics.jpg
-cover: banner.jpg
-description: Thirteen qualities of good leaders, focusing on yourself, others and the organisation.
 author: Matt Kevan
+cover: banner.jpg
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_342,w_456,x_68,y_128/c_scale,h_342,w_456/v1705279258/slc1/453.png
 ---
 Leadership can be a somewhat vague concept, so and this list outlines the main attributes of a good leader, and provides a point of reference to work towards.
 
