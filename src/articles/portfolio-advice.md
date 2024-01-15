@@ -1,17 +1,18 @@
 ---
 title: Advice for UX CVs and portfolios
+description: Lessons learned after looking at 150+ portfolios and CVs while
+  hiring for a UX design role.
 date: 2023-07-13
-layout: post
 tags:
-- Article
+  - Article
 categories:
-- UX
-- Product management
-description: 'Lessons learned after looking at 150+ portfolios and CVs while hiring for a UX design role.'
+  - UX
+  - Product management
+layout: post
 author: Matt Kevan
-image: /images/content.jpg
 cover: content-banner.jpg
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_353,w_471,x_62,y_122/c_scale,h_353,w_471/v1705279300/slc1/470.png
 ---
 
 ### Include your portfolio
