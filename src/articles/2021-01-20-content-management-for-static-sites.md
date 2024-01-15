@@ -10,7 +10,7 @@ layout: post
 author: Matt Kevan
 cover: content-banner.jpg
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_679,w_906,x_143,y_363/c_scale,h_679,w_906/v1705313565/960.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_680,w_907,x_144,y_142/c_scale,h_680,w_907/v1705313355/744.png
 ---
 However, where they’re weakest - and the reason why content management systems were created in the first place - is in how they manage content. 
 
