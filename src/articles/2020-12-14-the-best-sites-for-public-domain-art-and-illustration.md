@@ -4,7 +4,7 @@ description: Finding public domain images at a good enough resolution to print
   can be challenging, but here’s a list of the best places to source
   high-quality art and illustration.
 date: 2020-12-14
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705333729/wave-thumb.jpg
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_505,w_673,x_13,y_0/c_scale,h_505,w_673/v1705333729/wave-thumb.jpg
 banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705333520/wave-dither.jpg
 tags: Article
 layout: post
