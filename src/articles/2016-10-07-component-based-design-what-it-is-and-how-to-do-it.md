@@ -3,8 +3,8 @@ title: "Component-based design: what it is and how to do it"
 description: As the web evolves and gains complexity, so our approach to
   designing websites needs to become more sophisticated.
 date: 2016-10-07
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,w_900,h_900,ar_1:1/v1705277383/slc1/415.png
 tags: Article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705277389/slc1/416.png
 layout: post
 author: Matt Kevan
 type: article
