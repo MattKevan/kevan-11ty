@@ -5,7 +5,7 @@ description: Finding public domain images at a good enough resolution to print
   high-quality art and illustration.
 date: 2020-12-14
 image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_670,w_894,x_147,y_262/c_scale,h_670,w_894/v1705278640/slc1/434.png
-banner: wave-banner.jpg
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705333520/wave-dither.jpg
 tags: Article
 layout: post
 type: article
