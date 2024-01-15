@@ -2,7 +2,7 @@
 title: Training StyleGAN2 ADA with a custom dataset
 description: An quick guide to StyleGAN and how to train it to generate your own images.
 date: 2021-12-17
-banner: /images/IMG_5184.JPG
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705331992/stylegan/plants.png
 tags:
   - Article
 categories:
