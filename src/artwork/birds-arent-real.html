@@ -13,15 +13,67 @@ layout: post
 
 ---
 
-<p>This is an AI model that creates illustrations of previously undiscovered bird species.</p>
+<p>This is an image generation model that creates previously undiscovered bird species paired with a text generation model that creates new bird names.</p>
 
-<p>I created it by collecting and manually editing nearly 1000 illustrations of birds from the 18th and 19th century, then training a custom StyleGAN model.</p>
+<p>I created the images by training StyleGAN2-ADA on over 1000 bird illustrations from the 18th and 19th century. I had to edit every image by hand, removing backgrounds and fixing alignment issues so that the generated images were consistent. To create the names I finetuned GPT2 on the complete Wikipedia list of bird names.</p>
 
 <video src="https://res.cloudinary.com/dl4abuxel/video/upload/v1669587004/Birds4.mp4" controls class="fullwidth" /></video>
 <p class="caption">↑ Interpolation video generated with StyleGAN 2.</p>
 
-<img src="/images/fancy-chaps.jpg" class="wide mb">
-<p class="caption">↑ A few more birds that don't actually exist.</p>
+</div>
+
+<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto mt-6 md:mt-12 mb-8 md:mb-16 px-6">
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0315.png">
+    <p class="caption mt-2">↑ Singuan roller</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0174.png">
+    <p class="caption mt-2">↑ Wedge-tailed drongo</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0040.png">
+    <p class="caption mt-2">↑ Black-thighed tanager</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0305.png">
+    <p class="caption mt-2">↑ Rusty-fronted foliage-gleaner</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0195.png">
+    <p class="caption mt-2">↑ Many-colored woodpecker</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0184.png">
+    <p class="caption mt-2">↑ Singuan roller</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0149.png">
+    <p class="caption mt-2">↑ Torrent duck</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0049.png">
+    <p class="caption mt-2">↑ Thick-billed gnatcatcher</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0033.png">
+    <p class="caption mt-2">↑ BugPeacecher</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0006.png">
+    <p class="caption mt-2">↑ Stoical wedge-billed malkoha</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0040.png">
+    <p class="caption mt-2">↑ Suffle-necked siskin</p>
+</div>
+<div class="item">
+    <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1705328888/birds/seed0024.png">
+    <p class="caption mt-2">↑ Martian catbird</p>
+</div>
+</div>
+<div class="content prose md:prose-lg mx-auto px-6">
+
 
 
 
