@@ -1,16 +1,16 @@
 ---
-title: "How to set up a Gopher server on a Raspberry Pi"
+description: Run your own Gopher server in a few easy steps (and some harder ones).
 date: 2019-06-24
-layout: post
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_661,w_882,x_156,y_264/c_scale,h_661,w_882/v1705278854/slc1/441.png
 tags:
-- Article
-categories:
-- Retro tech
-- Raspberry Pi
-image: /images/gopher2-2.jpg
-description: Run your own Gopher server in a few easy steps (and some harder ones). 
+  - Article
+layout: post
 cover: pi-banner.jpg
+title: How to set up a Gopher server on a Raspberry Pi
 type: article
+categories:
+  - Retro tech
+  - Raspberry Pi
 ---
 
 To get the full Gopher experience, I realised I had to set up my own Gopher server. This turned out to be much easier than expected.  I used a Raspberry Pi, but it'll run on any Linux machine. 
