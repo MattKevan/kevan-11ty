@@ -1,14 +1,14 @@
 ---
-title: "Exploring the Gopher protocol"
+title: Exploring the Gopher protocol
 date: 2019-06-24
-layout: post
 tags:
-- Article
-categories:
-- Retro tech
-image: /images/gopher.jpg
-description: In the beginning, before the Web, there was Gopher. 
+  - Article
+layout: post
 type: article
+description: In the beginning, before the Web, there was Gopher.
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_676,w_901,x_143,y_257/c_scale,h_676,w_901/v1705278627/slc1/432.png
+categories:
+  - Retro tech
 ---
 
 Introduced in 1991, Gopher is a lightweight protocol designed for distributing, searching and retrieving documents over the Internet. It's long been supplanted by HTTP and the modern Web as we know it, but it stubbornly clings to life in various places. And there's many reasons why in 2019 it's still an interesting choice to use.
