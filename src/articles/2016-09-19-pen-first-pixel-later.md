@@ -4,7 +4,7 @@ description: A blank screen is a daunting prospect. There’s a strong temptatio
   to get right in there with your wireframing software and start drawing boxes.
   But don’t give in. It’s a trap.
 date: 2016-09-19
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724891/slc/217_n9fxmf.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705276953/slc1/404.png
 tags: List [ "Article" ]
 layout: post
 author: Matt Kevan
