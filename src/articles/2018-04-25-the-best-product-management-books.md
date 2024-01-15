@@ -9,7 +9,7 @@ author: Matt Kevan
 published: true
 date: 2018-04-25
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724729/slc/115_io8ioe.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_676,w_900,x_143,y_259/c_scale,h_676,w_900/v1705277597/slc1/425.png
 ---
 
 [<img src="/images/books/making.jpg" alt="" class="book-cover" />](https://www.amazon.co.uk/Making-Right-Product-Management-Startup-ebook/dp/B00M0KTVTO)
