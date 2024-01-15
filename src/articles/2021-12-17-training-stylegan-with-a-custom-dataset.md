@@ -15,7 +15,7 @@ image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_680,w_907,x_14
 
 Fascinated by the artistic opportunities of machine learning and the incredibly realistic images that can be generated, I decided to learn how to use it to create my own images. Here's the results of my exploration.
 
-<video src="https://res.cloudinary.com/dp5mvntv7/video/upload/v1638536029/botany5.mp4" controls class="fullwidth" >
+<video src="https://res.cloudinary.com/dhcgic4ld/video/upload/v1705328258/stylegan/botany2_b97vnl.mp4" controls class="fullwidth" >
 </video>
 
 <p class="caption">↑ Interpolation video generated with StyleGAN3.</p>
@@ -80,7 +80,7 @@ Then, choose a name for your dataset. This can be anything you like.
 ### While it’s training
 StyleGAN will save snapshots and sample images from the model in your drive as the training progresses in the `/results` folder.
 
-<img src="/images/fakes000008.jpg" class="fullwidth">
+<img src="/images/fakes000008.jpg" class="full">
 
 They’ll look weird at first, as they transition from the original face images to your new dataset.
 
@@ -105,7 +105,7 @@ I used a few different Colab notebooks to generate the output:
 
 [**Flesh Digressions**](https://colab.research.google.com/github/dvschultz/ai/blob/master/flesh_digressions.ipynb) creates looping videos with an interesting distortion effect.
 
-<video src="https://res.cloudinary.com/dp5mvntv7/video/upload/v1638536120/circular-15-10-2021-04-08-53-PM.mp4" controls class="fullwidth" ></video>
+<video src="https://res.cloudinary.com/dhcgic4ld/video/upload/v1705328269/stylegan/circular-16-10-2021-09-36-37-PM_zboegz.mp4" controls class="fullwidth" ></video>
 <p class="caption">↑ Flesh digressions.</p>
 
 [**StyleGAN3**](https://colab.research.google.com/drive/1BXNHZBai-pXtP-ncliouXo_kUiG1Pq7M?usp=sharing) is able to produce much smoother interpolations than StyleGAN2, so I used it to create the interpolation animations. Again, I edited the default model paths to make it work with my model. 
