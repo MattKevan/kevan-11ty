@@ -1,15 +1,15 @@
 ---
-date: 2021-01-12
-title: Book review – Indistractable by Nir Eyal
-tags: 
-- Article
-- Book review
-- Productivity
-image: '/images/indistractable.jpg'
-cover: 'indistractable-banner.jpg'
-description: 'How to control your attention and reduce distraction, from the author of ‘Hooked’, a manual for designing addictive products.'
-author: 'Matt Kevan'
+description: How to control your attention and reduce distraction, from the
+  author of ‘Hooked’, a manual for designing addictive products.
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_678,w_905,x_143,y_257/c_scale,h_678,w_905/v1705277398/slc1/421.png
+categories: Psychology
+layout: post
+author: Matt Kevan
 published: true
+date: 2021-01-12
+cover: indistractable-banner.jpg
+title: Book review – Indistractable by Nir Eyal
+tags: Article
 type: article
 ---
 
