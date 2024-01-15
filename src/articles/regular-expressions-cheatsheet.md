@@ -2,7 +2,7 @@
 title: Regular expressions cheatsheet
 description: A quick reference for some common regular expressions.
 date: 2023-07-13
-banner: null
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705318067/triangles2.svg
 tags:
   - Article
 categories:
@@ -11,7 +11,7 @@ categories:
 layout: post
 author: Matt Kevan
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_678,w_905,x_145,y_255/c_scale,h_678,w_905/v1705313410/813.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_445,w_593,x_0,y_49/c_scale,h_445,w_593/v1705318217/2208_1c_2.png
 ---
 ### Alternation
 
