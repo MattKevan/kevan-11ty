@@ -1,17 +1,18 @@
 ---
 title: Seven principles for smooth UX delivery in product teams
+description: Common problems and pitfalls that happen to all projects and ways
+  to avoid them.
 date: 2023-07-13
-layout: post
-tags:
-- Article
-categories:
-- UX
-- Product management
-description: 'Common problems and pitfalls that happen to all projects and ways to avoid them.'
-author: Matt Kevan
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833850/download-1_kwkvqk.png
 banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833850/download-1_kwkvqk.png
+tags:
+  - Article
+categories:
+  - UX
+  - Product management
+layout: post
+author: Matt Kevan
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_335,w_447,x_77,y_75/c_scale,h_335,w_447/v1705279282/slc1/462.png
 ---
 
 ### 1. No surprises
