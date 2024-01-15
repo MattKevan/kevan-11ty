@@ -12,7 +12,7 @@ layout: post
 author: Matt Kevan
 cover: content-banner.jpg
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_353,w_471,x_62,y_122/c_scale,h_353,w_471/v1705279300/slc1/470.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_682,w_909,x_143,y_253/c_scale,h_682,w_909/v1705280264/slc1/696.png
 ---
 
 ### Include your portfolio
