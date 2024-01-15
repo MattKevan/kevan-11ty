@@ -16,10 +16,14 @@
     href="https://fonts.gstatic.com"
     crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link href="/css/prism.css" rel="stylesheet" />
+  <link href="/css/prism.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="{{ "/main.css" }}">
-<script src="/js/prism.js"></script>
+  <script src="/js/prism.js"></script>
+  <script src="/js/ditherjs.dist.js"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+  <script src="/js/prism.js"></script>
+  
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:url" content="{{ page.url }}" />
   <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
@@ -53,8 +57,6 @@
   <meta name="twitter:image:alt" content="{{ title }}">
 
   <link rel="canonical" href="{{ page.url | replace:'/index.html','' | prepend: site.url }}">
-  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link
     rel="alternate"
     type="application/rss+xml"
