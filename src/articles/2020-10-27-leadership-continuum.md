@@ -1,15 +1,16 @@
 ---
-title: The Tannenbaum-Schmidt leadership continuum
 description: Seven styles of leadership, ranging from authoritarian to
   permissive, and the benefits and drawbacks of each.
 date: 2020-10-27
-tags: Article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_678,w_905,x_143,y_257/c_scale,h_678,w_905/v1705279242/slc1/446.png
+banner: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_508,w_903,x_144,y_341/c_scale,h_508,w_903/v1705313324/702.png
 categories: Leadership
 layout: post
 author: Matt Kevan
 cover: pattern-large.jpg
+title: The Tannenbaum-Schmidt leadership continuum
+tags: Article
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_678,w_905,x_143,y_257/c_scale,h_678,w_905/v1705279242/slc1/446.png
 ---
 The Tannenbaum-Schmidt Leadership Continuum is a model showing the relationship between the amount of authority you exercise as a leader and the freedom you give your team to make decisions.
 
