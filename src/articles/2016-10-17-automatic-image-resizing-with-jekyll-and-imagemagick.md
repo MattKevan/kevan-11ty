@@ -3,7 +3,7 @@ title: Automatic image resizing with Jekyll and ImageMagick
 description: How to get Jekyll to take care of the boring business of resizing
   and cropping images.
 date: 2016-10-17
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724719/slc/107_x4smec.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705277596/slc1/423.png
 tags: List [ "Article" ]
 layout: post
 author: Matt Kevan
