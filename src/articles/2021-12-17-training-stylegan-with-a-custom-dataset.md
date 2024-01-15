@@ -10,7 +10,7 @@ categories:
 layout: post
 author: Matt Kevan
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_658,w_877,x_157,y_267/c_scale,h_658,w_877/v1705279786/slc1/501.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_680,w_907,x_144,y_366/c_scale,h_680,w_907/v1705313345/729.png
 ---
 
 Fascinated by the artistic opportunities of machine learning and the incredibly realistic images that can be generated, I decided to learn how to use it to create my own images. Here's the results of my exploration.
