@@ -5,7 +5,7 @@ description: Developing a site structure is one of the most difficult and
   the harder it gets.
 date: 2016-10-10
 banner: ""
-tags: List [ "Article" ]
+tags: Article
 categories: Information architecture
 layout: post
 author: Matt Kevan

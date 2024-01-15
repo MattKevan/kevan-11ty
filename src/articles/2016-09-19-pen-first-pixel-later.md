@@ -5,7 +5,7 @@ description: A blank screen is a daunting prospect. There’s a strong temptatio
   But don’t give in. It’s a trap.
 date: 2016-09-19
 image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705276953/slc1/404.png
-tags: List [ "Article" ]
+tags: Article
 layout: post
 author: Matt Kevan
 type: article

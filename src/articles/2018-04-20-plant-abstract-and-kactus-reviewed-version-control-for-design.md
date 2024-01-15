@@ -6,9 +6,6 @@ description: Developers have used version control systems like Git for years.
 date: 2018-04-20
 tags:
   - Article
-  - Design
-  - Sketch
-  - Version Control
 categories: UI design
 layout: post
 author: Matt Kevan

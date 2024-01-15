@@ -4,7 +4,7 @@ description: How to get Jekyll to take care of the boring business of resizing
   and cropping images.
 date: 2016-10-17
 image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705277596/slc1/423.png
-tags: List [ "Article" ]
+tags: Article
 layout: post
 author: Matt Kevan
 type: article
