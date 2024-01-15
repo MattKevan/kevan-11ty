@@ -1,14 +1,14 @@
 ---
-date: 2020-10-30
+description: What a leader should do
+image: ""
+categories: Leadership
 layout: post
-title: The top ten actions of a good leader
-tags: 
-- Article
-image: ''
-cover: ''
-description: ''
-author: ''
+author: ""
 published: false
+date: 2020-10-30
+cover: ""
+title: The top ten actions of a good leader
+tags: Draft
 type: article
 ---
 **Set the task of the team** - put it across with enthusiasm and remind people of it often.
