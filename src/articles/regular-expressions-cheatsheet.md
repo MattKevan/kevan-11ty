@@ -1,17 +1,17 @@
 ---
 title: Regular expressions cheatsheet
+description: A quick reference for some common regular expressions.
 date: 2023-07-13
-layout: post
+banner: null
 tags:
-- Article
+  - Article
 categories:
-- UX
-- Product management
-description: 'A quick reference for some common regular expressions.'
+  - UX
+  - Product management
+layout: post
 author: Matt Kevan
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833850/download-1_kwkvqk.png
-banner: 
 type: article
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_358,w_478,x_58,y_120/c_scale,h_358,w_478/v1705279330/slc1/483.png
 ---
 
 ### Alternation
