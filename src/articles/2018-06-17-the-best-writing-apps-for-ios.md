@@ -3,7 +3,7 @@ title: The best writing apps for iOS - updated
 description: Focusing on the best writing apps, this is the first in a series
   exploring the best tools to get stuff done using iOS.
 date: 2018-06-17
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704724877/slc/210_hox18z.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_673,w_897,x_147,y_259/c_scale,h_673,w_897/v1705278854/slc1/440.png
 tags:
   - Article
   - Best of
