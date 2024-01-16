@@ -15,4 +15,7 @@
   .copy-to-clipboard-button {
     @apply bg-white text-sm;
   }
+  .output-canvas {
+    @apply w-full;
+  }
 }
