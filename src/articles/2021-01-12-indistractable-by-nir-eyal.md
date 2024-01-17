@@ -1,6 +1,6 @@
 ---
 description: How to control your attention and reduce distraction, from the
-  author of ‘Hooked’, a manual for designing addictive products.
+  author of ‘Hooked’, the manual for designing attention-grabbing products.
 image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_678,w_905,x_143,y_257/c_scale,h_678,w_905/v1705277398/slc1/421.png
 categories: Psychology
 layout: post
@@ -8,7 +8,7 @@ author: Matt Kevan
 published: true
 date: 2021-01-12
 cover: indistractable-banner.jpg
-title: Book review – Indistractable by Nir Eyal
+title: On distraction – thoughts on Indistractable by Nir Eyal
 tags: Article
 type: article
 ---
@@ -16,7 +16,7 @@ type: article
 
 Split into two halves, Indistractable first explains the causes and triggers for distraction, then gives some strategies and tactics for managing it in various contexts, such at work, in the home, and with the family. Both halves are worth reading, but the first half is the strongest as it explores the motivation and triggers for distraction, while the strategies in the second half are basic and better covered elsewhere. 
 
-It's also hard not to see this book in the context of the author's previous book, *Hooked*, an influential guide to designing addictive products. While he does see distraction from digital devices as a problem, he places the blame firmly on the individual for allowing themselves to be addicted, rather than challenging the notion that designing products to be addictive is in any way problematic.
+It's also hard not to see this book in the context of the author's previous book, *Hooked*, an influential guide to designing addictive products. While he does see distraction from digital devices as a problem, he places the blame firmly on the individual for allowing themselves to become addicted, without considering whether the blame should sit with the companies and people building the apps instead. Nor does he consider that he might be at least partly responsible for creating the problem in the first place.
 
 Ultimately the book never quite exceeds the sum of its parts, but does make some good points. Here’s what stood out:
 
