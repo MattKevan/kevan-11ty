@@ -21,8 +21,8 @@ collections:
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Logo", name: "logo", widget: "image", required: false}
       - {label: "Banner", name: "banner", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "string", default: "Article"}
-      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", default: "Article"}
+      - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Layout", name: "layout", widget: "string", default: "post"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "artwork" # Used in routes, e.g., /admin/collections/blog
@@ -37,8 +37,8 @@ collections:
       - label: "Image"
         name: "image"
         widget: "image"
-      - {label: "Tags", name: "tags", widget: "string", default: "Artwork"}
-      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", default: "Artwork"}
+      - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Layout", name: "layout", widget: "string", default: "post"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - label: "Gallery"
