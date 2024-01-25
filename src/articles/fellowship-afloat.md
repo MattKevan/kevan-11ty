@@ -5,7 +5,7 @@ description: Building an online presence for a unique outoor activity centre.
 layout: post
 category: Dev
 banner: "https://res.cloudinary.com/dhcgic4ld/image/upload/v1705954751/trinity.jpg"
-image: "/images/fact-thumb.jpg"
+image: "https://res.cloudinary.com/dhcgic4ld/image/upload/ar_4:3,c_crop,g_north/fact1.jpg"
 logo: "/images/fact.png"
 cover: fact-cover.jpg
 
