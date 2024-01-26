@@ -26,8 +26,8 @@ eleventyExcludeFromCollections: true
 </div> <!--/container -->
 
 
-{% assign sort = collections.Article | sort: 'date' | reverse %}
-{% for item in sort limit: 1 %}
+{% for item in collections.Article | limit: 1 %}
+	{% if item.data.featured == 1 %}
 	<div class="feature my-12 py-24 bg-cover bg-center" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
 		<div class="max-w-6xl mx-auto px-6">
 		<div class="feature-card bg-white p-10 w-1/2">
@@ -40,6 +40,7 @@ eleventyExcludeFromCollections: true
 		</div>
 		</div>
 	</div>
+	{% endif %}
 {% endfor %}
 
 <div class="container mt-5 max-w-6xl mx-auto px-6 py-6">

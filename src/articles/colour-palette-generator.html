@@ -1,17 +1,15 @@
 ---
-description: Quickly extract colours from an image to generate a colour palette.
+description: Handy tool to extract colours from an image and create a colour palette.
 date: 2024-01-25
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_681,w_909,x_141,y_255/c_scale,h_681,w_909/v1705313373/768.png
+image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_680,w_900,x_141,y_255/c_scale,h_681,w_909/v1705313373/788.png
 banner: 
 categories:
-  - UX
-  - Product management
+  - Tool
 layout: page
 author: Matt Kevan
 title: Colour palette generator
 tags:
   - Article
-type: article
 ---
 
 <div class="border rounded-lg border-gray-200 shadow-lg grid grid-cols-1 items-start lg:grid-cols-3">
@@ -23,8 +21,8 @@ type: article
           <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
           </svg>
-          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
-          <p class="text-xs text-gray-500 dark:text-gray-400">PNG, JPG or GIF (MAX. 800x400px)</p>
+          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop an image.</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">PNG, JPG or GIF, max. file size 2mb.</p>
       </div>
       <input id="dropzone-file" type="file" class="hidden" />
   </label>
@@ -40,7 +38,7 @@ type: article
   </div>
   <div class="grid grid-cols-1 gap-4 p-6">
     <label>Number of colours</label>
-    <input type="range" id="colorCount" min="4" max="10" value="6" class="w-full bg-transparent cursor-pointer appearance-none disabled:opacity-50 disabled:pointer-events-none focus:outline-none
+    <input type="range" id="colourCount" min="4" max="10" value="6" class="w-full bg-transparent cursor-pointer appearance-none disabled:opacity-50 disabled:pointer-events-none focus:outline-none
     [&::-webkit-slider-thumb]:w-2.5
     [&::-webkit-slider-thumb]:h-2.5
     [&::-webkit-slider-thumb]:-mt-0.5
@@ -76,7 +74,7 @@ type: article
     [&::-moz-range-track]:rounded-full">
     <label>Palette</label>
    
-    <input type="range" id="roundingFactor" min="20" max="200" value="60" class="w-full bg-transparent cursor-pointer appearance-none disabled:opacity-50 disabled:pointer-events-none focus:outline-none
+    <input type="range" id="roundingFactor" min="20" max="140" value="60" class="w-full bg-transparent cursor-pointer appearance-none disabled:opacity-50 disabled:pointer-events-none focus:outline-none
     [&::-webkit-slider-thumb]:w-2.5
     [&::-webkit-slider-thumb]:h-2.5
     [&::-webkit-slider-thumb]:-mt-0.5
@@ -110,30 +108,33 @@ type: article
     [&::-moz-range-track]:h-2
     [&::-moz-range-track]:bg-gray-100
     [&::-moz-range-track]:rounded-full">
-    <div id="colors" class=" mt-6 pt-6 border-t border-gray-200"></div>
+    <div id="colours" class=" mt-6 pt-6 border-t border-gray-200"></div>
 
   </div>
   </div>
   
   <script>
+    // Set the default values
     let imageData = null;
-    let roundingFactor = 60; // Default value
-    let numberOfColors = 6; // Default value
+    let roundingFactor = 60; 
+    let numberOfColours = 6; 
 
+    // Set the event listerners - these look for a change in the selected element and runs a function when the change is detected
     document.getElementById('dropzone-file').addEventListener('change', handleImageChange);
-    document.getElementById('colorCount').addEventListener('input', function() {
-        numberOfColors = parseInt(this.value);
-        updateColorDisplay();
+    document.getElementById('colourCount').addEventListener('input', function() {
+        // sets numberOfColours to the value of the range
+        numberOfColours = parseInt(this.value);
+        updateColourDisplay();
     });
     document.getElementById('roundingFactor').addEventListener('input', function() {
         roundingFactor = parseInt(this.value);
-        updateColorDisplay();
+        updateColourDisplay();
     });
     document.getElementById('removeBtn').addEventListener('click', resetAndShowDropzone);
     
     const dropzone = document.getElementById('dropzone');
     dropzone.addEventListener('dragover', function(e) {
-        e.preventDefault(); // Prevent file from being opened
+        e.preventDefault();
     });
     dropzone.addEventListener('drop', function(e) {
         e.preventDefault();
@@ -145,6 +146,11 @@ type: article
 
     function handleImageChange(event) {
         const file = event.target.files[0];
+        if (file.size > 2097152) {
+          alert("Image is too big. Maximum size is 2MB.");
+          return;
+      }
+
         const reader = new FileReader();
     
         reader.onload = function(e) {
@@ -177,19 +183,19 @@ type: article
   
         imageData = null;
   
-        document.getElementById('colorCount').value = 6;
+        document.getElementById('colourCount').value = 6;
         document.getElementById('roundingFactor').value = 60;
-        numberOfColors = 6;
+        numberOfColours = 6;
         roundingFactor = 60;
   
-        document.getElementById('colors').innerHTML = '';
+        document.getElementById('colours').innerHTML = '';
   
         document.getElementById('dropzone').style.display = 'block';
         document.getElementById('canvasContainer').style.display = 'none';
         document.getElementById('removeBtn').style.display = 'none';
     }
     
-    function updateColorDisplay() {
+    function updateColourDisplay() {
         processImage();
     }
   
@@ -197,7 +203,7 @@ type: article
         if (!imageData) return;
     
         const data = imageData.data;
-        let colorCount = {};
+        let colourCount = {};
     
         for (let i = 0; i < data.length; i += 4) {
             const r = Math.round(data[i] / roundingFactor) * roundingFactor;
@@ -205,27 +211,27 @@ type: article
             const b = Math.round(data[i + 2] / roundingFactor) * roundingFactor;
             const key = `${r},${g},${b}`;
     
-            if (!colorCount[key]) {
-                colorCount[key] = { color: [r, g, b], count: 0 };
+            if (!colourCount[key]) {
+                colourCount[key] = { colour: [r, g, b], count: 0 };
             }
-            colorCount[key].count++;
+            colourCount[key].count++;
         }
     
-        const groupedColors = Object.values(colorCount);
-        groupedColors.sort((a, b) => b.count - a.count);
+        const groupedColours = Object.values(colourCount);
+        groupedColours.sort((a, b) => b.count - a.count);
     
-        const topColors = groupedColors.slice(0, numberOfColors).map(c => {
-            const color = c.color;
-            return '#' + color.map(v => Math.min(v, 255).toString(16).padStart(2, '0')).join('');
+        const topColours = groupedColours.slice(0, numberOfColours).map(c => {
+            const colour = c.colour;
+            return '#' + colour.map(v => Math.min(v, 255).toString(16).padStart(2, '0')).join('');
         });
     
-        const colorsDiv = document.getElementById('colors');
-        colorsDiv.innerHTML = '';
-        topColors.forEach(hex => {
-            colorsDiv.innerHTML += `
+        const coloursDiv = document.getElementById('colours');
+        coloursDiv.innerHTML = '';
+        topColours.forEach(hex => {
+            coloursDiv.innerHTML += `
             <div class="flex-shrink-0 group block mb-3">
               <div class="flex items-center">
-                <span class="inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full text-lg font-semibold text-white leading-none" style="background-color: ${hex};"></span>
+                <span class="inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full text-lg font-semibold text-white leading-none border border-gray-100" style="background-color: ${hex};"></span>
                 <div class="ms-3">
                   <p class="text-gray-800">${hex}</p>
                 </div>
