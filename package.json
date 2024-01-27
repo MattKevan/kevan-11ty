@@ -30,6 +30,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "cssnano": "^6.0.3",
     "eleventy-plugin-seo": "^0.5.2",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^11.0.0",
+    "preline": "^2.0.3"
   }
 }
