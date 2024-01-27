@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Hanken Grotesk', ...defaultTheme.fontFamily.sans]
+      'sans': ['Neue Machina', ...defaultTheme.fontFamily.sans]
 
     },
   },

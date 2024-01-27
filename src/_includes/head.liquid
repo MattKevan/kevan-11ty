@@ -10,12 +10,7 @@
       {{ site.title }}
     {% endif %}
   </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+ 
   <link href="/css/prism.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="{{ "/main.css" }}">
@@ -67,5 +62,53 @@
     type="image/gif"
     href="{{ "/images/site/logo.gif" | prepend: site.baseurl }}">
 
+<style>
+@keyframes moveBackground {
+  0% {
+    background-position: -2000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 
+.loader {
+  animation: moveBackground 2s linear infinite;
+  background-image: url('/images/dither.png');
+  background-repeat: repeat-x;
+  height: 30px;
+  width: 100%;
+}
+.loader {
+  display: none;
+}
+.htmx-request .loader {
+  display: block;
+}
+.htmx-request.loader {
+  display: block;
+}
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/css/fonts/PPNeueMachina-InktrapUltrabold.woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/css/fonts/PPNeueMachina-InktrapMedium.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/css/fonts/PPNeueMachina-InktrapRegular.woff');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+</style>
 </head>
