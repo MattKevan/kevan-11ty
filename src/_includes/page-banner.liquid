@@ -2,7 +2,7 @@
   {% if banner and banner != "" %}
     <div class="py-10 bg-cover h-[50vh] md:h-[60vh] bg-center border-y border-[#000]" style="background-image: url('{{ banner }}');"></div>
   {% else %}
-  <div class="h-[32px] border-y border-[#000] random-pattern"></div>
+<div x-data="randomBackground()" class="h-[30px] border-y border-[#000]" x-bind:style="'background-image: url(\'/images/patterns/' + imageNumber + '.png\')'"></div>
 
   {% endif %}
 </div>
