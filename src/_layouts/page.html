@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="h-[32px] border-y border-[#000] random-pattern"></div>
+<div x-data="randomBackground()" class="h-[30px] border-b border-[#000] mb-12" x-bind:style="'background-image: url(\'/images/patterns/' + imageNumber + '.png\')'"></div>
 
 {% include 'page-title' %}
 
