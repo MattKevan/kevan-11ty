@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<div x-data="randomBackground()" class="h-[30px] border-y border-[#000]" x-bind:style="'background-image: url(\'/images/patterns/' + imageNumber + '.png\')'"></div>
-
+<div x-data
+     class="h-[32px] border-y border-[#000]"
+     :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.png\')'">
+</div>
 {% include 'page-title' %}
 
 <div class="container mt-5 max-w-6xl mx-auto px-6">

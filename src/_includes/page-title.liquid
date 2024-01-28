@@ -23,8 +23,7 @@
   </div>  
 
 </div>
-<div x-data="randomBackground()"
-     class="h-[30px] border-y border-[#000] mb-12"
-     x-init="init()"
-     :style="'background-image: url(\'/images/patterns/' + imageNumber + '.png\')'">
+<div x-data
+     class="h-[32px] border-b border-[#000] mb-12"
+     :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.png\')'">
 </div>
