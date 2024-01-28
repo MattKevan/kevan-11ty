@@ -62,12 +62,19 @@
         </div>
       </div>
       <div class="px-4 pt-3 pb-2 border-l border-[#000] leading-none">
-        <p><a href="/" class="flex mb-0 text-gray-900">
-          <span class="text-sm font-bold">Matt Kevan
-          </span>
+        <p class="text-sm font-bold mb-0"><a href="/" class=" text-[#000] hover:underline">
+        Matt Kevan
         </a></p>
-        <p class="text-sm">Art, design & code</p>
+        {% assign path = page.url | split: '/' %}
 
+        {% if path[1] == 'articles' %}
+          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/articles" class="hover:underline">Articles</a></p>
+           {% elsif path[1] == 'artwork' %}
+            <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/artwork" class="hover:underline">Artwork</a></p>
+
+          {% else %}
+        <p class="text-sm">Art, design & code </p>
+          {% endif %}
       </div>
 
    
