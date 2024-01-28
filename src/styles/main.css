@@ -12,8 +12,11 @@
   #animation-container canvas {
     width: 100% !important;
   }
-  .copy-to-clipboard-button {
-    @apply bg-white text-sm;
+  div.code-toolbar > .toolbar.toolbar > .toolbar-item > a, div.code-toolbar > .toolbar.toolbar > .toolbar-item > button {
+    @apply bg-white text-xs;
+  }
+  .copy-to-clipboard-button span {
+    @apply text-xs;
   }
   .output-canvas {
     @apply w-full;

@@ -2,12 +2,11 @@
 title: Regular expressions cheatsheet
 description: A quick reference for some common regular expressions.
 date: 2023-07-13
-banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705318067/triangles2.svg
+banner:
 tags:
   - Article
 categories:
-  - UX
-  - Product management
+  - Code
 layout: post
 author: Matt Kevan
 type: article
@@ -115,7 +114,7 @@ Represents the regex range \[ \t\r\n\f\v], matching a single space, tab, carriag
 \d\s\w\w\w\w\w\w\w
 ```
 
-# Matches a digit character, followed by a whitespace character, followed by 7 word characters, eg. 3 monkeys
+Matches a digit character, followed by a whitespace character, followed by 7 word characters, eg. 3 monkeys
 
 ```regex
 \W # Non-word character
