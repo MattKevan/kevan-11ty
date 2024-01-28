@@ -21,7 +21,13 @@
       }
     };
   }
-
+  
+document.body.addEventListener('htmx:afterSwap', (event) => {
+    Alpine.discoverUninitializedComponents((el) => {
+      Alpine.initializeComponent(el);
+    });
+  });
+  
 var $aContainer = document.getElementById("animation-container");
       var aContainerRect = $aContainer.getBoundingClientRect();
       var start = aContainerRect.top;
