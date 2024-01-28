@@ -2,14 +2,14 @@
 
 {% if banner and banner != "" %}
 
-    <div class="bg-cover md:flex flex-col  bg-center border-t border-[#000]" style="height: calc(100vh - 60px);">
+    <div class="bg-cover md:flex flex-col bg-center border-t border-[#000]" style="height: calc(100vh - 60px);">
       <div class="flex-grow border-b border-[#000]"  style="background-image: url('{{ banner }}');"></div>
       {% include 'page-title' %}
     </div>
 
 {% else %}
 
-    <div x-data class="h-[32px] border-y border-[#000]" :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.svg\')'">
+    <div x-data class="h-[32px] border-y border-[#000] bg-left-top" :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.svg\')'">
     </div>
     {% include 'page-title' %}
 

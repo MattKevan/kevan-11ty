@@ -1,11 +1,18 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_270_359)">
-<rect width="16" height="16" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0H7V2H6V3H5V4H4V5H2V4H1V3H0V4H1V5H2V6H4V7H6V8H7V10H6V11H5V12H4V13H2V12H1V11H0V12H1V13H2V14H4V15H6V16H7V15H6V14H4V13H5V12H6V11H8V12H9V13H10V14H12V15H14V16H15V15H14V14H12V13H13V12H14V11H16V8H15V7H14V6H12V5H13V4H14V3H16V0H15V2H14V3H13V4H12V5H10V4H9V3H8V0ZM8 3V4H9V5H10V6H12V7H14V8H15V10H14V11H13V12H12V13H10V12H9V11H8V8H7V7H6V6H4V5H5V4H6V3H8Z" fill="black"/>
+<rect width="8" height="8" fill="white"/>
+<path d="M7 0H8V3H6V2H7V0Z" fill="black"/>
+<rect x="2" y="5" width="2" height="1" fill="black"/>
+<rect x="4" y="6" width="2" height="1" fill="black"/>
+<rect y="3" width="1" height="1" fill="black"/>
+<rect x="5" y="3" width="1" height="1" fill="black"/>
+<rect x="6" y="7" width="1" height="1" fill="black"/>
+<rect x="1" y="4" width="1" height="1" fill="black"/>
+<rect x="4" y="4" width="1" height="1" fill="black"/>
 </g>
 <defs>
 <clipPath id="clip0_270_359">
-<rect width="16" height="16" fill="white"/>
+<rect width="8" height="8" fill="white"/>
 </clipPath>
 </defs>
 </svg>

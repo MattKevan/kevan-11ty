@@ -101,11 +101,11 @@ if ($aContainer) {
   document.addEventListener('alpine:init', () => {
     // Define a global store in Alpine.js
     Alpine.store('background', {
-      imageNumber: Math.floor(Math.random() * 20) + 1,
+      imageNumber: Math.floor(Math.random() * 25) + 1,
 
       // Function to update the image number
       updateImageNumber() {
-        this.imageNumber = Math.floor(Math.random() * 20) + 1;
+        this.imageNumber = Math.floor(Math.random() * 25) + 1;
       }
     });
   });
