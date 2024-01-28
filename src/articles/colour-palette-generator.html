@@ -11,12 +11,11 @@ title: Colour palette generator
 tags:
   - Article
 ---
-
-<div class="border rounded-lg border-gray-200 shadow-lg grid grid-cols-1 items-start lg:grid-cols-3">
-  <div class="grid grid-cols-1 gap-4 lg:col-span-2 bg-gray-50 p-6  rounded-l-lg h-full">
+<div class="border border-[#000] grid grid-cols-1 items-start lg:grid-cols-3">
+  <div class="grid grid-cols-1 gap-4 lg:col-span-2 p-6 h-full border-b lg:border-b-0 lg:border-r border-[#000] "  style="background-image: url('/images/pattern2.png');">
     
 <div class="flex items-center justify-center w-full" id="dropzone">
-  <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-80 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+  <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-80 border-2 border-[#000] border-dashed cursor-pointer bg-white">
       <div class="flex flex-col items-center justify-center pt-5 h-full pb-6">
           <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
@@ -56,7 +55,7 @@ tags:
     [&::-moz-range-thumb]:appearance-none
     [&::-moz-range-thumb]:bg-white
     [&::-moz-range-thumb]:border-4
-    [&::-moz-range-thumb]:border-blue-600
+    [&::-moz-range-thumb]:border-[#000]
     [&::-moz-range-thumb]:rounded-full
     [&::-moz-range-thumb]:transition-all
     [&::-moz-range-thumb]:duration-150
@@ -64,8 +63,9 @@ tags:
     
     [&::-webkit-slider-runnable-track]:w-full
     [&::-webkit-slider-runnable-track]:h-2
-    [&::-webkit-slider-runnable-track]:bg-gray-100
-    [&::-webkit-slider-runnable-track]:rounded-full
+    [&::-webkit-slider-runnable-track]:border
+    [&::-webkit-slider-runnable-track]:border-[#000]
+    [&::-webkit-slider-runnable-track]:bg-[#000]
     [&::-webkit-slider-runnable-track]:dark:bg-gray-700
     
     [&::-moz-range-track]:w-full
@@ -108,7 +108,7 @@ tags:
     [&::-moz-range-track]:h-2
     [&::-moz-range-track]:bg-gray-100
     [&::-moz-range-track]:rounded-full">
-    <div id="colours" class=" mt-6 pt-6 border-t border-gray-200"></div>
+    <div id="colours" class=" mt-6 pt-6 border-t border-[#000]"></div>
 
   </div>
   </div>

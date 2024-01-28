@@ -1,17 +1,24 @@
-<div class="max-w-6xl mx-auto mt-6 md:mt-12 mb-8 pb-12 md:mb-16 px-6  border-b border-[#000]">
-  <h1 itemprop="name headline" class="text-3xl lg:text-6xl mb-6">{{ title }}</h1>
+<div class="border-b border-[#000] flex mb-12">
+  
+  <div class="border-r border-[#000] w-6 md:w-[65px] flex-none"></div>
+  <div class="w-full">
+    <div class="p-6">
+      <h1 itemprop="name headline" class="text-3xl lg:text-4xl mb-2 lg:mb-4 font-bold">{{ title }}</h1>
+      {% if description %}
+        <p class="text-[#000">{{ description }}</p>
+      {% endif %}
+    </div>
 
-  {% if description %}
-    <p class="text-lg md:text-2xl text-gray-700">{{ description }}</p>
-  {% endif %}
+    <div class="flex border-t border-[#000]">
+      <div class="border-r border-[#000] pt-[21px] px-6 py-4">
+        <p class="text-xs">{{ page.date | date: "%-d %B %Y" }}</p>
+      </div>
+      <div class=" px-6 py-4">
+        {% for tag in categories %}
+          <span class="inline-flex items-center border px-2 py-1 text-xs font-medium border-gray-950 rounded-full">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
 
-  {% if page.collection == 'articles' %}
-    <p class="date xs">
-      {% for tag in page.tags %}
-        {{ tag }}
-      {% endfor %}
-      • {{ page.date | date: "%-d %B %Y" }}
-
-    </p>
-  {% endif %}
+  </div>  
 </div>
