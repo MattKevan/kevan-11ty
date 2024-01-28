@@ -5,13 +5,12 @@ permalink: /work/
 description: 
 eleventyExcludeFromCollections: true
 ---
-<hr class="mb-6">
-<div class="sm:flex sm:flex-row my-6">
-	<div class="sm:basis-1/4">
-		<h2 class="text-2xl sticky top-0 py-4 bg-white lg:w-44 inline-block">User experience</h2>
+<div class="sm:flex sm:flex-row my-6 border border-[#000]">
+	<div class="sm:basis-1/4 border-b sm:border-r sm:border-b-0 border-[#000] px-6">
+		<h2 class="text-xl sticky top-0 bg-white lg:w-44 py-6 inline-block">User experience</h2>
 	</div>
 
-	<div class="sm:basis-3/4 grid gap-6 grid-cols-2 md:grid-cols-3 my-6">
+	<div class="sm:basis-3/4 grid gap-6 grid-cols-2 md:grid-cols-3 p-6">
 		{% assign gallery-sorted = collections.Work | sort: 'date' | reverse %}
 		{% for item in gallery-sorted %}
 		{% if item.data.category == 'UX'%}
