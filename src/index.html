@@ -1,63 +1,75 @@
 ---
 layout: default
-title: Art, design & code.
+title: Matt Kevan
+description: Art, design & code.
 menu: false
 eleventyExcludeFromCollections: true
----
-<div class="h-[30px] border-b border-[#000]" style="background-image: url('/images/pattern1.png');"></div>
+page-bg: "/images/patterns/16.svg"
 
-<div class="container mt-5 max-w-6xl mx-auto px-6">
-	<div class="lg:grid gap-8 lg:grid-cols-2 ">
-		
+---
+
+<div class="mb-12 border-b border-[#000]" style="background-image: url('{{ page-bg }}')">
+	<div x-data class="bg-left-top h-[32px]" :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.svg\')'"></div>
+
+	{% for item in collections.Article | limit: 1 %}
+		{% if item.data.featured == 1 %}
+			<a href="{{ item.url }}">
+				<div class="feature  py-24 bg-cover bg-center border-y border-[#000]" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
+					<div class="max-w-6xl mx-auto px-6">
+						<div class="feature-card border border-[#000] bg-white p-10 md:w-1/2 shadow-line">
+							<h3 class="text-3xl mb-3 hover:underline">{{ item.data.title }}</h3>
+							<p class="intro mb-3 text-[#000] ">{{ item.data.description }}</p>
+							<p class="meta text-xs mb-4">
+								{{ item.data.date | date: "%-d %B %Y"}} 
+							</p>
+							{% include 'tags' %}
+						</div>
+					</div>
+				</div>
+			</a>
+		{% endif %}
+	{% endfor %}
+	<div x-data class="bg-left-top h-[32px] mb-12 border-b border-[#000]" :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.svg\')'"></div>
+
+
+	<div class="max-w-3xl mx-auto px-6 mb-12">
+		<h2 class="text-xl font-bold mb-3"><a href="/articles" class="hover:underline">Articles</a></h2>
 		{% assign sort = collections.Article | sort: 'date' | reverse %}
-		{% for item in sort limit:1%}
-			{% include 'article-card-large' %}
+		{% for item in sort  limit:4 %}
+		{% include 'article-list-large' %}			
 		{% endfor %}
-		
-		<div class="grid gap-8 grid-cols-2 ">
-			{% assign sort = collections.Article | sort: 'date' | reverse %}
-			{% for item in sort limit: 4 offset: 1 %}
-				{% include 'article-card-small' %}
+	</div>
+
+</div>
+		<div class="max-w-6xl mx-auto px-6">
+			<h2 class="text-xl font-bold mb-3"><a href="/projects" class="hover:underline">Projects</a></h2>
+		</div>
+
+		<div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 gap-6 lg:gap-12 px-6">
+			{% assign gallery-sorted = collections.Project | sort: 'date' | reverse %}
+			{% for item in gallery-sorted %}
+				{% if item.data.featured == "True" %}
+					{% include 'project-card' %}
+				{% endif %}
 			{% endfor %}
 		</div>
-		<a href="/articles">See all articles »</a>
-
 	</div>
-</div> <!--/container -->
 
 
-{% for item in collections.Article | limit: 1 %}
-	{% if item.data.featured == 1 %}
-	<a href="{{ item.url }}">
-	<div class="feature my-12 py-24 bg-cover bg-center border-y border-[#000]" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
-		<div class="max-w-6xl mx-auto px-6">
-		<div class="feature-card border border-[#000] bg-white p-10 md:w-1/2">
-			<h3 class="text-3xl mb-3 hover:underline">{{ item.data.title }}</h3>
-			<p class="intro mb-3 text-[#000] ">{{ item.data.description }}</p>
-			<p class="meta text-xs mb-4">
-				{{ item.data.date | date: "%-d %B %Y"}} 
-			</p>
-			{% include 'tags' %}
-		</div>
-		</div>
-	</div>
-</a>
-	{% endif %}
-{% endfor %}
+
+	<div class="mt-12 mb-12 border-y pt-12 border-[#000]" style="background-image: url('{{ page-bg }}')">
+
+
 
 <div class="container mt-5 max-w-6xl mx-auto px-6 py-6">
-	<div class="col-12">
 		<h2 class="title mb-4">Artwork</h2>
-	</div>
-	<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
 
-	{% assign gallery-sorted = collections.Artwork | sort: 'date' | reverse %}
-	{% for item in gallery-sorted limit: 8 %}
-		{% include 'gallery-teaser' %}
-	{% endfor %}
-<div class="col-12">
-		<p><a href="/artwork">See all artwork »</a></p>
-	</div>
+	<div class="max-w-6xl mx-auto mb-12">
+
+		{% assign sort = collections.Artwork | sort: 'date' | reverse %}
+		{% for item in sort limit:3 %}
+			{% include 'artwork-card' %}
+		{% endfor %}
+
 </div>
-
 </div>

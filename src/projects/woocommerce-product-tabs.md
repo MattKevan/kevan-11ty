@@ -8,8 +8,6 @@ theme: dark
 tags:
 - Project
 categories:
-- Branding
-- Print design
 - Web development
 layout: post
 featured: "False"

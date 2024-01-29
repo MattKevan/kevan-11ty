@@ -4,7 +4,9 @@ description: Simple browser-based ebook reader with an emphasis on clean typogra
 image: /images/tig/gallery.png
 tags:
   - Project
-categories: List [ "Vue", "Web app" ]
+categories: 
+  - Vue
+  - Web app
 layout: post
 logo: /images/minimal-logo.jpg
 featured: "False"

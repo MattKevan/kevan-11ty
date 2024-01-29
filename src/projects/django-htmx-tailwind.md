@@ -5,8 +5,6 @@ image: ""
 tags:
   - Project
 categories:
-  - Branding
-  - Print design
   - Web development
 layout: post
 logo: /images/djx.jpg

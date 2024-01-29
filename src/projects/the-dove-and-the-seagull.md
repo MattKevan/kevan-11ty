@@ -10,7 +10,7 @@ tags:
 categories:
 - E-commerce
 layout: post
-featured: "True"
+featured: "False"
 status: "Active"
 ---
 
