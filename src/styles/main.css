@@ -7,7 +7,7 @@
     @apply text-center text-sm;
   }
   .wide {
-    @apply lg:max-w-5xl md:max-w-3xl lg:-ml-[210px] md:-ml-[80px];
+    @apply lg:max-w-5xl lg:-ml-[110px];
   }
   #animation-container canvas {
     width: 100% !important;
