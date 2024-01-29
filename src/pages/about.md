@@ -1,10 +1,9 @@
 ---
 title: About
 description: "Hi, I'm Matt Kevan, a designer and artist based in Manchester."
-layout: content-page
+layout: post
 permalink: /about/
 eleventyExcludeFromCollections: true
-banner: "https://res.cloudinary.com/dhcgic4ld/image/upload/v1705578894/bg.svg"
 
 ---
 
