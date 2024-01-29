@@ -2,8 +2,8 @@
 
 {% if banner and banner != "" %}
 
-    <div class="bg-cover md:flex flex-col bg-center border-t border-[#000]" style="height: calc(100vh - 60px);">
-      <div class="flex-grow border-b border-[#000]"  style="background-image: url('{{ banner }}');"></div>
+    <div class="bg-cover flex flex-col bg-center border-t border-[#000] h-[calc(100vh-40px)] md:h-[calc(100vh-60px)]" style="height: ;">
+      <div class="flex-grow border-b border-[#000]" style="background-image: url('{{ banner }}');"></div>
       {% include 'page-title' %}
     </div>
 
