@@ -1,0 +1,31 @@
+---
+title: "Shapes Lines Colours – CMY motion"
+date: 2021-04-01 00:00:00
+description: Minimal motion graphics made with an iPhone.
+image: "/images/cmy-motion.jpg"
+banner: /images/motion-banner.jpg
+tags:
+- Motion graphics
+- Artwork
+layout: post
+
+---
+
+#### Notice:
+
+* There must only be cyan, magenta and yellow.
+* Blend modes may be used.
+* The animations must loop.
+
+
+</div>
+<div class="grid grid-cols-3  max-w-6xl mx-auto mt-6 md:mt-12 mb-8 md:mb-16 px-6">
+    <dotlottie-player src="/images/lottie/slc1.lottie.json" background="#FFFFFF" speed="1" style="width: 100%; height: 100%" direction="1" mode="normal" loop autoplay></dotlottie-player>
+    <dotlottie-player src="/images/lottie/slc2.json" background="#FFFFFF" speed="1" style="width: 100%; height: 100%" direction="1" mode="normal" loop autoplay></dotlottie-player>
+    <dotlottie-player src="/images/lottie/slc3.json" background="#FFFFFF" speed="1" style="width: 100%; height: 100%" direction="1" mode="normal" loop autoplay></dotlottie-player>
+
+    {% assign i = 0 %}
+{% for i in (4..19) %}
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/c_scale,w_500/v1705491045/slc4/{{i}}.gif">
+{% endfor %}
+</div>
