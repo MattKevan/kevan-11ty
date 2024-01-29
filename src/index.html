@@ -9,7 +9,6 @@ page-bg: "/images/patterns/16.svg"
 ---
 
 <div class="mb-12 border-b border-[#000]" style="background-image: url('{{ page-bg }}')">
-	<div x-data class="bg-left-top h-[32px]" :style="'background-image: url(\'/images/patterns/' + $store.background.imageNumber + '.svg\')'"></div>
 
 	{% for item in collections.Article | limit: 1 %}
 		{% if item.data.featured == 1 %}
