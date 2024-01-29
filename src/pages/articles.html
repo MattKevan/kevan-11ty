@@ -2,18 +2,14 @@
 title: Articles
 layout: page
 permalink: /articles/
+description: Lovely intro text
+page-bg: "/images/patterns/16.svg"
 eleventyExcludeFromCollections: true
 ---
-<div class="mb-16">
-{% assign sort = collections.Article | sort: 'date' | reverse %}
-{% for item in sort limit: 1%}
-	{% include 'article-list-large' %}
-{% endfor %}
-<hr>
 
-<div class="max-w-3xl mx-auto mt-16">
+<div class="max-w-3xl mx-auto">
 	{% assign sort = collections.Article | sort: 'date' | reverse %}
-	{% for item in sort  offset: 1%}
-		{% include 'article-list-small' %}			
+	{% for item in sort %}
+	{% include 'article-list-large' %}			
 	{% endfor %}
 </div>

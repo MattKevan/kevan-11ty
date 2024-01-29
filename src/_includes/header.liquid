@@ -69,12 +69,15 @@
 
         {% if path[1] == 'articles' %}
           <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/articles" class="hover:underline">Articles</a></p>
-           {% elsif path[1] == 'artwork' %}
-            <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/artwork" class="hover:underline">Artwork</a></p>
-
-          {% else %}
-        <p class="text-sm">Art, design & code </p>
-          {% endif %}
+        {% elsif path[1] == 'artwork' %}
+          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/artwork" class="hover:underline">Artwork</a></p>
+        {% elsif path[1] == 'work' %}
+          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/work" class="hover:underline">Work</a></p>
+        {% elsif path[1] == 'projects' %}
+          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/projects" class="hover:underline">Projects</a></p>
+        {% else %}
+          <p class="text-sm">Art, design & code </p>
+        {% endif %}
       </div>
 
    
