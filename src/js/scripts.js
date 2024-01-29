@@ -71,3 +71,47 @@ function spreadError(pixels, idx, width, error) {
     if ((idx + 4 * width + 4) < pixels.length) pixels[idx + 4 * width + 4] += errorFraction; // Bottom right
     if ((idx + 8 * width) < pixels.length) pixels[idx + 8 * width] += errorFraction; // Bottom + 1
 }
+
+var $aContainer = document.getElementById("animation-container");
+
+// Check if the element exists
+if ($aContainer) {
+    var aContainerRect = $aContainer.getBoundingClientRect();
+    var start = aContainerRect.top;
+    var length = (aContainerRect.height + 200) * 8; // Height of the container plus an offset for better presentation
+
+    scrollAnimate({
+        frames: {
+            path: "/images/slc2/",
+            prefix: "",
+            extension: "jpeg",
+            amount: 255,
+            pad: ""
+        },
+        parent: $aContainer,
+        scroll: {
+            start: start,
+            length: length
+        }
+    });
+}
+
+
+  // Initialize Alpine.js
+  document.addEventListener('alpine:init', () => {
+    // Define a global store in Alpine.js
+    Alpine.store('background', {
+      imageNumber: Math.floor(Math.random() * 25) + 1,
+
+      // Function to update the image number
+      updateImageNumber() {
+        this.imageNumber = Math.floor(Math.random() * 25) + 1;
+      }
+    });
+  });
+
+  // Listen for HTMX load events
+  document.body.addEventListener('htmx:load', () => {
+    // Update the image number in the global store
+    Alpine.store('background').updateImageNumber();
+  });

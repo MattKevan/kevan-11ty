@@ -1,28 +1,85 @@
 <section
-  class="w-full text-gray-700 bg-white"
-  {!!
-  $attributes
-  ??
-  ''
-  !!}>
-  <div class="container flex flex-col flex-wrap justify-between py-5 px-6 mx-auto md:flex-row max-w-6xl">
-    <div class="relative flex flex-col md:flex-row">
-      <a href="/" class="flex mb-3 font-medium text-gray-900 lg:w-auto lg:justify-en md:mb-0">
-        <span class="text-xl font-bold leading-none text-gray-900 select-none">Matt Kevan
-        </span>
-      </a>
+  class="w-full text-gray-700 bg-white fixed bottom-0 border-t border-[#000] flex-row z-50">
+    <div class="flex">
 
-    </div>
+      <div
+          x-data="{
+              open: false,
+              toggle() {
+                  if (this.open) {
+                      return this.close()
+                  }
 
-    <div class="inline-flex space-x-6 lg:justify-end">
-      <nav class="flex flex-wrap text-base md:mb-0">
-        <a href="/articles/" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Articles</a>
-        <a href="/projects/" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Projects</a>
-        <a href="/work/" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Work</a>
-        <a href="/artwork/" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Artwork</a>
-        <a href="/about/" class="font-medium leading-6 text-gray-600 hover:text-gray-900">About</a>
+                  this.$refs.button.focus()
 
-      </nav>
-    </div>
+                  this.open = true
+              },
+              close(focusAfter) {
+                  if (! this.open) return
+
+                  this.open = false
+
+                  focusAfter && focusAfter.focus()
+              }
+          }"
+          x-on:keydown.escape.prevent.stop="close($refs.button)"
+          x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+          x-id="['dropdown-button']"
+          class="relative"
+      >
+        <!-- Button -->
+        <button
+            x-ref="button"
+            x-on:click="toggle()"
+            :aria-expanded="open"
+            :aria-controls="$id('dropdown-button')"
+            type="button"
+            class="flex items-center gap-2 bg-white p-5"
+        >
+          <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Panel -->
+        <div
+          x-ref="panel"
+          x-show="open"
+          x-transition.origin.bottom.left
+          x-on:click.outside="close($refs.button)"
+          :id="$id('dropdown-button')"
+          style="display: none;"
+          class="absolute left-0 bottom-full w-40 bg-white border-[#000] border-t border-r border-b py-2"
+        >
+          <a href="/articles/" class="font-medium text-[#000] hover:underline px-4 py-2 block">Articles</a>
+          <a href="/projects/" class="font-medium text-[#000] hover:underline px-4 py-2 block">Projects</a>
+          <a href="/work/" class="font-medium text-[#000] hover:underline px-4 py-2 block">Work</a>
+          <a href="/artwork/" class="font-medium text-[#000] hover:underline px-4 py-2 block">Artwork</a>
+          <a href="/about/" class="font-medium text-[#000] hover:underline px-4 py-2 block">About</a>
+        </div>
+      </div>
+      <div class="px-4 pt-3 pb-2 border-l border-[#000] leading-none">
+        <p class="text-sm font-bold mb-0"><a href="/" class=" text-[#000] hover:underline">
+        Matt Kevan
+        </a></p>
+        {% assign path = page.url | split: '/' %}
+
+        {% if path[1] == 'articles' %}
+          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/articles" class="hover:underline">Articles</a></p>
+           {% elsif path[1] == 'artwork' %}
+            <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/artwork" class="hover:underline">Artwork</a></p>
+
+          {% else %}
+        <p class="text-sm">Art, design & code </p>
+          {% endif %}
+      </div>
+
+   
+  </div>
+  <div class="border-t border-[#000] h-[10px] md:h-[30px] bg-[#000] w-full bg-repeat-x" style="background-image: url('/images/dither.png');">
+    <div class="loader h-[10px] md:h-[30px] w-full bg-repeat-x"></div>
   </div>
 </section>

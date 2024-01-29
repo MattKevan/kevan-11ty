@@ -10,6 +10,7 @@ tags: Article
 layout: post
 type: article
 categories: Public domain
+featured: 1
 ---
 
 ### Updates

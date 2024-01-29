@@ -2,7 +2,7 @@
 title: Co-Create Consultancy
 date: 2019-05-19
 description: Building a website for a leadership and coaching consultancy.
-image: "/images/cocreate-thumb.jpg"
+image: "https://res.cloudinary.com/dhcgic4ld/image/upload/ar_4:3,c_crop,g_north/cocreate.jpg"
 link: https://www.cocreateconsultancy.com
 tags:
 - Work

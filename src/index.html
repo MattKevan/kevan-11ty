@@ -4,7 +4,7 @@ title: Art, design & code.
 menu: false
 eleventyExcludeFromCollections: true
 ---
-{% include 'page-title' %}
+<div class="h-[30px] border-b border-[#000]" style="background-image: url('/images/pattern1.png');"></div>
 
 <div class="container mt-5 max-w-6xl mx-auto px-6">
 	<div class="lg:grid gap-8 lg:grid-cols-2 ">
@@ -26,13 +26,14 @@ eleventyExcludeFromCollections: true
 </div> <!--/container -->
 
 
-{% assign sort = collections.Article | sort: 'date' | reverse %}
-{% for item in sort limit: 1 %}
-	<div class="feature my-12 py-24 bg-cover bg-center" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
+{% for item in collections.Article | limit: 1 %}
+	{% if item.data.featured == 1 %}
+	<a href="{{ item.url }}">
+	<div class="feature my-12 py-24 bg-cover bg-center border-y border-[#000]" style="background-image: url('{{ item.data.banner }}?tr=w-1200');">
 		<div class="max-w-6xl mx-auto px-6">
-		<div class="feature-card bg-white p-10 w-1/2">
-			<h3 class="text-3xl mb-3"><a href="{{ item.data.url | prepend: site.data.baseurl }}" class="hover:underline">{{ item.data.title }}</a></h3>
-			<p class="intro mb-3 text-gray-700 ">{{ item.data.description }}</p>
+		<div class="feature-card border border-[#000] bg-white p-10 md:w-1/2">
+			<h3 class="text-3xl mb-3 hover:underline">{{ item.data.title }}</h3>
+			<p class="intro mb-3 text-[#000] ">{{ item.data.description }}</p>
 			<p class="meta text-xs mb-4">
 				{{ item.data.date | date: "%-d %B %Y"}} 
 			</p>
@@ -40,6 +41,8 @@ eleventyExcludeFromCollections: true
 		</div>
 		</div>
 	</div>
+</a>
+	{% endif %}
 {% endfor %}
 
 <div class="container mt-5 max-w-6xl mx-auto px-6 py-6">
