@@ -7,7 +7,7 @@ page-bg: "/images/patterns/16.svg"
 eleventyExcludeFromCollections: true
 ---
 
-<div class="max-w-3xl mx-auto">
+<div class="grid gap-6 lg:gap-12 max-w-3xl mx-auto">
 	{% assign sort = collections.Article | sort: 'date' | reverse %}
 	{% for item in sort %}
 	{% include 'article-list-large' %}			

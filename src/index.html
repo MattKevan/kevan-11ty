@@ -33,10 +33,12 @@ page-bg: "/images/patterns/16.svg"
 
 	<div class="max-w-3xl mx-auto px-6 mb-12">
 		<h2 class="text-xl font-bold mb-3"><a href="/articles" class="hover:underline">Articles</a></h2>
+		<div class="grid gap-6 lg:gap-12">
 		{% assign sort = collections.Article | sort: 'date' | reverse %}
 		{% for item in sort  limit:4 %}
 		{% include 'article-list-large' %}			
 		{% endfor %}
+	</div>
 	</div>
 
 </div>
@@ -44,7 +46,7 @@ page-bg: "/images/patterns/16.svg"
 			<h2 class="text-xl font-bold mb-3"><a href="/projects" class="hover:underline">Projects</a></h2>
 		</div>
 
-		<div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 gap-6 lg:gap-12 px-6">
+		<div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-6 lg:gap-12 px-6">
 			{% assign gallery-sorted = collections.Project | sort: 'date' | reverse %}
 			{% for item in gallery-sorted %}
 				{% if item.data.featured == "True" %}
