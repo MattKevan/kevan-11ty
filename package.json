@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:eleventy": "eleventy --serve --quiet",
-    "dev:css": "postcss src/styles/main.css -o _site/main.css -w"
+    "dev:css": "postcss src/styles/main.css -o _site/main.css -w",
+    "build": "rm -rf _site && eleventy && NODE_ENV=production postcss src/styles/main.css > _site/main.css"
   },  
   "keywords": [],
   "author": "",
