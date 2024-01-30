@@ -5,8 +5,9 @@ description: "Highly detailed drawings with iPad and Pencil."
 image: "/images/sd.jpg"
 banner: /images/sd-banner.jpg
 tags:
-- Drawing
 - Artwork
+categories:
+- Drawing
 width: full
 theme: dark
 layout: post

@@ -6,10 +6,11 @@ image: "/images/photo-thumb.jpg"
 banner: "/images/photo-thumb.jpg"
 theme: dark
 tags:
-- Photography
-- Artwork
-layout: wide-post
 
+- Artwork
+layout: post
+categories: 
+- Photography
 ---
 
 <div class="grid grid-cols-3">

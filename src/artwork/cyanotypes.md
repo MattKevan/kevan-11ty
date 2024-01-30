@@ -5,11 +5,11 @@ description: "Hand-printed cyanotype photographs."
 image: "/images/cyan2.png"
 theme: dark
 tags:
-- Photography
 - Artwork
 banner: /images/cyan-cover.jpg
 layout: post
-
+categories: 
+- Photography
 ---
 
 [Cyanography](https://en.wikipedia.org/wiki/Cyanography) is one of the earliest photographic print processes, invented in 1842 by Sir John Herschel. It was used later that year by [Anna Atkins](https://en.wikipedia.org/wiki/Anna_Atkins) to create the first photographic book.

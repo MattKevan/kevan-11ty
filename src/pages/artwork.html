@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 page-bg: "/images/patterns/16.svg"
 ---
 </div>
-<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-5xl mx-auto px-6 grid gap-6 lg:gap-12">
 {% assign sort = collections.Artwork | sort: 'date' | reverse %}
 {% for item in sort %}
 	{% include 'artwork-card' %}
