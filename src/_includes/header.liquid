@@ -34,12 +34,12 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="flex items-center gap-2 p-5 bg-white"
+            class="flex items-center gap-2 p-5 bg-white text-[#000]"
         >
-          <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#000]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-          <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#000]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
         </button>
@@ -68,13 +68,13 @@
         {% assign path = page.url | split: '/' %}
 
         {% if path[1] == 'articles' %}
-          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/articles" class="hover:underline">Articles</a></p>
+          <p class="text-sm text-[#000]"><a href="/" class="hover:underline">Home</a> » <a href="/articles" class="hover:underline">Articles</a></p>
         {% elsif path[1] == 'artwork' %}
-          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/artwork" class="hover:underline">Artwork</a></p>
+          <p class="text-sm text-[#000]"><a href="/" class="hover:underline">Home</a> » <a href="/artwork" class="hover:underline">Artwork</a></p>
         {% elsif path[1] == 'work' %}
-          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/work" class="hover:underline">Work</a></p>
+          <p class="text-sm text-[#000]"><a href="/" class="hover:underline">Home</a> » <a href="/work" class="hover:underline">Work</a></p>
         {% elsif path[1] == 'projects' %}
-          <p class="text-sm"><a href="/" class="hover:underline">Home</a> » <a href="/projects" class="hover:underline">Projects</a></p>
+          <p class="text-sm text-[#000]"><a href="/" class="hover:underline">Home</a> » <a href="/projects" class="hover:underline">Projects</a></p>
         {% else %}
           <p class="text-sm text-[#000]">Art, design & code </p>
         {% endif %}

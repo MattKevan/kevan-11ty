@@ -5,14 +5,13 @@ description: Mumsnet’s Am I being unreasonable? forum is famous for the
   what would happen if I used it to train a neural network?
 date: 2018-09-24
 tags:
-  - Article
+- Article
 categories:
-  - Artificial intelligence
+- Artificial intelligence
 layout: post
 author: Matt Kevan
-cover: aibu-banner.jpg
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_686,w_914,x_137,y_254/c_scale,h_686,w_914/v1705278640/slc1/435.png
+image: 
 ---
 If you’ve not heard of it, Mumsnet's [AIBU](https://www.mumsnet.com/Talk/am_i_being_unreasonable) is a place where you can ask the hivemind whether you’re being unreasonable about a particular issue or circumstance (quick tip: if you have to ask, you are). Favourite topics include the neighbours, shoddy parking, mothers in law, parents at school and the DH’s general uselessness. Swears abound.
 

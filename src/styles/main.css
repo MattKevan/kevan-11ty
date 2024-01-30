@@ -24,4 +24,8 @@
   .shadow-line {
     @apply shadow-[4px_4px_0_-1px_white,4px_4px_0px_black] hover:shadow-[8px_8px_0_-1px_white,8px_8px_0px_black] ease-in-out duration-200;
   }
+  .prose p,
+  .prose a {
+    @apply text-[#000]
+  }
 }

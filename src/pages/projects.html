@@ -7,7 +7,7 @@ page-bg: "/images/patterns/16.svg"
 eleventyExcludeFromCollections: true
 ---
 
-<div class="max-w-3xl mx-auto grid gap-6 lg:gap-12">
+<div class="grid max-w-3xl gap-6 mx-auto mb-12 lg:mb-20 lg:gap-12">
 	{% assign gallery-sorted = collections.Project | sort: 'date' | reverse %}
 	{% for item in gallery-sorted %}
 		{% if item.data.featured == "True" %}
@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
 	{% endfor %}
 </div>
 
-<div class="max-w-3xl mx-auto grid gap-6 lg:gap-12">
+<div class="grid gap-6 mx-auto md:grid-cols-2 lg:max-w-6xl lg:gap-12">
 	{% for item in gallery-sorted %}
 		{% if item.data.featured == "False" %}
 			{% include 'project-card' %}

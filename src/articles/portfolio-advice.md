@@ -3,7 +3,7 @@ description: Lessons learned after looking at 150+ portfolios and CVs while
   hiring for a UX design role.
 date: 2023-07-13
 image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_681,w_909,x_141,y_255/c_scale,h_681,w_909/v1705313373/768.png
-banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705314505/longpattern.svg
+banner: 
 categories:
   - UX
   - Product management
