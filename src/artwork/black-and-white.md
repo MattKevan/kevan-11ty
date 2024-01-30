@@ -1,14 +1,13 @@
 ---
 title: Black & white photography
 date: 2019-03-24
-description: 
+description: Some of my favourite photos taken over the years. 
 image: "/images/photo-thumb.jpg"
 banner: "/images/photo-thumb.jpg"
 theme: dark
 tags:
-
 - Artwork
-layout: post
+layout: wide-post
 categories: 
 - Photography
 ---
