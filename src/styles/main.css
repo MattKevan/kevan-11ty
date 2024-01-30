@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .body {
+    @apply subpixel-antialiased;
+  }
   .caption {
     @apply text-sm text-center;
   }
