@@ -7,7 +7,7 @@
     "dev": "npm-run-all --parallel dev:*",
     "dev:eleventy": "eleventy --serve --quiet",
     "dev:css": "postcss src/styles/main.css -o _site/main.css -w"
-  },
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",

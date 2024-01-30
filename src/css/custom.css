@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('/css/fonts/PPNeueMachina-InktrapUltrabold.woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Neue Machina';
+    src: url('/css/fonts/PPNeueMachina-InktrapMedium.woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Neue Machina';
+    src: url('/css/fonts/PPNeueMachina-InktrapRegular.woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+@keyframes moveBackground {
+    0% {
+      background-position: -2000px 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .loader {
+    animation: moveBackground 2s linear infinite;
+    background-image: url('/images/dither.png');
+    background-repeat: repeat-x;
+    height: 30px;
+    width: 100%;
+  }
+  .loader {
+    display: none;
+  }
+  .htmx-request .loader {
+    display: block;
+  }
+  .htmx-request.loader {
+    display: block;
+  }
+  
