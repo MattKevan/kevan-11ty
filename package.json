@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "rm -rf _site && mkdir _site && postcss src/styles/main.css > _site/main.css && eleventy --serve --quiet",
-    "build": "rm -rf _site && eleventy && NODE_ENV=production postcss src/styles/main.css > _site/main.css"
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:eleventy": "eleventy --serve --quiet",
+    "dev:css": "postcss src/styles/main.css -o _site/main.css -w"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@aloskutov/eleventy-plugin-link-preview": "^0.1.7",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "css-loader": "^6.7.1",

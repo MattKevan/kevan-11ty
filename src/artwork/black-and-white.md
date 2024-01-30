@@ -8,11 +8,11 @@ theme: dark
 tags:
 - Photography
 - Artwork
-layout: post
+layout: wide-post
 
 ---
 
-<div class="grid wide">
+<div class="grid grid-cols-3">
 {% assign i = 0 %}
 {% for i in (1..24) %}
 <img src="/images/p{{ i }}.jpg" />
