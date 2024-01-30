@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Neue Machina', ...defaultTheme.fontFamily.sans]
+      'sans': ['Safiro', ...defaultTheme.fontFamily.sans]
 
     },
   },

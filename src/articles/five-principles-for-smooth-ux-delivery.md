@@ -3,7 +3,7 @@ title: Five principles for smooth UX delivery in product teams
 description: Common problems and pitfalls that happen to all projects and ways
   to avoid them.
 date: 2023-07-13
-banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1705315448/triangles.svg
+banner:
 tags:
   - Article
 categories:
@@ -11,7 +11,7 @@ categories:
 layout: post
 author: Matt Kevan
 type: article
-image: https://res.cloudinary.com/dhcgic4ld/image/upload/c_crop,h_678,w_905,x_142,y_143/c_scale,h_678,w_905/v1705313497/902.png
+image: 
 ---
 
 This post is a collection of things I've learned about delivering UX in a product team over the last few years. They aren't absolute truths and aren't right for all circumstances, but if you're a designer in a cross-functional product team you may find them useful.
