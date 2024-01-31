@@ -12,21 +12,21 @@ tags:
   - Article
 ---
 
-With the release of ChatGPT in 2022, natural language generation (NLG) has exploded from a rather niche curiosity to an increasingly essential part of our lives, almost overnight. 
+With the release of ChatGPT in 2022, large language models (LLMs) have gone, seemingly overnight, from a fairly niche curiosity to an increasingly essential part of our lives. While the ideas behind LLMs are not new, models large enough and computers powerful enough have only just become available. 
 
-While the basic ideas have been around for a long time, models large enough to create good results and the comptuing power to run them at a reasonable speed haven't been available until recently. Unlike traditional programs, where functionality is carefully designed and coded by developers, natural language models are more like black boxes – we don't actually know what they can do until we try things out. This is exciting as there's lots to discover, but can be a problem as it's often not possible to tell how or why they arrived at a particular result.
+The core technology behind ChatGPT is a LLM called GPT, or Generative Pre-trained Transformer. Since the release of GPT1 by OpenAI in 2018, the size and complexity (and ability) of the GPT models has increased from 117 million parameters with GPT1 to an estimated 1.76 trillion parameters with GPT4.
 
-The core technology behind ChatGPT is a large language model (LLM) called GPT, or Generative Pre-trained Transformer. Since the release of GPT1 by OpenAI in 2018, the size and complexity (and ability) of the GPT series of models has increased massively, from 117 million parameters with GPT1 to an estimated 1.76 trillion parameters with GPT4.
+Unlike traditional programs, where features are carefully designed and developed, LLMs are more like black boxes – we don't actually know what they can do until we experiment. This is exciting as there's still a lot to discover, but can be a problem as it's often not possible to tell how or why they arrived at a particular result.
 
 One of the things that makes LLMs so useful is that it's straightforward to customise them to perform specific tasks. This is called fine-tuning, and basically consists of giving a model enough examples of a type of content for it to create new content in that style. For example, fine-tuning an LLM on the works of Shakespeare would result in it producing content in a similar style, including vocabulary, sentence structure and formatting.
 
-In this article I'll show you how to fine-tune GPT2 to generate your own text. GPT2 is a good choice for this, as it's large enough to produce reasonable text, while still being small enough to not need enormous amounts of processing power It's also fully open source, which later releases are not.
+In this article I'll show you how to fine-tune GPT2 to generate your own text. GPT2 is a good choice for this, as it's big enough to produce coherent text while being small enough to run on regular hardware. It's also open source, unlike later versions.
 
-## Preparing the data
+## Preparing the training data
 
 I thought it would be fun to fine-tune GPT2 on the infamous [@fesshole](https://twitter.com/fesshole) Twitter/X account, but this turned out to be a mistake so I'd recommend you use your own training dataset. Here's a list of [ready-made Kaggle datasets](https://www.kaggle.com/datasets?tags=13204-NLP) if you're looking for ideas. 
 
-If you really want to use the @fesshole dataset, you can find over 16,000 tweets that I scraped here. Though be prepared, there's a lot of naughty language and general bad behaviour.
+If you really want to use the Fesshole dataset, you can find over 16,000 tweets that I scraped here. If you've not encountered Fesshole before, be prepared, there's a lot of bad language and naughty behaviour.
 
 ## Fine-tuning the model
 
@@ -35,13 +35,13 @@ It's possible to fine-tune GPT2 on your computer, especially if you have a decen
 I've made a Colab notebook that should make the whole process pretty simple, but here's a more detailed explanation.
 
 ### Setup 
-First, open the notebook. You may need to sign into your Google account. The model will run happily on a free Colab account, but if you upgrade to a Colab Pro account or buy some credits you'll get access to more powerful hardware, making the whole process much faster.
+First, open the notebook. You may need to sign into your Google account for this. The model will run happily on a free Colab plan, but if you upgrade to Colab Pro or buy some credits you'll get access to more powerful hardware.
 
-Install the requirements and connect your Google Drive. The latter is optional, but I definitely recommend it as it means you only need to download the models once and any progress will be saved in your Drive. Free Colab accounts have low usage limits and regularly disconnect, meaning any progress not saved will be lost. Just make sure you have enough space in your Drive.
+Run the 'Install requirements' cell and wait for the installation process to complete. Ensure 'use_google_drive' is ticked and enter the name of the folder in your Drive where you want to save everything into the 'working_folder' field. Run the cell and follow the instructions to connect your Drive. If the folder doesn't already exist, the script will create it for you. 
+
+You don't have to use Google Drive, but if you don't you'll lose all your models and any training progress whenever the notebook disconnects, which happens often.
 
 ### Configuration
-
-Upload your dataset to your Google Drive. Locate the file in the notebook file browser, right click on it and select 'Copy patj'
 
 **training_data** – This is the location of your dataset. Find the file in the notebook file browser, right click on it, select 'Copy path' and paste it in this field.
 
