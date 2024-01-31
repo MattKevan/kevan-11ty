@@ -55,7 +55,7 @@
   
   .loader {
     animation: moveBackground 2s linear infinite;
-    background-image: url('/images/dither.png');
+    background-image: url('/images/gradient.svg');
     background-repeat: repeat-x;
     height: 30px;
     width: 100%;
