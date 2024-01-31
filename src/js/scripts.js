@@ -115,3 +115,22 @@ if ($aContainer) {
     // Update the image number in the global store
     Alpine.store('background').updateImageNumber();
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var lastScrollTop = 0;
+    var scalingFactor = 2; // Adjust this factor to control the speed
+
+    window.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Directly calculate and apply the background position
+        var scrollDiff = (scrollTop - lastScrollTop) * scalingFactor;
+        var scroller = document.querySelector('.scroller');
+        var bgX = parseInt(window.getComputedStyle(scroller).backgroundPosition.split(' ')[0]);
+        var newBgPosition = bgX + scrollDiff;
+        scroller.style.backgroundPosition = `${newBgPosition}px 0px`;
+
+        lastScrollTop = scrollTop;
+    });
+});
