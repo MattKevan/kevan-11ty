@@ -1,0 +1,31 @@
+---
+title: Page not found
+permalink: /404/
+eleventyExcludeFromCollections: true
+date:
+---
+<!DOCTYPE html>
+<html>
+    {% include 'head' %}
+
+
+  <body hx-boost="true" hx-indicator=".loader"  style="background-image: url('/images/patterns/1.svg');">
+        <div class="grid h-screen place-items-center w-full">
+        
+            <div class="border-[2px] border-[#000]  bg-white w-full max-w-96 m-6 p-[2px]">
+                <div class="border border-[#000] p-6 w-full flex">
+                <div class="mr-6">
+                    <img src="/images/bomb.svg">
+                </div>
+
+                <div class="font-bold pl-6px grid gap-4 w-full">
+                    <p>Sorry, a 404 error occurred.</p>
+                    <p class="flex justify-end items-end"><a href="/" class="text-sm border border-[#000] px-2 py-1 rounded-full hover:bg-[#000] hover:text-white">Restart</a></p>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+  </body>
+
+</html>
