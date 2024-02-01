@@ -39,36 +39,35 @@ First, open the notebook. You may need to sign into your Google account for this
 
 Run the 'Install requirements' cell and wait for the installation process to complete. Ensure 'use_google_drive' is ticked and enter the name of the folder in your Drive where you want to save everything into the 'working_folder' field. Run the cell and follow the instructions to connect your Drive. If the folder doesn't already exist, the script will create it for you. 
 
-You don't have to use Google Drive, but if you don't you'll lose all your models and any training progress whenever the notebook disconnects, which happens often.
+You don't have to use Google Drive, but if you don't you'll lose your models and training progress whenever the notebook disconnects. Which happens a lot.
 
 ### Configuration
 
 **training_data** – This is the location of your dataset. Find the file in the notebook file browser, right click on it, select 'Copy path' and paste it in this field.
 
-**select_model** – This is the GPT2 model to use. 124M is selected by default as it's smaller and quicker, while the 355M model will produce better results but take a lot longer. Larger GPT2 models are available, but they're too big to run in free Google Colab. The selected model will automatically download to the 'models' folder if you haven't downloaded them already.
+**select_model** – Select which GPT2 model to use. 124M is the default as it's smaller and quicker, while the 355M model produces better results but takes longer. Larger GPT2 models are available but they're too big to run in free Google Colab. The selected model will automatically download to the 'models' folder if they're not downloaded already.
 
 **restore_from** – Selecting 'Fresh' will start a new fine-tuning session, while selecting 'Latest' will resume an existing one.
 
 **session_name** – Enter the name for your session. An existing session name will either overwrite or resume it depending on the option above. Sessions are saved in the 'checkpoint' folder.
 
-**number_of_steps** – How long to run the fine-tuning for. Longer is not always better as quality may decrease over time. You may need to experiment with this, but 1000 is a good starting point.
+**number_of_steps** – How long to run the fine-tuning for. Longer is not always better as output quality may decrease over time. You'll need to experiment for best results, but 1000 is a good starting point.
 
-**print_after** – How many steps before printing a progress report. 
+**sample_every** – How many steps before printing a sample generation. Interesting to see how the output changes during the fine-tuning progresses.
 
-**sample_every** – How many steps before printing an output sample. Useful to see how the output is improving as the fine-tuning progresses.
-
-**save_every** – How many steps before saving a progress checkpoint. Set this lower if you're on a free Colab account so that you don't have to re-do too much training when starting a new session. Lots of checkpoint saves will quickly fill up your drive though.
+**save_every** – How many steps before saving a progress checkpoint. Set this lower if you're on a free Colab so you don't lose too much progress when starting a new session. Checkpoint saves will quickly fill up your drive.
 
 ### The training process
 
-When you're happy with the settings, click 'Start training'. This will load everything up and start the fine-tuning process, printing the progress and samples as it goes.
+When you're happy with the settings, click 'Start training'. This will start the fine-tuning process, printing the progress and samples as it goes.
 
-While this is happening, keep an eye on the loss number. This is a rough estimate of how good the output is compared to your original dataset. The lower the loss, the better the output is likely to be. Eventually you'll see the loss stabilise or even start to increase. This is a good sign to stop the training as the model won't improve further and may actually get worse.
+While this is happening, keep an eye on the loss number. This is a rough estimate of how close the output is to your original dataset. The lower the loss, the better the output is likely to be. It'll drop quite rapidly at first, but When the loss stabilises, the fine-tuning is pretty much complete. Training for longer longer won't improve the output much and may even make it worse.
 
 ## Generating content
 
-I got pretty good results from the @fesshole fine-tune. Some were a bit mad, but no more mad than many of the real ones. I was feeling pretty pleased with myself, until I realised that all I'd done was teach an innocent AI about wanking and divorce. 
+It surprised me how well the fine-tune came out – some generations were nonsens, but many could easily be real 'fesses. Then I felt guilty as I realised all I'd actually done was teach an innocent AI about about divorce and wanking.
 
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Z9cw4pyKMSU?si=oRXMJKaESNLkeIgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-You can see a bunch of the generations here, at least until GPT becomes powerful enough that it decides to wipe us out as humanity is clearly too far gone.
+You can see a bunch of the generations here, at least until GPT becomes powerful enough that it decides to wipe us all out, as humanity is clearly beyond saving.
+
