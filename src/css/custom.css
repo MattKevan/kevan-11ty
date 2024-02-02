@@ -73,13 +73,13 @@
     transition: background-position 0.1s linear; /* Adjust duration and easing as needed */
 }
 body {
-  cursor: url('/images/pointer.svg'), default;
+  cursor: url('/images/site/pointer.png'), default;
 }
 a:link {
-  cursor: url('/images/hover.svg'), pointer;
+  cursor: url('/images/site/hover.png'), pointer;
 }
-.busy {
-  cursor: url('/images/watch.svg'), default!important;
+body.busy {
+  cursor: url('/images/site/watch.png'), default!important;
 }
 
 .pixel-corners-8,
@@ -516,7 +516,7 @@ a:link {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;1
+  right: 0;
   background: #000000;
   display: block;
   pointer-events: none;
