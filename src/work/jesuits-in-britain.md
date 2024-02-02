@@ -25,13 +25,12 @@ slides:
     cols: 12
     captions:
       - c: "The full site map, showing how the four different retreat centre microsites are integrated into the wider site."
-link: https://www.pathwaystogod.org
+link: 
 layout: post
-category: IA
 tags:
 - Work
 categories:
-- User experience
+- Information architecture
 ---
 
 ## Background
@@ -51,3 +50,4 @@ The brief was that each centre should have its own section in the new site, buil
 I conducted a thorough audit of each site to discover where the functionality and content types could be shared – these became the core microsite features.
 
 To help people go deeper on their faith journey, I leveraged the power of Drupal’s taxonomy system. As well as tagging content by topic, content could be tagged by depth. So content for people just starting out would be tagged with level 1 and content for people with more experience would be tagged with level five. 
+

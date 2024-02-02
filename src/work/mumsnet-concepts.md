@@ -6,10 +6,8 @@ image: "/images/mnc-thumb.jpg"
 tags:
 - Work
 categories:
-- Product design
-- UI design
+- User experience
 layout: post
-category: UX
 ---
 
 ## Millennial branding

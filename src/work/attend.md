@@ -3,10 +3,10 @@ title: Attend
 date: 2010-08-01
 description: Publication designs for Attend, the national organisation for hospital and community volunteers.
 image: "/images/attend/attend2.png"
-category: Design
+categories: 
+- Design
 tags:
 - Work
-- Design
 layout: post
 weight: 1
 

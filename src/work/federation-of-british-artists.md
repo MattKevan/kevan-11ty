@@ -6,10 +6,10 @@ image: "/images/mall-thumb.jpg"
 tags:
 - Work
 categories:
-- User experience 
+- Information architecture
 link: https://www.mallgalleries.org.uk
 layout: post
-category: IA
+
 ---
 
 ## Background

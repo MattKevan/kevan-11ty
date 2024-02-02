@@ -15,9 +15,11 @@ date:
 	<div class="sm:basis-3/4 grid gap-6 grid-cols-2 md:grid-cols-3 p-6">
 		{% assign gallery-sorted = collections.Work | sort: 'date' | reverse %}
 		{% for item in gallery-sorted %}
-		{% if item.data.category == 'UX'%}
-		{% include 'gallery-teaser' %}
-	{% endif %}
+			{% for cat in item.data.categories%}
+			{% if cat == 'User experience'%}
+				{% include 'gallery-teaser' %}
+			{% endif %}
+			{% endfor %}
 		{% endfor %}
 	</div>
 </div>
@@ -31,9 +33,11 @@ date:
 	<div class="sm:basis-3/4 grid gap-6 grid-cols-2 md:grid-cols-3 p-6">
 		{% assign gallery-sorted = collections.Work | sort: 'date' | reverse %}
 		{% for item in gallery-sorted %}
-		{% if item.data.category == 'Dev'%}
-		{% include 'gallery-teaser' %}
-	{% endif %}
+			{% for cat in item.data.categories%}
+			{% if cat == 'Web development'%}
+				{% include 'gallery-teaser' %}
+			{% endif %}
+			{% endfor %}
 		{% endfor %}
 	</div>
 </div>
@@ -45,25 +49,27 @@ date:
 	<div class="sm:basis-3/4 grid gap-6 grid-cols-2 md:grid-cols-3 p-6">
 		{% assign gallery-sorted = collections.Work | sort: 'date' | reverse %}
 		{% for item in gallery-sorted %}
-			{% if item.data.category == 'IA'%}
+			{% for cat in item.data.categories%}
+			{% if cat == 'Information architecture'%}
 				{% include 'gallery-teaser' %}
 			{% endif %}
+			{% endfor %}
 		{% endfor %}
 	</div>
 </div>
-
-
 
 <div class="sm:flex sm:flex-row mb-12 border border-[#000] bg-white">
 	<div class="sm:basis-1/4 border-b sm:border-r sm:border-b-0 border-[#000] px-6">
 		<h2 class="text-lg sticky top-0 bg-white lg:w-44 py-6 inline-block font-bold">Design & branding</h2>	
 	</div>
 	<div class="sm:basis-3/4 grid gap-6 grid-cols-2 md:grid-cols-3 p-6">
-		{% assign gallery-sorted = collections.Work | sort: 'date' | reverse %}
+		{% assign gallery-sorted = collections.all | sort: 'date' | reverse %}
 		{% for item in gallery-sorted %}
-			{% if item.data.category == 'Design'%}
+			{% for cat in item.data.categories%}
+			{% if cat == 'Design'%}
 				{% include 'gallery-teaser' %}
 			{% endif %}
+			{% endfor %}
 		{% endfor %}
 	</div>
 </div>

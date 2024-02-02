@@ -6,7 +6,8 @@ image: "/images/bcc-thumb.jpg"
 link: http://www.breastcancercare.org.uk
 tags:
 - Work
-category: IA
+categories:
+- Information architecture
 layout: post
 
 ---

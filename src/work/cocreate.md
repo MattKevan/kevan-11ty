@@ -6,7 +6,8 @@ image: "https://res.cloudinary.com/dhcgic4ld/image/upload/ar_4:3,c_crop,g_north/
 link: https://www.cocreateconsultancy.com
 tags:
 - Work
-category: Dev
+categories:
+- Web development
 layout: post
 
 ---

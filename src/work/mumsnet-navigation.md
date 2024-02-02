@@ -7,10 +7,9 @@ link: http://www.mumsnet.com
 tags:
 - Work
 categories:
-- User experience 
-- Design
+- Information architecture
 layout: post
-category: UX
+
 ---
 
 ## Background

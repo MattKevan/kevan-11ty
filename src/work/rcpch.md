@@ -8,10 +8,8 @@ link: http://www.rcpch.ac.uk
 tags:
 - Work
 categories:
-- User research
-- User experience
+- Information architecture
 layout: post
-category: IA
 ---
 ### Overview
 

@@ -10,7 +10,13 @@
     @apply text-sm text-center;
   }
   .wide {
-    @apply lg:max-w-5xl lg:-ml-[110px];
+    @apply lg:max-w-5xl lg:-ml-[110px] ;
+  }
+  .content-col {
+    @apply prose md:prose-lg mx-auto px-6 py-12 relative;
+  }
+  .wide-col {
+    @apply lg:max-w-6xl mx-auto px-6;
   }
   #animation-container canvas {
     width: 100% !important;

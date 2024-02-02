@@ -9,14 +9,15 @@ tags:
 categories:
 - Abstract
 layout: wide-post
-text: >
+
+---
+
+<div class="content-col">
     <p> For this series I set myself the challenge of creating an abstract image per day using only lines and two colours: a dark grey background and a contrasting colour.</p>
     <p>This colour should start with red and increment through the RGB colour space by three points for each picture.</p>
     <p>I've currently created 255 of a possible 510 images, cycling from red to cyan through yellow and green.</p>
----
-
-
-<div class="grid grid-cols-3 w-full gap-6 px-6 mt-12">
+</div>
+<div class="grid grid-cols-3 w-full gap-6 px-6 mb-6">
     {% assign i = 0 %}
     {% for i in (0..254) %}
     <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/c_scale,w_800/v1706521364/slc2/{{ i }}.jpg" alt="{{ i }}" title="{{ i }}" />

@@ -6,12 +6,10 @@ image: "/images/uxlift-thumb.jpg"
 logo: "/images/UnltdDreamCo.png"
 link: https://www.unlimiteddreamco.xyz
 banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833577/Deep_Glass2_r8pl0b.jpg
-
 tags:
 - Project
 featured: "True"
 categories:
-- Design
 - Web development
 layout: post
 status: "Active"

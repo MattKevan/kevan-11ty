@@ -6,9 +6,8 @@ image: "/images/mnc-thumb.jpg"
 tags:
 - Work
 categories:
-- E-commerce
+- User experience
 layout: post
-category: UX
 ---
 
 Whi

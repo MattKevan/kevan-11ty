@@ -3,29 +3,14 @@ title: Fellowship Afloat
 date: 2018-10-01
 description: Building an online presence for a unique outoor activity centre.
 layout: post
-category: Dev
 banner: "https://res.cloudinary.com/dhcgic4ld/image/upload/v1705954751/trinity.jpg"
 image: "https://res.cloudinary.com/dhcgic4ld/image/upload/ar_4:3,c_crop,g_north/fact1.jpg"
 logo: "/images/fact.png"
-cover: fact-cover.jpg
-
-work-url: http://www.fact.org.uk
-project-type: Pro-bono project
-roles:
-- UX Design
-- Visual design
-- Web development
-tech:
-- Drupal 7
-- Bootstrap
-- Sketch
 tags:
 - Work
-categories:
+categories: 
 - Web development
-- User experience
 
-weight: 6
 ---
 
 Based on a converted lightship moored off the Essex coast and surrounded by nature, Fellowship Afloat is an outdoor activity centre like no other. It's been offering outdoor adventures to people of all ages for over 50 years, providing a wide range of activities including sailing, powerboating, canoeing, climbing, archery, and nature studies. 

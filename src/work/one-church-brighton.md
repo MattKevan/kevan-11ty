@@ -5,7 +5,8 @@ description: Building a Wordpress website for a Brighton-based church.
 image: "https://res.cloudinary.com/dhcgic4ld/image/upload/ar_4:3,c_crop,g_north/OneChurch1.jpg"
 link: https://www.onechurchbrighton.org
 tags: Work
-category: Dev
+categories: 
+- Web development
 layout: post
 
 ---

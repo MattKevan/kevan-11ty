@@ -5,13 +5,10 @@ description: Doubling user registration by improving the sign-up journey.
 image: "/images/reg-thumb.jpg"
 link: http://www.mumsnet.com
 layout: post
-
 tags:
 - Work
 categories:
-- User experience 
-- Design
-category: UX
+- Information architecture
 ---
 
 ## Background
