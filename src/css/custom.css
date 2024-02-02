@@ -72,12 +72,8 @@
   .scroller {
     transition: background-position 0.1s linear; /* Adjust duration and easing as needed */
 }
-body {
-  cursor: url('/images/site/pointer.png'), default;
-}
-a:link {
-  cursor: url('/images/site/hover.png'), pointer;
-}
+
+
 body.busy {
   cursor: url('/images/site/watch.png'), default!important;
 }

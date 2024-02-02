@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .body {
+  body {
     @apply subpixel-antialiased;
   }
   .caption {
