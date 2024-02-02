@@ -134,3 +134,10 @@ if ($aContainer) {
         lastScrollTop = scrollTop;
     });
 });
+document.body.addEventListener('htmx:beforeRequest', function() {
+    document.body.classList.add('busy');
+});
+
+document.body.addEventListener('htmx:afterRequest', function() {
+    document.body.classList.remove('busy');
+});

@@ -78,6 +78,10 @@ body {
 a:link {
   cursor: url('/images/hover.svg'), pointer;
 }
+.busy {
+  cursor: url('/images/watch.svg'), default!important;
+}
+
 .pixel-corners-8,
 .pixel-corners-8--wrapper {
   clip-path: polygon(0px calc(100% - 5px),
