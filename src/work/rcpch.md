@@ -21,19 +21,21 @@ The challenge was to re-develop the RCPCH’s website, improving every aspect of
 
 ### Solution
 
-RCPCH is a large organisation, with many different stakeholders, interal teams and user groups who each rely on the site in different ways. It was essential that our solution would work for each of these groups, as well as being technically sound and attractively designed. 
+Being a large organisation, the site is used by a huge range of people, including researchers, internal teams, practicing and retired paediatricians, students and even parents. It was essential therefore that the new site would support their journeys and help them meet their goals. These included logging professional development, registering for exams and getting results, publishing research papers and finding information on medicines and health conditions.
 
 #### User research
 
-In order to understand the site's users and their needs, I conducted an extensive series of interviews with a wide range of stakeholders, including internal teams, paediatricians, parents, young people and more. 
+I spent over six weeks conducting user interviews with a wide range of stakeholders and user groups to explore their needs, goals and pain points.
 
-From these interviews, we developed hundreds of user stories, which in a series of workshops held with each department, we grouped into epics and ranked them by importance. These formed the site's core user journeys and had a direct impact on the content strategy and information architecture.
+From these interviews I developed hundreds of user stories which summed up all the many ways people might want to use the site. In workshops held with each stakeholder group, we grouped these stories into epics and ranked them by importance. These epics formed the site's core user journeys and directly informed the content strategy and information architecture.
 
 #### Content strategy
 
-The old site had over five thousand pages of content plus many more PDFs, from clinical guidelines, to research papers, to articles and advice guides. Each one would need migrating manually as it was too complex to automate.
+The old site had over five thousand pages and many more PDFs, from clinical guidelines, to research papers, to articles and advice guides. We made the decision early on that PDF content should be re-publised as site content, to improve accessibility and SEO. Each of these pieces would need categorising and migrating to the new site manually as they were too complex to automate.
 
-To facilitate this, I completed a full content audit, indexing each piece of content and cross-referencing it against traffic stats for the last year. Any page with five or less views I marked as a potential candidate for deletion. And, working with the RCPCH web team, we determined which content could be transferred directly or needed to be re-written. Each team was responsible for their own content, so the decision to delete or re-write content was quite politically sensitive.
+I conducted a full content audit, indexing every page and linked document
+
+Each one would need migrating manually as it was too complex to automate. cross-referencing it against traffic stats for the last year. Any page with five or less views I marked as a potential candidate for deletion. And, working with the RCPCH web team, we determined which content could be transferred directly or needed to be re-written. Each team was responsible for their own content, so the decision to delete or re-write content was quite politically sensitive.
 
 With a full understanding of the content, I created a set of content types and templates. The old site only had one content type – the page – which meant it was being used for many different things with no consistent structure.
 
@@ -43,8 +45,7 @@ With a full understanding of the content, I created a set of content types and t
 
 Content types are defined by the purpose of each piece of content, for example an article content type may have tag and author field whereas an event may have date and location fields.
 
-I also needed to create a new taxonomy structure to categorise content. Combined with content types, this would be used to sort and view content in various ways – for example to show related articles on a certain topic.
-
+I also created a new taxonomy structure to categorise content, using card-sorting techniques with stakeholder and user groups to ensure they were properly validated. Combined with content types, this would be used to sort and view content in various ways – for example to show related articles on a certain topics.
 
 #### Information architecture
 
@@ -69,9 +70,17 @@ These wireframes formed the blueprints of the site that the developers used to b
 
 #### User testing
 
-To ensure – and to prove – the new site would be easier to use than the old one, I ran a series of user tests:
+To ensure – and to prove – the new site would be easier to use than the old one, I ran a series of user tests.
 
-* I used tree testing to validate the new map. By clicking through the menu structure could users find the content they were looking for?
+I tested the taxonomies and user journeys with each audience group. By clicking through the menu structure could they find the content they were looking for?
+
+<div class="grid grid-cols-2 gap-6 wide-col">
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706919523/work/rcpch-test-1.jpg" class="w-full">
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706919523/work/rcpch-test-2.jpg" class="w-full">
+
+</div>
+<p class="caption">↑ A few of the tree testing results.</p>
+
 * Using first-click testing I tested page features. Could people find calls to action or particular options on pages?
 
 The final deliverable from the entire UX process was a document containing detailed information about every aspect of the new site, including content types, fields, taxonomy, user roles and permissions, user flows, entity relationships, data security and more.
