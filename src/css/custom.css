@@ -876,3 +876,73 @@ body.busy {
 .pixel-corners::after {
   margin: -2px;
 }
+
+
+
+.classic-mono-scrollbars::-webkit-scrollbar {
+  width:16px;
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-button:end:increment, .classic-mono-scrollbars::-webkit-scrollbar-button:start:decrement {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border:1px solid #000;
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-button:vertical:decrement {
+  border-top: 1px solid #000;
+  background:linear-gradient(#000 9.090909091%, #fff 0, #fff 90.909090909%, transparent 0) 49% 49%/1px 11px no-repeat, linear-gradient(transparent 9.090909091%, #000 0, #000 18.181818182%, #fff 0, #fff 90.909090909%, transparent 0) 49% 49%/3px 11px no-repeat, linear-gradient(transparent 18.181818182%, #000 0, #000 27.272727273%, #fff 0, #fff 90.909090909%, #000 0, #000) 49% 49%/5px 11px no-repeat, linear-gradient(transparent 27.272727273%, #000 0, #000 36.363636364%, #fff 0, #fff 54.545454545%, #000 0, #000) 49% 49%/7px 11px no-repeat, linear-gradient(transparent 36.363636364%, #000 0, #000 45.454545455%, #fff 0, #fff 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 49% 49%/9px 11px no-repeat, linear-gradient(transparent 45.454545455%, #000 0, #000 63.636363636%, transparent 0) 49% 49%/11px 11px no-repeat, linear-gradient(transparent 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 49% 49%/13px 11px no-repeat, #fff;
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-button:vertical:increment {
+  border-bottom: 1px solid #000;
+  background: linear-gradient(0deg, #000 9.090909091%, #fff 0, #fff 90.909090909%, transparent 0) 49% 51%/1px 11px no-repeat, linear-gradient(0deg, transparent 9.090909091%, #000 0, #000 18.181818182%, #fff 0, #fff 90.909090909%, transparent 0) 49% 51%/3px 11px no-repeat, linear-gradient(0deg, transparent 18.181818182%, #000 0, #000 27.272727273%, #fff 0, #fff 90.909090909%, #000 0, #000) 49% 51%/5px 11px no-repeat, linear-gradient(0deg, transparent 27.272727273%, #000 0, #000 36.363636364%, #fff 0, #fff 54.545454545%, #000 0, #000) 49% 51%/7px 11px no-repeat, linear-gradient(0deg, transparent 36.363636364%, #000 0, #000 45.454545455%, #fff 0, #fff 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 49% 51%/9px 11px no-repeat, linear-gradient(0deg, transparent 45.454545455%, #000 0, #000 63.636363636%, transparent 0) 49% 51%/11px 11px no-repeat, linear-gradient(0deg, transparent 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 49% 51%/13px 11px no-repeat, #fff;
+  height: 15px;
+  border-bottom:none
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-button:horizontal:decrement {
+  background:linear-gradient(90deg, #000 9.090909091%, #fff 0, #fff 90.909090909%, transparent 0) 49% 49%/11px 1px no-repeat, linear-gradient(90deg, transparent 9.090909091%, #000 0, #000 18.181818182%, #fff 0, #fff 90.909090909%, transparent 0) 49% 49%/11px 3px no-repeat, linear-gradient(90deg, transparent 18.181818182%, #000 0, #000 27.272727273%, #fff 0, #fff 90.909090909%, #000 0, #000) 49% 49%/11px 5px no-repeat, linear-gradient(90deg, transparent 27.272727273%, #000 0, #000 36.363636364%, #fff 0, #fff 54.545454545%, #000 0, #000) 49% 49%/11px 7px no-repeat, linear-gradient(90deg, transparent 36.363636364%, #000 0, #000 45.454545455%, #fff 0, #fff 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 49% 49%/11px 9px no-repeat, linear-gradient(90deg, transparent 45.454545455%, #000 0, #000 63.636363636%, transparent 0) 49% 49%/11px 11px no-repeat, linear-gradient(90deg, transparent 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 49% 49%/11px 13px no-repeat, #fff
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-button:horizontal:increment {
+  background: linear-gradient(270deg, #000 9.090909091%, #fff 0, #fff 90.909090909%, transparent 0) 51% 49%/11px 1px no-repeat, linear-gradient(270deg, transparent 9.090909091%, #000 0, #000 18.181818182%, #fff 0, #fff 90.909090909%, transparent 0) 51% 49%/11px 3px no-repeat, linear-gradient(270deg, transparent 18.181818182%, #000 0, #000 27.272727273%, #fff 0, #fff 90.909090909%, #000 0, #000) 51% 49%/11px 5px no-repeat, linear-gradient(270deg, transparent 27.272727273%, #000 0, #000 36.363636364%, #fff 0, #fff 54.545454545%, #000 0, #000) 51% 49%/11px 7px no-repeat, linear-gradient(270deg, transparent 36.363636364%, #000 0, #000 45.454545455%, #fff 0, #fff 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 51% 49%/11px 9px no-repeat, linear-gradient(270deg, transparent 45.454545455%, #000 0, #000 63.636363636%, transparent 0) 51% 49%/11px 11px no-repeat, linear-gradient(270deg, transparent 54.545454545%, #000 0, #000 63.636363636%, transparent 0) 51% 49%/11px 13px no-repeat, #fff;
+  width: 15px;
+  border-right:none
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-track {
+  background:radial-gradient(circle at .5px .5px, #000 .5px, transparent 0) 0/4px 2px repeat, radial-gradient(circle at 2.5px 1.5px, #000 .5px, transparent 0) 0/4px 2px repeat, #fff
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-track:vertical {
+  border-left: 1px solid #000;
+  border-right:1px solid #000
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-track:horizontal {
+  border-top: 1px solid #000;
+  border-bottom:1px solid #000
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  width: 14px;
+  border:1px solid #000
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-thumb:vertical {
+  border-left: 2px solid #000;
+  border-right:2px solid #000
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-thumb:horizontal {
+  border-top: 2px solid #000;
+  border-bottom:2px solid #000
+}
+
+.classic-mono-scrollbars::-webkit-scrollbar-corner {
+  border-top: 1px solid #000;
+  border-left:1px solid #000
+}
