@@ -13,15 +13,15 @@
     requirejs.config({
         baseUrl: getBasePath(),
         paths: {
-            'async': '/micro/lib/requirejs-async',
-            'jquery': '/micro/lib/jquery.min',
-            'jquery-visibility': '/micro/lib/jquery-visibility',
-            'bootstrap': '/micro/lib/bootstrap.min',
-            'gapi': '/micro/lib/gapi',
-            'jsunzip': '/micro/lib/jsunzip',
-            'promise': '/micro/lib/promise-6.0.0',
-            'underscore': '/micro/lib/underscore-min',
-            'webgl-debug': '/micro/lib/webgl-debug'
+            'async': 'lib/requirejs-async',
+            'jquery': 'lib/jquery.min',
+            'jquery-visibility': 'lib/jquery-visibility',
+            'bootstrap': 'lib/bootstrap.min',
+            'gapi': 'lib/gapi',
+            'jsunzip': 'lib/jsunzip',
+            'promise': 'lib/promise-6.0.0',
+            'underscore': 'lib/underscore-min',
+            'webgl-debug': 'lib/webgl-debug'
         },
         shim: {
             'underscore': {exports: '_'},
