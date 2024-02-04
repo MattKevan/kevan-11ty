@@ -141,3 +141,30 @@ document.body.addEventListener('htmx:beforeRequest', function() {
 document.body.addEventListener('htmx:afterRequest', function() {
     document.body.classList.remove('busy');
 });
+
+let lastEscapePressTime = 0;
+    const doublePressThreshold = 500; // Time in milliseconds; adjust as needed
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const currentTime = new Date().getTime();
+            
+            // Check if the current press is within the threshold of the last press
+            if (currentTime - lastEscapePressTime <= doublePressThreshold) {
+                // Prevent the default action to avoid conflicts
+                event.preventDefault();
+                
+                // The URL you want to open
+                const url = '/bbcmicro';
+                
+                // Open the URL in a new tab
+                window.open(url);
+                
+                // Reset the last press time to prevent immediate re-triggering
+                lastEscapePressTime = 0;
+            } else {
+                // Update the last press time
+                lastEscapePressTime = currentTime;
+            }
+        }
+    });

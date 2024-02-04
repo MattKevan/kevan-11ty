@@ -53,6 +53,14 @@
     100% {background-position: 0 0;}
   }
   
+  html {
+    cursor: url(/images/site/cursor3.svg),
+    url(/images/site/cursor3.svg), auto;
+  }
+  a, a:link, a:hover, a:active, button:hover {
+    cursor: url(/images/site/pointer.svg),
+    url(/images/site/pointer.png), pointer;
+  }
   .loader {
     animation: moveBackground 2s linear infinite;
     background-image: url('/images/gradient.svg');
@@ -913,7 +921,7 @@ body.busy {
 }
 
 .classic-mono-scrollbars::-webkit-scrollbar-track {
-  background:radial-gradient(circle at .5px .5px, #000 .5px, transparent 0) 0/4px 2px repeat, radial-gradient(circle at 2.5px 1.5px, #000 .5px, transparent 0) 0/4px 2px repeat, #fff
+  background:radial-gradient(circle at .5px .5px, #000 .5px, transparent 0) 0/4px 2px repeat, radial-gradient(circle at 2.5px 1.5px, #000 .5px, transparent 0) 0/4px 2px repeat, #fff;
 }
 
 .classic-mono-scrollbars::-webkit-scrollbar-track:vertical {
@@ -929,12 +937,14 @@ body.busy {
 .classic-mono-scrollbars::-webkit-scrollbar-thumb {
   background-color: #fff;
   width: 14px;
-  border:1px solid #000
+  border:1px solid #000;
 }
 
 .classic-mono-scrollbars::-webkit-scrollbar-thumb:vertical {
   border-left: 2px solid #000;
-  border-right:2px solid #000
+  border-right:2px solid #000;
+  cursor: url(/images/site/cursor3.svg), url(/images/site/cursor3.svg), auto;
+
 }
 
 .classic-mono-scrollbars::-webkit-scrollbar-thumb:horizontal {

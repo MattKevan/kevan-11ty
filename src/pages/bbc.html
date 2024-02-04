@@ -1,0 +1,57 @@
+---
+title: BBC Micro
+permalink: /bbc/
+description: "Some kind of heading here"
+eleventyExcludeFromCollections: true
+page-bg: "/images/patterns/16.svg"
+date:
+---
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Matt Godbolt">
+    <meta name="description" content="A Javascript BBC Micro emulator">
+    <meta http-equiv="Content-Security-Policy"
+          content="script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.google.com;"/>
+    <title>JSBeeb - Javascript BBC Micro emulator</title>
+    <link rel="stylesheet" href="/micro/lib/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/micro/jsbeeb.css" type="text/css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script type="text/javascript" src="/micro/lib/require.js"></script>
+    <script type="text/javascript">
+        require(['/micro/requirejs-common.js'], function () {
+            require(['/micro/main.js']);
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-55180-8', 'godbolt.org');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+<style>
+
+	
+</style>
+
+<canvas id="screen" width="896" height="600"></canvas>
+</body>
+</html>

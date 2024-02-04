@@ -28,6 +28,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/resources");
+  eleventyConfig.addPassthroughCopy("src/bbcmicro");
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' })
 
   eleventyConfig.addShortcode('version', function () {

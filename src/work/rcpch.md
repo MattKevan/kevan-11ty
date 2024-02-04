@@ -33,15 +33,13 @@ From these interviews I developed hundreds of user stories which summed up all t
 
 The old site had over five thousand pages and many more PDFs, from clinical guidelines, to research papers, to articles and advice guides. We made the decision early on that PDF content should be re-publised as site content, to improve accessibility and SEO. Each of these pieces would need categorising and migrating to the new site manually as they were too complex to automate.
 
-I conducted a full content audit, indexing every page and linked document
-
-Each one would need migrating manually as it was too complex to automate. cross-referencing it against traffic stats for the last year. Any page with five or less views I marked as a potential candidate for deletion. And, working with the RCPCH web team, we determined which content could be transferred directly or needed to be re-written. Each team was responsible for their own content, so the decision to delete or re-write content was quite politically sensitive.
+I conducted a full content audit, indexing every page and linked document, cross-referencing it against traffic stats for the last year. Any page with five or less views I marked as a potential candidate for deletion. And, working with the RCPCH web team, we determined which content could be migrated directly or would need a re-write. Each team was responsible for their own content, so the decision to delete or re-write content was quite politically sensitive.
 
 With a full understanding of the content, I created a set of content types and templates. The old site only had one content type – the page – which meant it was being used for many different things with no consistent structure.
 
-<img src="/images/rcpch3.jpg" class="wide">
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706958355/work/rcpch-docs.jpg" class="wide">
 
-<p class="caption">↑ Example content type definitions, showing permissions, fields and taxonomies.</p>
+<p class="caption">↑ Example content type definitions, showing permissions, fields, taxonomies and display views.</p>
 
 Content types are defined by the purpose of each piece of content, for example an article content type may have tag and author field whereas an event may have date and location fields.
 
@@ -74,11 +72,7 @@ To ensure – and to prove – the new site would be easier to use than the old 
 
 I tested the taxonomies and user journeys with each audience group. By clicking through the menu structure could they find the content they were looking for?
 
-<div class="grid grid-cols-2 gap-6 wide-col">
-<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706919523/work/rcpch-test-1.jpg" class="w-full">
-<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706919523/work/rcpch-test-2.jpg" class="w-full">
-
-</div>
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706957530/work/rcpch-test-1.jpg" class="wide">
 <p class="caption">↑ A few of the tree testing results.</p>
 
 * Using first-click testing I tested page features. Could people find calls to action or particular options on pages?
