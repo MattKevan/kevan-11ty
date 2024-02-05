@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/resources");
   eleventyConfig.addPassthroughCopy("src/bbc");
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' })
-
+  eleventyConfig.addPassthroughCopy('_redirects')
   eleventyConfig.addShortcode('version', function () {
     return now
   })
