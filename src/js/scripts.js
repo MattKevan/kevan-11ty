@@ -155,7 +155,7 @@ let lastEscapePressTime = 0;
                 event.preventDefault();
                 
                 // The URL you want to open
-                const url = '/bbcmicro';
+                const url = '/bbc';
                 
                 // Open the URL in a new tab
                 window.open(url);
