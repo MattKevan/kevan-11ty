@@ -58,7 +58,7 @@
     url(/images/site/cursor3.svg), auto;
   }
   a, a:link, a:hover, a:active, button:hover {
-    cursor: url(/images/site/pointer.svg),
+    cursor: url(/images/site/pointer.png),
     url(/images/site/pointer.png), pointer;
   }
   .loader {

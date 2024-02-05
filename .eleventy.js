@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/resources");
-  eleventyConfig.addPassthroughCopy("src/bbcmicro");
+  eleventyConfig.addPassthroughCopy("src/bbc");
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' })
 
   eleventyConfig.addShortcode('version', function () {
