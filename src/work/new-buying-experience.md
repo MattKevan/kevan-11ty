@@ -4,7 +4,7 @@ date: 2021-03-06
 description: Radical new approach to the purchasing journey for AO.com
 image: "/images/mnc-thumb.jpg"
 tags:
-- Work
+- Draft
 categories:
 - User experience
 layout: post

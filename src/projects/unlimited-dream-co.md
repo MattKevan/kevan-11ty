@@ -7,7 +7,7 @@ logo: "/images/UnltdDreamCo.png"
 link: https://www.unlimiteddreamco.xyz
 banner: https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833577/Deep_Glass2_r8pl0b.jpg
 tags:
-- Project
+- Draft
 featured: "True"
 categories:
 - Web development

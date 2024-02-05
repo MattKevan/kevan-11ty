@@ -69,5 +69,5 @@ It surprised me how well the fine-tune came out – some generations were nonsen
 
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Z9cw4pyKMSU?si=oRXMJKaESNLkeIgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-You can see a bunch of the generations here, at least until GPT becomes powerful enough that it decides to wipe us all out, as humanity is clearly beyond saving.
+You can see a bunch of the generations here, at least until GPT becomes so powerful it decides humanity's not worth saving.
 

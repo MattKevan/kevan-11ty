@@ -11,25 +11,25 @@ categories:
 - Information architecture
 layout: post
 ---
-### Overview
+## Overview
 
 Royal College for Paediatric and Child Health (RCPCH) are the premier training and accreditation body for paediatricians and child health practitioners in the UK.
 
-### Challenge
+## Challenge
 
 The challenge was to re-develop the RCPCH’s website, improving every aspect of it, from updating the content to re-platforming on a modern CMS. Content was hard to find, the site wasn’t optimised for mobile, and editors found it difficult to use.
 
-### Solution
+## Solution
 
 Being a large organisation, the site is used by a huge range of people, including researchers, internal teams, practicing and retired paediatricians, students and even parents. It was essential therefore that the new site would support their journeys and help them meet their goals. These included logging professional development, registering for exams and getting results, publishing research papers and finding information on medicines and health conditions.
 
-#### User research
+### User research
 
 I spent over six weeks conducting user interviews with a wide range of stakeholders and user groups to explore their needs, goals and pain points.
 
 From these interviews I developed hundreds of user stories which summed up all the many ways people might want to use the site. In workshops held with each stakeholder group, we grouped these stories into epics and ranked them by importance. These epics formed the site's core user journeys and directly informed the content strategy and information architecture.
 
-#### Content strategy
+### Content strategy
 
 The old site had over five thousand pages and many more PDFs, from clinical guidelines, to research papers, to articles and advice guides. We made the decision early on that PDF content should be re-publised as site content, to improve accessibility and SEO. Each of these pieces would need categorising and migrating to the new site manually as they were too complex to automate.
 
@@ -45,7 +45,7 @@ Content types are defined by the purpose of each piece of content, for example a
 
 I also created a new taxonomy structure to categorise content, using card-sorting techniques with stakeholder and user groups to ensure they were properly validated. Combined with content types, this would be used to sort and view content in various ways – for example to show related articles on a certain topics.
 
-#### Information architecture
+### Information architecture
 
 Based on the content strategy and the user stories outcomes of the user interviews and the content strategy, I created a site map that showed where the new content types would fit into the site structure. Then, working with the development team, I developed a series of process and entity relationship diagrams, detailing key pieces of functionality and how the site would interact with outside systems.
 
@@ -54,30 +54,37 @@ Based on the content strategy and the user stories outcomes of the user intervie
 <p class="caption">↑ Sitemap showing page hierarchy and content types.</p>
 
 
-#### Wireframing & prototyping
+### Wireframing & prototyping
 
 From this, I was able to create a set of pixel-perfect mobile-first, responsive wireframes, covering page hierarchy, content types, listings, challenging functionality, such as search, and key landing pages. 
 
-<img src="/images/rcpch-wf1.jpg" class="wide">
-<p class="caption">↑ Homepage and user dashboard.</p>
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1707141655/work/rcpch-wf1.jpg" class="wide">
+<p class="caption">↑ Homepage and topic hub.</p>
 
 These wireframes formed the blueprints of the site that the developers used to build the site from, so they had to be completely accurate in how they described the site features and functionality.
 
-<img src="/images/rcpch-wf2.jpg" class="wide">
-<p class="caption">↑ Example content type and topic hub.</p>
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1707142037/work/rcpch-wf2.jpg" class="wide">
+<p class="caption">↑ User dashboard and example content page.</p>
 
-#### User testing
+### User testing
 
-To ensure – and to prove – the new site would be easier to use than the old one, I ran a series of user tests.
+I conducted a series of user tests with each user group to validate the information architecture. The tests looked at how easy it was to navigate through the content structure and whether they could find the information or functionality on the page.
 
-I tested the taxonomies and user journeys with each audience group. By clicking through the menu structure could they find the content they were looking for?
+#### Tree testing
+
+The goal of these tests were to validate the proposed content structure and taxonomy. I gave each user group a series of tasks, asking them to show where they would expect to find certain pieces of content. The examples below show the results of giving two different user groups the same task, demonstrating that not everyone expects to find the same thing in the same place.
 
 <img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1706957530/work/rcpch-test-1.jpg" class="wide">
-<p class="caption">↑ A few of the tree testing results.</p>
+<p class="caption">↑ Tree testing results.</p>
 
-* Using first-click testing I tested page features. Could people find calls to action or particular options on pages?
+#### First-click testing
 
-The final deliverable from the entire UX process was a document containing detailed information about every aspect of the new site, including content types, fields, taxonomy, user roles and permissions, user flows, entity relationships, data security and more.
+Users were set a goal, for example to click where they would expect to find a certain type of content to access a feature. Where they click is recorded as a heatmap on the wireframe, demonstrating how easy or hard they found it to achieve the goal.
+
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1707145773/work/rcpch-test-2.jpg" class="wide">
+<p class="caption">↑ Example first-click testing results.</p>
+
+The final deliverable from the UX process was a document containing detailed information about every aspect of the new site, including content types, fields, taxonomy, user roles and permissions, user flows, entity relationships, data security and more. This became the specification for the site, helping the client understand exactly what the new site would be like and how it worked, and also became the detailed blueprint for the developers to build from.
 
 #### Handover and development
 
@@ -87,6 +94,8 @@ Once development was complete, RCPCH had the substantial task  of publishing the
 
 ### Outcome
 
-The project took over three years, from pitch to launch. The UX phase took about nine months and the site was launched in March 2018.
+This was one of the largest and smoothest projects I was involved in, despite the large numbers of competing stakeholders and priorities. I believe it was successful becasue of the excellent communication, not just between RCPCH and the agency, but inside RCPCH itself. Every team was involved in the project throughout and had a direct stake in its success.
+
+The site launched in March 2018.
 
 [**Visit the site »**](https://www.rcpch.org.uk)

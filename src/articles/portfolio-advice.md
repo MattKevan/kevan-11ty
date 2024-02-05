@@ -12,7 +12,7 @@ author: Matt Kevan
 cover: content-banner.jpg
 title: Advice for UX CVs and portfolios
 tags:
-  - Article
+  - Draft
 type: article
 ---
 

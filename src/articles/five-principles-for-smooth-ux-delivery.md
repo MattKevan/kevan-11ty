@@ -5,7 +5,7 @@ description: Common problems and pitfalls that happen to all projects and ways
 date: 2023-07-13
 banner:
 tags:
-  - Article
+  - Draft
 categories:
   - UX leadership
 layout: post

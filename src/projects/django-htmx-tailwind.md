@@ -9,7 +9,7 @@ categories:
 layout: post
 logo: /images/djx.jpg
 banner: ""
-featured: "False"
+featured: "True"
 date: 2023-12-01
 status: Active
 title: Django HTMX

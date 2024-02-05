@@ -13,13 +13,14 @@ layout: post
 ---
 
 ## Background
-The Federation of British Artists (FBA) consists of nine artist societies, representing over 500  member artists, and is based at the Mall Galleries in London.
+Established in 1961, The Federation of British Artists (FBA) consists of nine artist societies and is based at the Mall Galleries in London. The societies represent over 500 member artists working in the UK, focusing on contemporary figuarative art.
 
 ## The challenge
 
-The FBA had larger ambitions than just wanting a better version of their existing site: their plan was to create an online space that would both compliment and extend their galley exhibtions and showcase the work of their members.
+As well as a new website to better promote their exhibitions and gallery space, they wanted to make the website an extension of their physical gallery space. The site should both compliment and extend their in-gallery exhibtions, showcase the work of their members and display their permanent collection.
 
 ## The solution
+
 
 Gallery sites (done well) give you all the information you need about their exhibitions, but the artwork itself, beyond a few samples, is often omitted. If you want to see the work, visit the gallery.
 
