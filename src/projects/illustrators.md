@@ -21,7 +21,7 @@ Illustrators\.co was a curated multi-vendor marketplace for illustrators to prom
 
 With a similar model to Etsy, sellers were responsible for managing and dispatching orders, with the site taking a small fee from each sale. Launched in 2012, it was joint project between and Oliver Jelf and myself. 
 
-<img src="/images/illustrators1.jpg" class="wide">
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1707150177/work/illustrators1.jpg" class="wide">
 <p class="caption">↑ Illustrators.co homepage.</p>
 
 We featured over 30 artists, both up-and-coming and well established, including [Tom Gauld](https://www.tomgauld.com), [Tony Meeuwissen](https://folioart.co.uk/illustrator/tony-meeuwissen/), [Martin Grover](https://martingrover.com), [Laura Hughes](https://www.laurahughes-illustrator.co.uk) and [Marcus Walters](https://www.marcuswalters.com).
@@ -38,7 +38,7 @@ I built the site with Drupal 7, Ubercart Marketplace and Stripe. This was the fi
 <img src="/images/illustrators4.jpg" class="wide">
 <p class="caption">↑ Early wireframes showing page hierarchy and content blocks.</p>
 
-<img src="/images/illustrators3.jpg" class="wide">
+<img src="https://res.cloudinary.com/dhcgic4ld/image/upload/v1707150435/work/illustrators3.jpg" class="wide">
 <p class="caption">↑ Selection of key pages throughout the site.</p>
 
-The website is no longer online, but a static archive can be viewed [here »](https://illustrators.netlify.app)
+The site itself is no longer online, but a static archive can be viewed [here »](https://illustrators.netlify.app)
