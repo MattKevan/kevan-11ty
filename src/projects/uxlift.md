@@ -3,7 +3,7 @@ title: UX Lift
 date: 2021-04-19
 description: A directory of articles, resources, books and tools covering every aspect of the UX and design process.
 image: "/images/uxlift-thumb.jpg"
-logo: "/images/uxlift-logo.jpg"
+logo: "/images/uxlift-logo.svg"
 link: https://www.uxlift.org
 tags:
 - Project
