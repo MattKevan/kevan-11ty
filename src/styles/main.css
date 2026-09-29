@@ -1,49 +1,99 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Neue Machina", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    cursor: url("/images/site/cursor3.svg"), auto;
+  }
+
+  body {
+    @apply subpixel-antialiased bg-white text-black;
+  }
+
+  a,
+  button {
+    cursor: url("/images/site/pointer.png"), pointer;
+  }
+}
 
 @layer components {
-  body {
-    @apply subpixel-antialiased;
-  }
   .caption {
-    @apply text-sm text-center;
+    @apply text-center text-sm;
   }
-  .wide {
-    @apply lg:max-w-5xl lg:-ml-[110px] ;
-  }
+
   .content-col {
-    @apply prose md:prose-lg mx-auto px-6 py-12 relative;
+    @apply prose md:prose-lg relative mx-auto px-6 py-12;
   }
+
   .wide-col {
-    @apply lg:max-w-6xl mx-auto px-6;
+    @apply mx-auto px-6 lg:max-w-6xl;
   }
-  #animation-container canvas {
-    width: 100% !important;
-  }
-  div.code-toolbar > .toolbar.toolbar > .toolbar-item > a, div.code-toolbar > .toolbar.toolbar > .toolbar-item > button {
-    @apply text-xs bg-white;
-  }
-  .copy-to-clipboard-button span {
-    @apply text-xs;
-  }
-  .output-canvas {
-    @apply w-full;
-  }
+
   .shadow-line {
-    @apply shadow-[4px_4px_0_-1px_white,4px_4px_0px_black] hover:shadow-[8px_8px_0_-1px_white,8px_8px_0px_black] ease-in-out duration-200;
+    box-shadow: 4px 4px 0 -1px white, 4px 4px 0 0 black;
+    transition: box-shadow 200ms ease-in-out;
   }
+
+  .shadow-line:hover {
+    box-shadow: 8px 8px 0 -1px white, 8px 8px 0 0 black;
+  }
+
+  .loader {
+    animation: moveBackground 2s linear infinite;
+    background-image: url("/images/gradient.svg");
+    background-repeat: repeat-x;
+    height: 28px;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .htmx-request .loader,
+  .htmx-request.loader {
+    opacity: 1;
+  }
+
+  .scroller {
+    transition: background-position 100ms linear;
+  }
+
   .prose p,
   .prose a,
   .prose ul,
   .prose li {
-    @apply text-[#000];
+    color: #000;
   }
-  .pixel-button-outer {
-    @apply px-[2px] pt-[3px] pb-[4px] border-[#000];
 
+  #animation-container canvas {
+    width: 100% !important;
   }
-  .pixel-button-inner{
-    @apply px-2 pt-[6px] pb-[6px] mt-[4px] mb-[4px] hover:bg-[#000] hover:text-white text-sm border-[#000];
+
+  .output-canvas {
+    width: 100%;
   }
+
+  .pixel-button-outer {
+    border-color: #000;
+    padding: 3px 2px 4px;
+  }
+
+  .pixel-button-inner {
+    border-color: #000;
+    margin: 4px 0;
+    padding: 6px 8px;
+    font-size: 0.875rem;
+  }
+
+  .pixel-button-inner:hover {
+    background: #000;
+    color: white;
+  }
+}
+
+@keyframes moveBackground {
+  from { background-position: -2000px 0; }
+  to { background-position: 0 0; }
 }

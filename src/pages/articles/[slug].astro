@@ -1,0 +1,15 @@
+---
+import { getEmDashEntry } from "emdash";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageBanner from "../../components/PageBanner.astro";
+import ContentBody from "../../components/ContentBody.astro";
+const { entry } = await getEmDashEntry("articles", Astro.params.slug ?? "");
+const data = entry?.data ?? { title: "Article not found", description: "", body: "", body_format: "markdown" };
+if (!entry) Astro.response.status = 404;
+---
+<BaseLayout title={data.title} description={data.description} image={data.image} type="article">
+  <article>
+    <PageBanner title={data.title} description={data.description} date={data.date} banner={data.banner ?? data.image} categories={data.categories} tags={data.tags} />
+    <ContentBody body={data.body} bodyFormat={data.body_format} />
+  </article>
+</BaseLayout>

@@ -1,39 +1,37 @@
 {
-  "name": "Kevan.tv",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "kevan-tv",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Kevan.tv — art, design and code",
   "scripts": {
-    "dev": "npm-run-all --parallel dev:*",
-    "dev:eleventy": "eleventy --serve --quiet",
-    "dev:css": "postcss src/styles/main.css -o _site/main.css -w",
-    "build": "rm -rf _site && eleventy && NODE_ENV=production postcss src/styles/main.css > _site/main.css"
-  },  
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@aloskutov/eleventy-plugin-link-preview": "^0.1.7",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.16",
-    "css-loader": "^6.7.1",
-    "markdown-it-anchor": "^8.6.6",
-    "mini-css-extract-plugin": "^0.11.3",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.32",
-    "postcss-loader": "^4.3.0",
-    "rimraf": "^3.0.2",
-    "tailwindcss": "^3.4.0",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "dev": "astro dev --config astro.config.local.mjs --host localhost --port 4322 --strictPort",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "emdash:types": "emdash types",
+    "emdash:migrate": "node src/scripts/migrate-legacy-content.mjs",
+    "emdash:seed": "npm run emdash:migrate && emdash seed .emdash/seed.json --database ./data.db --on-conflict update"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "cssnano": "^6.0.3",
-    "eleventy-plugin-seo": "^0.5.2",
-    "postcss-cli": "^11.0.0",
-    "preline": "^2.0.3"
+    "@astrojs/cloudflare": "^14.3.3",
+    "@astrojs/node": "^11.1.6",
+    "@astrojs/react": "^7.0.0",
+    "@emdash-cms/cloudflare": "^1.0.1",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.5",
+    "emdash": "^1.0.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.14",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.44.0"
+  },
+  "allowScripts": {
+    "workerd@1.20260926.1": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true
   }
 }

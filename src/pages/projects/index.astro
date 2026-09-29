@@ -1,0 +1,22 @@
+---
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageBanner from "../../components/PageBanner.astro";
+import ContentCard from "../../components/ContentCard.astro";
+import { byDateDescending, isFeatured } from "../../lib/content";
+const [{ entries }, { entry: page }] = await Promise.all([getEmDashCollection("projects"), getEmDashEntry("pages", "projects")]);
+const projects = byDateDescending(entries);
+const featured = projects.filter((entry) => isFeatured(entry.data.featured));
+const others = projects.filter((entry) => !isFeatured(entry.data.featured));
+const data = page?.data ?? { title: "Projects", description: "A few of my self-initiated projects, highlighting independent explorations in design and innovation." };
+---
+<BaseLayout title={data.title} description={data.description}>
+  <PageBanner title={data.title} description={data.description} />
+  <section class="mx-auto mb-12 grid max-w-3xl gap-6 px-6 pt-12 lg:mb-20 lg:gap-12">
+    {featured.map((entry) => <ContentCard entry={entry} collection="projects" />)}
+  </section>
+  <section class="mx-auto grid max-w-6xl gap-6 px-6 pb-12 md:grid-cols-2 lg:gap-12">
+    {others.map((entry) => <ContentCard entry={entry} collection="projects" />)}
+  </section>
+</BaseLayout>
+

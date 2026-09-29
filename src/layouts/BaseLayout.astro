@@ -1,0 +1,62 @@
+---
+import "../styles/main.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { imageUrl } from "../lib/content";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: unknown;
+  tags?: unknown;
+  type?: string;
+}
+
+const {
+  title = "Matt Kevan",
+  description = "Art, design & code.",
+  image,
+  type = "website",
+} = Astro.props;
+const fullTitle = title === "Matt Kevan" ? title : `${title} | Matt Kevan`;
+const shareImage = imageUrl(image) ?? "https://www.unlimiteddreamco.xyz/assets/UnltdDreamCo.jpg";
+const canonical = new URL(Astro.url.pathname, "https://kevan.tv").href;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en" class="classic-mono-scrollbars">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Matt Kevan" />
+    <link rel="canonical" href={canonical} />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="alternate" type="application/rss+xml" title="Kevan.tv" href="/feed.xml" />
+    <link rel="shortcut icon" type="image/png" href="/images/site/kevan.png" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:type" content={type} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@unltd_dream_co" />
+    <meta name="twitter:creator" content="@unltd_dream_co" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={shareImage} />
+  </head>
+  <body class="min-h-screen bg-white text-black">
+    <main class="pb-24">
+      <slot />
+    </main>
+    <SiteFooter />
+    <SiteHeader currentPath={currentPath} />
+    <script is:inline src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script is:inline data-goatcounter="https://unltddreamco.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  </body>
+</html>
+

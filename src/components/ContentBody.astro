@@ -1,0 +1,8 @@
+---
+import { marked } from "marked";
+interface Props { body?: string; bodyFormat?: string; class?: string }
+const { body = "", bodyFormat = "markdown", class: className = "" } = Astro.props;
+const html = bodyFormat === "html" ? body : marked.parse(body, { breaks: true, gfm: true });
+---
+<div class:list={["prose md:prose-lg mx-auto max-w-3xl px-6 py-12 text-black", className]} set:html={html} />
+

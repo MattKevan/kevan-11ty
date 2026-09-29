@@ -1,0 +1,17 @@
+---
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageBanner from "../../components/PageBanner.astro";
+import ContentCard from "../../components/ContentCard.astro";
+import { byDateDescending } from "../../lib/content";
+const [{ entries }, { entry: page }] = await Promise.all([getEmDashCollection("articles"), getEmDashEntry("pages", "articles")]);
+const articles = byDateDescending(entries);
+const data = page?.data ?? { title: "Articles", description: "Insights and reflections on design, technology, techniques and personal growth." };
+---
+<BaseLayout title={data.title} description={data.description}>
+  <PageBanner title={data.title} description={data.description} />
+  <section class="mx-auto grid max-w-3xl gap-6 px-6 py-12 lg:gap-12">
+    {articles.map((entry) => <ContentCard entry={entry} collection="articles" />)}
+  </section>
+</BaseLayout>
+

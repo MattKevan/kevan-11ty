@@ -1,0 +1,29 @@
+---
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageBanner from "../../components/PageBanner.astro";
+import ContentCard from "../../components/ContentCard.astro";
+import { byDateDescending, listValue } from "../../lib/content";
+const [{ entries }, { entry: page }] = await Promise.all([getEmDashCollection("work"), getEmDashEntry("pages", "work")]);
+const work = byDateDescending(entries);
+const data = page?.data ?? { title: "Work", description: "Case studies of UX, design and development work, from conception to execution." };
+const groups = [
+  { label: "User experience", matches: ["user experience"] },
+  { label: "Web development", matches: ["web development"] },
+  { label: "Information architecture", matches: ["information architecture"] },
+  { label: "Design & branding", matches: ["design", "branding"] },
+];
+---
+<BaseLayout title={data.title} description={data.description}>
+  <PageBanner title={data.title} description={data.description} />
+  <div class="mx-auto max-w-6xl px-6 py-12">
+    {groups.map((group) => {
+      const matching = work.filter((entry) => listValue(entry.data.categories).some((category) => group.matches.includes(category.toLowerCase())));
+      return <section class="mb-12 border border-black bg-white sm:flex" aria-label={group.label}>
+        <div class="border-b border-black px-6 sm:basis-1/4 sm:border-b-0 sm:border-r"><h2 class="sticky top-0 inline-block bg-white py-6 text-xl font-bold">{group.label}</h2></div>
+        <div class="grid grid-cols-2 gap-6 p-6 md:grid-cols-3 sm:basis-3/4">{matching.map((entry) => <ContentCard entry={entry} collection="work" />)}</div>
+      </section>;
+    })}
+  </div>
+</BaseLayout>
+

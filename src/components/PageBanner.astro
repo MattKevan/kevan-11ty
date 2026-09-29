@@ -1,0 +1,39 @@
+---
+import { formatDate, listValue } from "../lib/content";
+import { Image } from "emdash/ui";
+interface Props {
+  title?: string;
+  description?: string;
+  date?: string | Date;
+  banner?: unknown;
+  categories?: unknown;
+  tags?: unknown;
+}
+const { title = "", description = "", date, banner, categories, tags } = Astro.props;
+const background = banner && (typeof banner === "string" || typeof banner === "object");
+const labels = listValue(categories).length ? listValue(categories) : listValue(tags);
+---
+
+<div class="border-t border-black bg-white">
+  {background ? (
+    <div class="relative flex h-[45vh] min-h-64 flex-col overflow-hidden bg-center md:h-[calc(100vh-60px)]" role="img" aria-label={title}>
+      <Image image={banner as any} alt={title} class="absolute inset-0 h-full w-full object-cover" width={1920} height={1080} priority />
+      <div class="relative flex-grow bg-center bg-cover"></div>
+    </div>
+  ) : <div class="h-[32px] border-b border-black bg-left-top" style="background-image:url('/images/patterns/16.svg')"></div>}
+  <div class="border-y border-black bg-white">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="border-x border-black">
+        <div class="p-6">
+          <h1 class="text-2xl font-bold lg:text-4xl">{title}</h1>
+          {description && <p class="mt-2 text-black lg:mt-4">{description}</p>}
+        </div>
+        {(date || labels.length > 0) && <div class="flex border-t border-black">
+          {date && <div class="border-r border-black px-6 py-5"><p class="text-xs">{formatDate(date)}</p></div>}
+          {labels.length > 0 && <div class="flex flex-wrap gap-2 p-4">{labels.map((label) => <span class="inline-flex items-center border border-black px-2 py-1 text-xs">{label}</span>)}</div>}
+        </div>}
+      </div>
+    </div>
+  </div>
+  <div class="h-[33px] border-b border-black bg-left-top" style="background-image:url('/images/patterns/16.svg')"></div>
+</div>

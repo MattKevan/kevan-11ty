@@ -1,0 +1,52 @@
+---
+import { Image } from "emdash/ui";
+import { formatDate, listValue, type EntryData } from "../lib/content";
+interface Entry { slug: string; data: EntryData }
+interface Props { entry: Entry; collection: "articles" | "projects" | "work" | "artwork" }
+const { entry, collection } = Astro.props;
+const { data } = entry;
+const href = `/${collection}/${entry.slug}/`;
+const image = data.image;
+const logo = data.logo ?? image;
+const banner = data.banner ?? image;
+const labels = listValue(data.categories).length ? listValue(data.categories) : listValue(data.tags);
+---
+
+{collection === "projects" || collection === "work" ? (
+  <article class="flex border border-black bg-white shadow-line">
+    {logo && <a href={href} class="flex flex-none items-center border-r border-black p-4 lg:p-6"><Image image={logo as any} alt={data.title ?? ""} class="w-20 border border-black object-contain lg:w-24" width={96} height={96} loading="lazy" /></a>}
+    <div class="min-w-0 flex-1">
+      <div class="border-b border-black p-4 lg:p-6">
+        <h3 class="mb-2 text-xl font-bold hover:underline lg:text-2xl"><a href={href}>{data.title}</a></h3>
+        {data.description && <p class="text-sm text-black">{data.description}</p>}
+      </div>
+      <div class="flex flex-wrap gap-2 p-4">{labels.map((label) => <span class="border border-black px-2 py-1 text-xs">{label}</span>)}</div>
+    </div>
+  </article>
+) : collection === "artwork" ? (
+  <article>
+    <a href={href} class="block">
+      <div class="relative h-64 overflow-hidden border border-black bg-cover bg-center md:h-80">
+        {banner && <Image image={banner as any} alt={data.title ?? ""} class="absolute inset-0 h-full w-full object-cover" width={800} height={600} loading="lazy" />}
+      </div>
+      <div class="relative mx-6 -mt-20 border border-black bg-white shadow-line md:w-2/3">
+        <div class="p-4">
+          <h3 class="mb-2 text-xl font-bold hover:underline md:text-2xl">{data.title}</h3>
+          {data.description && <p class="text-sm text-black">{data.description}</p>}
+        </div>
+        <div class="flex flex-wrap gap-2 border-t border-black p-4">{labels.map((label) => <span class="border border-black px-2 py-1 text-xs">{label}</span>)}</div>
+      </div>
+    </a>
+  </article>
+) : (
+  <article class="border border-black bg-white shadow-line">
+    <div class="p-6">
+      <h3 class="mb-2 text-xl font-bold hover:underline lg:text-2xl"><a href={href}>{data.title}</a></h3>
+      {data.description && <p class="text-sm text-black">{data.description}</p>}
+    </div>
+    <div class="flex border-t border-black">
+      {data.date && <div class="border-r border-black px-6 py-4"><p class="text-xs text-black">{formatDate(data.date)}</p></div>}
+      <div class="flex flex-wrap gap-2 px-4 py-3">{labels.map((label) => <span class="border border-black px-2 py-1 text-xs">{label}</span>)}</div>
+    </div>
+  </article>
+)}

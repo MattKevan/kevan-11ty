@@ -1,0 +1,67 @@
+---
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentCard from "../components/ContentCard.astro";
+import { Image } from "emdash/ui";
+import { byDateDescending, isFeatured } from "../lib/content";
+
+const [{ entries: rawArticles }, { entries: rawProjects }, { entries: rawArtwork }, { entry: home }] = await Promise.all([
+  getEmDashCollection("articles"),
+  getEmDashCollection("projects"),
+  getEmDashCollection("artwork"),
+  getEmDashEntry("pages", "home"),
+]);
+const articles = byDateDescending(rawArticles);
+const projects = byDateDescending(rawProjects).filter((item) => isFeatured(item.data.featured));
+const artwork = byDateDescending(rawArtwork);
+const featuredArticle = articles.find((item) => isFeatured(item.data.featured));
+const recentArticles = articles.filter((item) => item !== featuredArticle).slice(0, 4);
+const featuredProjectCards = projects;
+const intro = home?.data ?? { title: "Matt Kevan", description: "Art, design & code." };
+const heroImage = featuredArticle?.data.banner ?? featuredArticle?.data.image;
+---
+
+<BaseLayout title={intro.title ?? "Matt Kevan"} description={intro.description ?? "Art, design & code."}>
+  <div class="mb-12 border-b border-black bg-left-top" style="background-image:url('/images/patterns/16.svg')">
+    {featuredArticle && <a href={`/articles/${featuredArticle.slug}/`} class="block border-y border-black">
+      <div class="relative overflow-hidden border-y border-black bg-cover bg-center py-24">
+        {heroImage && <Image image={heroImage as any} alt={featuredArticle.data.title ?? ""} class="absolute inset-0 h-full w-full object-cover" width={1920} height={1080} priority />}
+        <div class="relative mx-auto max-w-6xl px-6">
+          <div class="border border-black bg-white shadow-line md:w-1/2">
+            <div class="p-8">
+              <h2 class="mb-3 text-3xl font-bold hover:underline">{featuredArticle.data.title}</h2>
+              <p>{featuredArticle.data.description}</p>
+            </div>
+            <div class="flex border-t border-black">
+              <p class="border-r border-black p-5 text-xs">{featuredArticle.data.date ? new Date(featuredArticle.data.date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }) : "Featured article"}</p>
+              <p class="p-4 text-xs">{featuredArticle.data.categories ?? featuredArticle.data.tags}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>}
+
+    <div class="mb-12 h-8 border-b border-black bg-left-top" style="background-image:url('/images/patterns/16.svg')"></div>
+
+    <section class="mx-auto mb-14 max-w-3xl px-6" aria-labelledby="articles-heading">
+      <h2 id="articles-heading" class="mb-3 text-xl font-bold"><a href="/articles/" class="hover:underline">Articles</a></h2>
+      <div class="grid gap-6 lg:gap-12">
+        {recentArticles.map((entry) => <ContentCard entry={entry} collection="articles" />)}
+      </div>
+    </section>
+  </div>
+
+  <section class="mx-auto max-w-6xl px-6" aria-labelledby="projects-heading">
+    <h2 id="projects-heading" class="mb-3 text-xl font-bold"><a href="/projects/" class="hover:underline">Projects</a></h2>
+  </section>
+  <div class="mx-auto grid max-w-6xl gap-6 px-6 lg:grid-cols-2 lg:gap-12">
+    {featuredProjectCards.map((entry) => <ContentCard entry={entry} collection="projects" />)}
+  </div>
+
+  <section class="mt-14 border-y border-black bg-left-top py-12" style="background-image:url('/images/patterns/16.svg')" aria-labelledby="artwork-heading">
+    <div class="mx-auto max-w-3xl px-6"><h2 id="artwork-heading" class="mb-3 text-xl font-bold"><a href="/artwork/" class="hover:underline">Artwork</a></h2></div>
+    <div class="mx-auto grid max-w-3xl gap-6 px-6 lg:gap-12">
+      {artwork.slice(0, 3).map((entry) => <ContentCard entry={entry} collection="artwork" />)}
+    </div>
+  </section>
+</BaseLayout>

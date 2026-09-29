@@ -1,0 +1,564 @@
+<svg width="322" height="8" viewBox="0 0 322 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="8" transform="matrix(-1 0 0 1 322 0)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 258 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 257 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 253 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 249 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 245 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 257 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 253 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 249 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 245 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 255 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 251 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 247 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 243 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 255 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 251 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 247 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 243 4)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 274 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 273 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 269 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 265 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 261 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 273 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 269 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 265 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 261 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 271 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 267 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 263 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 259 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 271 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 267 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 263 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 259 4)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 290 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 276 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 284 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 275 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 283 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 279 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 280 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 288 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 287 3)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 306 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 292 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 300 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 291 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 299 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 295 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 296 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 304 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(1 0 0 -1 303 3)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 242 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 241 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 237 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 233 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 229 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 241 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 237 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 233 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 229 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 241 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 241 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 237 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 233 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 229 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 237 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 233 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 229 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 239 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 235 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 231 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 227 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 239 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 235 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 231 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 227 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 239 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 235 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 231 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 227 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 239 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 235 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 231 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 227 6)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 226 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 225 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 221 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 217 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 213 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 225 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 221 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 217 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 213 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 225 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 225 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 221 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 217 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 213 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 221 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 217 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 213 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 223 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 219 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 215 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 211 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 223 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 219 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 215 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 211 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 223 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 219 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 215 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 211 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 223 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 219 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 215 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 211 6)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 210 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 209 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 206 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 204 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 206 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 208 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 208 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 205 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 202 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 202 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 204 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 200 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 198 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 196 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 200 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 198 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 196 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 201 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 197 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 209 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 205 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 201 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 197 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 209 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 209 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 205 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 201 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 197 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 205 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 201 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 197 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 207 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 203 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 199 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 195 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 207 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 203 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 199 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 195 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 207 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 203 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 199 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 195 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 207 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 203 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 199 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 195 6)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 194 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 193 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 190 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 188 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 190 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 192 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 192 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 189 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 186 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 186 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 188 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 184 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 182 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 180 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 184 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 182 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 180 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 185 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 181 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 193 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 189 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 185 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 181 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 193 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 193 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 189 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 185 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 181 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 189 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 185 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 181 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 191 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 187 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 183 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 179 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 191 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 187 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 183 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 179 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 191 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 187 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 183 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 179 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 191 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 187 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 183 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 179 6)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 178 0)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 178 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 177 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 176 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 178 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 174 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 170 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 166 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 176 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 174 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 170 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 166 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 176 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 178 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 174 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 170 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 166 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 176 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 174 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 170 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 166 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 173 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 172 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 172 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 172 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 172 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 164 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 164 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 164 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 164 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 168 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 168 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 168 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 168 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 169 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 165 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 177 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 178 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 173 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 169 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 165 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 177 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 177 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 178 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 173 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 169 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 165 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 173 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 169 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 165 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 175 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 171 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 167 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 163 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 175 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 171 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 167 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 163 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 175 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 171 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 167 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 163 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 175 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 171 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 167 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 163 6)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 162 0)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 162 0)" fill="black"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 161 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 160 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 162 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 158 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 154 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 150 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 160 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 158 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 154 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 150 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 160 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 162 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 158 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 154 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 150 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 160 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 158 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 154 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 150 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 157 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 156 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 156 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 156 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 156 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 148 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 148 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 148 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 148 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 152 1)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 152 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 152 5)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 152 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 153 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 149 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 161 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 162 3)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 157 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 153 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 149 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 161 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 161 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 162 7)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 157 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 153 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 149 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 157 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 153 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 149 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 159 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 155 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 151 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 147 0)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 159 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 155 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 151 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 147 2)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 159 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 155 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 151 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 147 4)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 159 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 155 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 151 6)" fill="white"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 147 6)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 146 0)" fill="white"/>
+<rect x="145" y="8" width="1" height="1" transform="rotate(180 145 8)" fill="black"/>
+<rect x="146" y="7" width="1" height="1" transform="rotate(180 146 7)" fill="black"/>
+<rect x="144" y="5" width="1" height="1" transform="rotate(180 144 5)" fill="black"/>
+<rect x="143" y="2" width="1" height="1" transform="rotate(180 143 2)" fill="black"/>
+<rect x="144" y="1" width="1" height="1" transform="rotate(180 144 1)" fill="black"/>
+<rect x="141" y="8" width="1" height="1" transform="rotate(180 141 8)" fill="black"/>
+<rect x="142" y="7" width="1" height="1" transform="rotate(180 142 7)" fill="black"/>
+<rect x="136" y="5" width="1" height="1" transform="rotate(180 136 5)" fill="black"/>
+<rect x="142" y="3" width="1" height="1" transform="rotate(180 142 3)" fill="black"/>
+<rect x="140" y="1" width="1" height="1" transform="rotate(180 140 1)" fill="black"/>
+<rect x="134" y="7" width="1" height="1" transform="rotate(180 134 7)" fill="black"/>
+<rect x="132" y="5" width="1" height="1" transform="rotate(180 132 5)" fill="black"/>
+<rect x="134" y="3" width="1" height="1" transform="rotate(180 134 3)" fill="black"/>
+<rect x="132" y="1" width="1" height="1" transform="rotate(180 132 1)" fill="black"/>
+<rect x="138" y="7" width="1" height="1" transform="rotate(180 138 7)" fill="black"/>
+<rect x="140" y="5" width="1" height="1" transform="rotate(180 140 5)" fill="black"/>
+<rect x="138" y="3" width="1" height="1" transform="rotate(180 138 3)" fill="black"/>
+<rect x="136" y="1" width="1" height="1" transform="rotate(180 136 1)" fill="black"/>
+<rect x="137" y="8" width="1" height="1" transform="rotate(180 137 8)" fill="black"/>
+<rect x="133" y="8" width="1" height="1" transform="rotate(180 133 8)" fill="black"/>
+<rect x="145" y="6" width="1" height="1" transform="rotate(180 145 6)" fill="black"/>
+<rect x="141" y="6" width="1" height="1" transform="rotate(180 141 6)" fill="black"/>
+<rect x="137" y="6" width="1" height="1" transform="rotate(180 137 6)" fill="black"/>
+<rect x="133" y="6" width="1" height="1" transform="rotate(180 133 6)" fill="black"/>
+<rect x="145" y="4" width="1" height="1" transform="rotate(180 145 4)" fill="black"/>
+<rect x="146" y="3" width="1" height="1" transform="rotate(180 146 3)" fill="black"/>
+<rect x="141" y="4" width="1" height="1" transform="rotate(180 141 4)" fill="black"/>
+<rect x="137" y="4" width="1" height="1" transform="rotate(180 137 4)" fill="black"/>
+<rect x="133" y="4" width="1" height="1" transform="rotate(180 133 4)" fill="black"/>
+<rect x="141" y="2" width="1" height="1" transform="rotate(180 141 2)" fill="black"/>
+<rect x="137" y="2" width="1" height="1" transform="rotate(180 137 2)" fill="black"/>
+<rect x="133" y="2" width="1" height="1" transform="rotate(180 133 2)" fill="black"/>
+<rect x="143" y="8" width="1" height="1" transform="rotate(180 143 8)" fill="black"/>
+<rect x="139" y="8" width="1" height="1" transform="rotate(180 139 8)" fill="black"/>
+<rect x="135" y="8" width="1" height="1" transform="rotate(180 135 8)" fill="black"/>
+<rect x="131" y="8" width="1" height="1" transform="rotate(180 131 8)" fill="black"/>
+<rect x="143" y="6" width="1" height="1" transform="rotate(180 143 6)" fill="black"/>
+<rect x="139" y="6" width="1" height="1" transform="rotate(180 139 6)" fill="black"/>
+<rect x="135" y="6" width="1" height="1" transform="rotate(180 135 6)" fill="black"/>
+<rect x="131" y="6" width="1" height="1" transform="rotate(180 131 6)" fill="black"/>
+<rect x="143" y="4" width="1" height="1" transform="rotate(180 143 4)" fill="black"/>
+<rect x="139" y="4" width="1" height="1" transform="rotate(180 139 4)" fill="black"/>
+<rect x="135" y="4" width="1" height="1" transform="rotate(180 135 4)" fill="black"/>
+<rect x="131" y="4" width="1" height="1" transform="rotate(180 131 4)" fill="black"/>
+<rect x="145" y="2" width="1" height="1" transform="rotate(180 145 2)" fill="black"/>
+<rect x="139" y="2" width="1" height="1" transform="rotate(180 139 2)" fill="black"/>
+<rect x="135" y="2" width="1" height="1" transform="rotate(180 135 2)" fill="black"/>
+<rect x="131" y="2" width="1" height="1" transform="rotate(180 131 2)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 130 0)" fill="white"/>
+<rect x="129" y="8" width="1" height="1" transform="rotate(180 129 8)" fill="black"/>
+<rect x="130" y="7" width="1" height="1" transform="rotate(180 130 7)" fill="black"/>
+<rect x="128" y="5" width="1" height="1" transform="rotate(180 128 5)" fill="black"/>
+<rect x="127" y="2" width="1" height="1" transform="rotate(180 127 2)" fill="black"/>
+<rect x="128" y="1" width="1" height="1" transform="rotate(180 128 1)" fill="black"/>
+<rect x="125" y="8" width="1" height="1" transform="rotate(180 125 8)" fill="black"/>
+<rect x="126" y="7" width="1" height="1" transform="rotate(180 126 7)" fill="black"/>
+<rect x="120" y="5" width="1" height="1" transform="rotate(180 120 5)" fill="black"/>
+<rect x="126" y="3" width="1" height="1" transform="rotate(180 126 3)" fill="black"/>
+<rect x="124" y="1" width="1" height="1" transform="rotate(180 124 1)" fill="black"/>
+<rect x="118" y="7" width="1" height="1" transform="rotate(180 118 7)" fill="black"/>
+<rect x="116" y="5" width="1" height="1" transform="rotate(180 116 5)" fill="black"/>
+<rect x="118" y="3" width="1" height="1" transform="rotate(180 118 3)" fill="black"/>
+<rect x="116" y="1" width="1" height="1" transform="rotate(180 116 1)" fill="black"/>
+<rect x="122" y="7" width="1" height="1" transform="rotate(180 122 7)" fill="black"/>
+<rect x="124" y="5" width="1" height="1" transform="rotate(180 124 5)" fill="black"/>
+<rect x="122" y="3" width="1" height="1" transform="rotate(180 122 3)" fill="black"/>
+<rect x="120" y="1" width="1" height="1" transform="rotate(180 120 1)" fill="black"/>
+<rect x="121" y="8" width="1" height="1" transform="rotate(180 121 8)" fill="black"/>
+<rect x="117" y="8" width="1" height="1" transform="rotate(180 117 8)" fill="black"/>
+<rect x="129" y="6" width="1" height="1" transform="rotate(180 129 6)" fill="black"/>
+<rect x="125" y="6" width="1" height="1" transform="rotate(180 125 6)" fill="black"/>
+<rect x="121" y="6" width="1" height="1" transform="rotate(180 121 6)" fill="black"/>
+<rect x="117" y="6" width="1" height="1" transform="rotate(180 117 6)" fill="black"/>
+<rect x="129" y="4" width="1" height="1" transform="rotate(180 129 4)" fill="black"/>
+<rect x="130" y="3" width="1" height="1" transform="rotate(180 130 3)" fill="black"/>
+<rect x="125" y="4" width="1" height="1" transform="rotate(180 125 4)" fill="black"/>
+<rect x="121" y="4" width="1" height="1" transform="rotate(180 121 4)" fill="black"/>
+<rect x="117" y="4" width="1" height="1" transform="rotate(180 117 4)" fill="black"/>
+<rect x="125" y="2" width="1" height="1" transform="rotate(180 125 2)" fill="black"/>
+<rect x="121" y="2" width="1" height="1" transform="rotate(180 121 2)" fill="black"/>
+<rect x="117" y="2" width="1" height="1" transform="rotate(180 117 2)" fill="black"/>
+<rect x="127" y="8" width="1" height="1" transform="rotate(180 127 8)" fill="black"/>
+<rect x="123" y="8" width="1" height="1" transform="rotate(180 123 8)" fill="black"/>
+<rect x="119" y="8" width="1" height="1" transform="rotate(180 119 8)" fill="black"/>
+<rect x="115" y="8" width="1" height="1" transform="rotate(180 115 8)" fill="black"/>
+<rect x="127" y="6" width="1" height="1" transform="rotate(180 127 6)" fill="black"/>
+<rect x="123" y="6" width="1" height="1" transform="rotate(180 123 6)" fill="black"/>
+<rect x="119" y="6" width="1" height="1" transform="rotate(180 119 6)" fill="black"/>
+<rect x="115" y="6" width="1" height="1" transform="rotate(180 115 6)" fill="black"/>
+<rect x="127" y="4" width="1" height="1" transform="rotate(180 127 4)" fill="black"/>
+<rect x="123" y="4" width="1" height="1" transform="rotate(180 123 4)" fill="black"/>
+<rect x="119" y="4" width="1" height="1" transform="rotate(180 119 4)" fill="black"/>
+<rect x="115" y="4" width="1" height="1" transform="rotate(180 115 4)" fill="black"/>
+<rect x="129" y="2" width="1" height="1" transform="rotate(180 129 2)" fill="black"/>
+<rect x="123" y="2" width="1" height="1" transform="rotate(180 123 2)" fill="black"/>
+<rect x="119" y="2" width="1" height="1" transform="rotate(180 119 2)" fill="black"/>
+<rect x="115" y="2" width="1" height="1" transform="rotate(180 115 2)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 114 0)" fill="white"/>
+<rect x="113" y="8" width="1" height="1" transform="rotate(180 113 8)" fill="black"/>
+<rect x="113" y="6" width="1" height="1" transform="rotate(180 113 6)" fill="black"/>
+<rect x="113" y="4" width="1" height="1" transform="rotate(180 113 4)" fill="black"/>
+<rect x="113" y="2" width="1" height="1" transform="rotate(180 113 2)" fill="black"/>
+<rect x="111" y="8" width="1" height="1" transform="rotate(180 111 8)" fill="black"/>
+<rect x="107" y="8" width="1" height="1" transform="rotate(180 107 8)" fill="black"/>
+<rect x="103" y="8" width="1" height="1" transform="rotate(180 103 8)" fill="black"/>
+<rect x="99" y="8" width="1" height="1" transform="rotate(180 99 8)" fill="black"/>
+<rect x="111" y="6" width="1" height="1" transform="rotate(180 111 6)" fill="black"/>
+<rect x="107" y="6" width="1" height="1" transform="rotate(180 107 6)" fill="black"/>
+<rect x="103" y="6" width="1" height="1" transform="rotate(180 103 6)" fill="black"/>
+<rect x="99" y="6" width="1" height="1" transform="rotate(180 99 6)" fill="black"/>
+<rect x="111" y="4" width="1" height="1" transform="rotate(180 111 4)" fill="black"/>
+<rect x="111" y="2" width="1" height="1" transform="rotate(180 111 2)" fill="black"/>
+<rect x="107" y="4" width="1" height="1" transform="rotate(180 107 4)" fill="black"/>
+<rect x="103" y="4" width="1" height="1" transform="rotate(180 103 4)" fill="black"/>
+<rect x="99" y="4" width="1" height="1" transform="rotate(180 99 4)" fill="black"/>
+<rect x="107" y="2" width="1" height="1" transform="rotate(180 107 2)" fill="black"/>
+<rect x="103" y="2" width="1" height="1" transform="rotate(180 103 2)" fill="black"/>
+<rect x="99" y="2" width="1" height="1" transform="rotate(180 99 2)" fill="black"/>
+<rect x="109" y="8" width="1" height="1" transform="rotate(180 109 8)" fill="black"/>
+<rect x="105" y="8" width="1" height="1" transform="rotate(180 105 8)" fill="black"/>
+<rect x="101" y="8" width="1" height="1" transform="rotate(180 101 8)" fill="black"/>
+<rect x="109" y="6" width="1" height="1" transform="rotate(180 109 6)" fill="black"/>
+<rect x="105" y="6" width="1" height="1" transform="rotate(180 105 6)" fill="black"/>
+<rect x="101" y="6" width="1" height="1" transform="rotate(180 101 6)" fill="black"/>
+<rect x="109" y="4" width="1" height="1" transform="rotate(180 109 4)" fill="black"/>
+<rect x="105" y="4" width="1" height="1" transform="rotate(180 105 4)" fill="black"/>
+<rect x="101" y="4" width="1" height="1" transform="rotate(180 101 4)" fill="black"/>
+<rect x="109" y="2" width="1" height="1" transform="rotate(180 109 2)" fill="black"/>
+<rect x="105" y="2" width="1" height="1" transform="rotate(180 105 2)" fill="black"/>
+<rect x="101" y="2" width="1" height="1" transform="rotate(180 101 2)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 98 0)" fill="white"/>
+<rect x="97" y="8" width="1" height="1" transform="rotate(180 97 8)" fill="black"/>
+<rect x="97" y="6" width="1" height="1" transform="rotate(180 97 6)" fill="black"/>
+<rect x="97" y="4" width="1" height="1" transform="rotate(180 97 4)" fill="black"/>
+<rect x="97" y="2" width="1" height="1" transform="rotate(180 97 2)" fill="black"/>
+<rect x="95" y="8" width="1" height="1" transform="rotate(180 95 8)" fill="black"/>
+<rect x="91" y="8" width="1" height="1" transform="rotate(180 91 8)" fill="black"/>
+<rect x="87" y="8" width="1" height="1" transform="rotate(180 87 8)" fill="black"/>
+<rect x="83" y="8" width="1" height="1" transform="rotate(180 83 8)" fill="black"/>
+<rect x="95" y="6" width="1" height="1" transform="rotate(180 95 6)" fill="black"/>
+<rect x="91" y="6" width="1" height="1" transform="rotate(180 91 6)" fill="black"/>
+<rect x="87" y="6" width="1" height="1" transform="rotate(180 87 6)" fill="black"/>
+<rect x="83" y="6" width="1" height="1" transform="rotate(180 83 6)" fill="black"/>
+<rect x="95" y="4" width="1" height="1" transform="rotate(180 95 4)" fill="black"/>
+<rect x="95" y="2" width="1" height="1" transform="rotate(180 95 2)" fill="black"/>
+<rect x="91" y="4" width="1" height="1" transform="rotate(180 91 4)" fill="black"/>
+<rect x="87" y="4" width="1" height="1" transform="rotate(180 87 4)" fill="black"/>
+<rect x="83" y="4" width="1" height="1" transform="rotate(180 83 4)" fill="black"/>
+<rect x="91" y="2" width="1" height="1" transform="rotate(180 91 2)" fill="black"/>
+<rect x="87" y="2" width="1" height="1" transform="rotate(180 87 2)" fill="black"/>
+<rect x="83" y="2" width="1" height="1" transform="rotate(180 83 2)" fill="black"/>
+<rect x="93" y="8" width="1" height="1" transform="rotate(180 93 8)" fill="black"/>
+<rect x="89" y="8" width="1" height="1" transform="rotate(180 89 8)" fill="black"/>
+<rect x="85" y="8" width="1" height="1" transform="rotate(180 85 8)" fill="black"/>
+<rect x="93" y="6" width="1" height="1" transform="rotate(180 93 6)" fill="black"/>
+<rect x="89" y="6" width="1" height="1" transform="rotate(180 89 6)" fill="black"/>
+<rect x="85" y="6" width="1" height="1" transform="rotate(180 85 6)" fill="black"/>
+<rect x="93" y="4" width="1" height="1" transform="rotate(180 93 4)" fill="black"/>
+<rect x="89" y="4" width="1" height="1" transform="rotate(180 89 4)" fill="black"/>
+<rect x="85" y="4" width="1" height="1" transform="rotate(180 85 4)" fill="black"/>
+<rect x="93" y="2" width="1" height="1" transform="rotate(180 93 2)" fill="black"/>
+<rect x="89" y="2" width="1" height="1" transform="rotate(180 89 2)" fill="black"/>
+<rect x="85" y="2" width="1" height="1" transform="rotate(180 85 2)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 82 0)" fill="white"/>
+<rect x="79" y="8" width="1" height="1" transform="rotate(180 79 8)" fill="black"/>
+<rect x="75" y="8" width="1" height="1" transform="rotate(180 75 8)" fill="black"/>
+<rect x="71" y="8" width="1" height="1" transform="rotate(180 71 8)" fill="black"/>
+<rect x="67" y="8" width="1" height="1" transform="rotate(180 67 8)" fill="black"/>
+<rect x="81" y="6" width="1" height="1" transform="rotate(180 81 6)" fill="black"/>
+<rect x="77" y="6" width="1" height="1" transform="rotate(180 77 6)" fill="black"/>
+<rect x="73" y="6" width="1" height="1" transform="rotate(180 73 6)" fill="black"/>
+<rect x="69" y="6" width="1" height="1" transform="rotate(180 69 6)" fill="black"/>
+<rect x="79" y="4" width="1" height="1" transform="rotate(180 79 4)" fill="black"/>
+<rect x="75" y="4" width="1" height="1" transform="rotate(180 75 4)" fill="black"/>
+<rect x="71" y="4" width="1" height="1" transform="rotate(180 71 4)" fill="black"/>
+<rect x="81" y="2" width="1" height="1" transform="rotate(180 81 2)" fill="black"/>
+<rect x="77" y="2" width="1" height="1" transform="rotate(180 77 2)" fill="black"/>
+<rect x="73" y="2" width="1" height="1" transform="rotate(180 73 2)" fill="black"/>
+<rect x="69" y="2" width="1" height="1" transform="rotate(180 69 2)" fill="black"/>
+<rect x="67" y="4" width="1" height="1" transform="rotate(180 67 4)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 66 0)" fill="white"/>
+<rect x="63" y="8" width="1" height="1" transform="rotate(180 63 8)" fill="black"/>
+<rect x="59" y="8" width="1" height="1" transform="rotate(180 59 8)" fill="black"/>
+<rect x="55" y="8" width="1" height="1" transform="rotate(180 55 8)" fill="black"/>
+<rect x="51" y="8" width="1" height="1" transform="rotate(180 51 8)" fill="black"/>
+<rect x="65" y="6" width="1" height="1" transform="rotate(180 65 6)" fill="black"/>
+<rect x="61" y="6" width="1" height="1" transform="rotate(180 61 6)" fill="black"/>
+<rect x="57" y="6" width="1" height="1" transform="rotate(180 57 6)" fill="black"/>
+<rect x="53" y="6" width="1" height="1" transform="rotate(180 53 6)" fill="black"/>
+<rect x="63" y="4" width="1" height="1" transform="rotate(180 63 4)" fill="black"/>
+<rect x="59" y="4" width="1" height="1" transform="rotate(180 59 4)" fill="black"/>
+<rect x="55" y="4" width="1" height="1" transform="rotate(180 55 4)" fill="black"/>
+<rect x="65" y="2" width="1" height="1" transform="rotate(180 65 2)" fill="black"/>
+<rect x="61" y="2" width="1" height="1" transform="rotate(180 61 2)" fill="black"/>
+<rect x="57" y="2" width="1" height="1" transform="rotate(180 57 2)" fill="black"/>
+<rect x="53" y="2" width="1" height="1" transform="rotate(180 53 2)" fill="black"/>
+<rect x="51" y="4" width="1" height="1" transform="rotate(180 51 4)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 33 0)" fill="white"/>
+<rect x="29" y="6" width="1" height="1" transform="rotate(180 29 6)" fill="black"/>
+<rect x="21" y="6" width="1" height="1" transform="rotate(180 21 6)" fill="black"/>
+<rect x="30" y="2" width="1" height="1" transform="rotate(180 30 2)" fill="black"/>
+<rect x="22" y="2" width="1" height="1" transform="rotate(180 22 2)" fill="black"/>
+<rect x="26" y="3" width="1" height="1" transform="rotate(180 26 3)" fill="black"/>
+<rect x="18" y="3" width="1" height="1" transform="rotate(180 18 3)" fill="black"/>
+<rect x="25" y="8" width="1" height="1" transform="rotate(180 25 8)" fill="black"/>
+<rect x="17" y="8" width="1" height="1" transform="rotate(180 17 8)" fill="black"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 16 0)" fill="white"/>
+<rect width="16" height="8" transform="matrix(-1 0 0 1 50 0)" fill="white"/>
+<rect x="46" y="6" width="1" height="1" transform="rotate(180 46 6)" fill="black"/>
+<rect x="38" y="6" width="1" height="1" transform="rotate(180 38 6)" fill="black"/>
+<rect x="47" y="2" width="1" height="1" transform="rotate(180 47 2)" fill="black"/>
+<rect x="39" y="2" width="1" height="1" transform="rotate(180 39 2)" fill="black"/>
+<rect x="43" y="3" width="1" height="1" transform="rotate(180 43 3)" fill="black"/>
+<rect x="35" y="3" width="1" height="1" transform="rotate(180 35 3)" fill="black"/>
+<rect x="42" y="8" width="1" height="1" transform="rotate(180 42 8)" fill="black"/>
+<rect x="34" y="8" width="1" height="1" transform="rotate(180 34 8)" fill="black"/>
+</svg>

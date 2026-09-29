@@ -1,0 +1,16 @@
+---
+import { getEmDashEntry } from "emdash";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageBanner from "../../components/PageBanner.astro";
+import ContentBody from "../../components/ContentBody.astro";
+const { entry } = await getEmDashEntry("artwork", Astro.params.slug ?? "");
+const data = entry?.data ?? { title: "Artwork not found", description: "", body: "", body_format: "markdown" };
+if (!entry) Astro.response.status = 404;
+---
+<BaseLayout title={data.title} description={data.description} image={data.image} type="article">
+  <article>
+    <PageBanner title={data.title} description={data.description} date={data.date} banner={data.banner ?? data.image} categories={data.categories} tags={data.tags} />
+    <ContentBody body={data.body} bodyFormat={data.body_format} />
+    {data.gallery_images && <div class="mx-auto grid max-w-6xl gap-6 px-6 pb-12 md:grid-cols-2">{(Array.isArray(data.gallery_images) ? data.gallery_images : []).map((item) => item && typeof item === "object" && "gallery" in item && <img src={String(item.gallery)} alt={data.title ?? ""} class="w-full border border-black" loading="lazy" />)}</div>}
+  </article>
+</BaseLayout>
