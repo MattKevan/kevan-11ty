@@ -2,7 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: "Neue Machina", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:  ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -21,6 +22,11 @@
 }
 
 @layer components {
+
+  h1, h2, h3 {
+    @apply font-mono font-bold;
+
+  }
   .caption {
     @apply text-center text-sm;
   }
