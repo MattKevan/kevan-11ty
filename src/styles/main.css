@@ -32,6 +32,11 @@
 }
 
 @layer components {
+
+  h1, h2, h3 {
+    @apply font-mono font-bold;
+
+  }
   .caption {
     @apply text-center text-sm;
   }
