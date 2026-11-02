@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "kevan-tv-preview-20260929",
+  "main": "./entry.mjs",
+  "compatibility_date": "2026-09-29",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env",
+    "global_fetch_strictly_public"
+  ],
+  "vars": {
+    "EMDASH_SITE_URL": "https://kevan-tv-preview-20260929.m-809.workers.dev"
+  },
+  "workers_dev": true,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "../client"
+  },
+  "images": { "binding": "IMAGES" },
+  "no_bundle": true,
+  "rules": [
+    { "type": "ESModule", "globs": ["**/*.js", "**/*.mjs"] }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "kevan-tv-preview-20260929",
+      "database_id": "dc9a20a9-8a8e-4a34-871b-bcb22eb8e5dd"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "SESSION",
+      "id": "10adddb04b554a33bb98c38e222a5bde"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA",
+      "bucket_name": "kevan-tv-preview-20260929-media"
+    }
+  ]
+}

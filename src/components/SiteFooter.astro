@@ -1,2 +1,25 @@
 <footer class="h-[69px] border-y border-black bg-left-top md:h-[92px]" style="background-image: url('/images/patterns/16.svg')" aria-label="Site footer"></footer>
+<div class="fixed bottom-0 scroller h-[10px] w-full border-t border-black bg-black bg-repeat md:h-[28px]" style="background-image: url('/images/gradient.svg')">
+    <div class="loader h-[10px] w-full bg-repeat md:h-[28px]"></div>
+  </div>
+<script>
+  const scroller = document.querySelector<HTMLElement>(".scroller");
 
+  if (scroller) {
+    let frame = 0;
+    const updateBackgroundPosition = () => {
+      frame = 0;
+      scroller.style.backgroundPosition = `${window.scrollY * 2}px 0px`;
+    };
+
+    updateBackgroundPosition();
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (frame) return;
+        frame = window.requestAnimationFrame(updateBackgroundPosition);
+      },
+      { passive: true },
+    );
+  }
+</script>

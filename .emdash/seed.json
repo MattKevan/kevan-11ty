@@ -1159,12 +1159,7 @@
           "title": "Django HTMX",
           "description": "Starter project for Django, with HTMX, Tailwind and Alpine.js.",
           "date": "2023-12-01T00:00:00.000Z",
-          "logo": {
-            "$media": {
-              "file": "39b0ac7c10f3.jpg",
-              "alt": "Django HTMX"
-            }
-          },
+          "logo": "/images/djx.jpg",
           "tags": "Project",
           "categories": "Web development",
           "featured": true,
@@ -1182,18 +1177,8 @@
           "title": "Illustrators.co",
           "description": "A curated marketplace for contemporary illustration.",
           "date": "2012-09-01T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "914951b1e6cc.jpg",
-              "alt": "Illustrators.co"
-            }
-          },
-          "logo": {
-            "$media": {
-              "file": "090beef5d093.jpg",
-              "alt": "Illustrators.co"
-            }
-          },
+          "image": "/images/illustrators-thumb.jpg",
+          "logo": "/images/illo-logo.jpg",
           "tags": "Project",
           "categories": "Design, Web development",
           "featured": false,
@@ -1211,24 +1196,9 @@
           "title": "Lineup: Illustrators at the Mall",
           "description": "An exhibition for contemporary illustration in the centre of London.",
           "date": "2013-05-01T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "16b756fe6833.jpg",
-              "alt": "Lineup: Illustrators at the Mall"
-            }
-          },
-          "banner": {
-            "$media": {
-              "file": "7144a4d85377.jpg",
-              "alt": "Lineup: Illustrators at the Mall"
-            }
-          },
-          "logo": {
-            "$media": {
-              "file": "226a45852124.jpg",
-              "alt": "Lineup: Illustrators at the Mall"
-            }
-          },
+          "image": "/images/lineup.jpg",
+          "banner": "/images/lineup-cover.jpg",
+          "logo": "/images/lineup-logo.jpg",
           "tags": "Project, Self-initiated",
           "categories": "Event",
           "featured": false,
@@ -1246,12 +1216,7 @@
           "title": "Minimal Reader",
           "description": "Simple browser-based ebook reader with an emphasis on clean typography.",
           "date": "2023-08-01T00:00:00.000Z",
-          "logo": {
-            "$media": {
-              "file": "87db81c6dda2.jpg",
-              "alt": "Minimal Reader"
-            }
-          },
+          "logo": "/images/minimal-logo.jpg",
           "tags": "Project",
           "categories": "Vue, Web app",
           "featured": false,
@@ -1269,18 +1234,8 @@
           "title": "The Dove & The Seagull",
           "description": "Botanical, scientific, fine art and illustration prints.",
           "date": "2020-05-18T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "d0ac079bacca.jpg",
-              "alt": "The Dove & The Seagull"
-            }
-          },
-          "logo": {
-            "$media": {
-              "file": "638177a3dec1.jpg",
-              "alt": "The Dove & The Seagull"
-            }
-          },
+          "image": "/images/seagull-thumb.jpg",
+          "logo": "/images/seagull-logo.jpg",
           "tags": "Project",
           "categories": "E-commerce",
           "featured": false,
@@ -1298,12 +1253,7 @@
           "title": "Unlimited Dream Co.",
           "description": "Combining human creativity and machine learning to make something new and unexpected.",
           "date": "2022-04-19T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "666fd34c1a14.jpg",
-              "alt": "Unlimited Dream Co."
-            }
-          },
+          "image": "/images/uxlift-thumb.jpg",
           "banner": {
             "$media": {
               "url": "https://res.cloudinary.com/dhcgic4ld/image/upload/v1704833577/Deep_Glass2_r8pl0b.jpg",
@@ -1311,12 +1261,7 @@
               "alt": "Unlimited Dream Co."
             }
           },
-          "logo": {
-            "$media": {
-              "file": "6fe7af6b152d.png",
-              "alt": "Unlimited Dream Co."
-            }
-          },
+          "logo": "/images/UnltdDreamCo.png",
           "tags": "Draft",
           "categories": "Web development",
           "featured": true,
@@ -1334,18 +1279,8 @@
           "title": "UX Lift",
           "description": "A directory of articles, resources, books and tools covering every aspect of the UX and design process.",
           "date": "2021-04-19T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "666fd34c1a14.jpg",
-              "alt": "UX Lift"
-            }
-          },
-          "logo": {
-            "$media": {
-              "file": "9cb83de81316.svg",
-              "alt": "UX Lift"
-            }
-          },
+          "image": "/images/uxlift-thumb.jpg",
+          "logo": "/images/uxlift-logo.svg",
           "tags": "Project",
           "categories": "Design, Web development",
           "featured": true,
@@ -1363,12 +1298,7 @@
           "title": "Woocommerce Product Tabs",
           "description": "Take control of your Woocommerce product page tabs.",
           "date": "2023-09-01T00:00:00.000Z",
-          "logo": {
-            "$media": {
-              "file": "3490796d99e0.jpg",
-              "alt": "Woocommerce Product Tabs"
-            }
-          },
+          "logo": "/images/woo.jpg",
           "tags": "Project",
           "categories": "Web development",
           "featured": false,
@@ -1388,12 +1318,7 @@
           "title": "Attend",
           "description": "Publication designs for Attend, the national organisation for hospital and community volunteers.",
           "date": "2011-08-01T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "73c888263cf9.png",
-              "alt": "Attend"
-            }
-          },
+          "image": "/images/attend/attend2.png",
           "tags": "Work",
           "categories": "Design",
           "featured": false,
@@ -1411,12 +1336,7 @@
           "title": "Breast Cancer Care",
           "description": "Designing a new mobile-first, component-based user experience for Breast Cancer Care.",
           "date": "2018-12-01T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "620b36420fcb.jpg",
-              "alt": "Breast Cancer Care"
-            }
-          },
+          "image": "/images/bcc-thumb.jpg",
           "tags": "Work",
           "categories": "Information architecture",
           "featured": false,
@@ -1458,12 +1378,7 @@
           "title": "Federation of British Artists",
           "description": "Creating an online gallery space for the Federation of British Artists.",
           "date": "2018-11-12T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "3ac8ba1bba2b.jpg",
-              "alt": "Federation of British Artists"
-            }
-          },
+          "image": "/images/mall-thumb.jpg",
           "tags": "Work",
           "categories": "Information architecture",
           "featured": false,
@@ -1495,12 +1410,7 @@
               "alt": "Fellowship Afloat"
             }
           },
-          "logo": {
-            "$media": {
-              "file": "aed17a8155f8.png",
-              "alt": "Fellowship Afloat"
-            }
-          },
+          "logo": "/images/fact.png",
           "tags": "Work",
           "categories": "Web development",
           "featured": false,
@@ -1518,12 +1428,7 @@
           "title": "Jesuits in Britain",
           "description": "Creating an information architecture that helps people go deeper in their journey of faith.",
           "date": "2018-12-25T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "a25197638f20.jpg",
-              "alt": "Jesuits in Britain"
-            }
-          },
+          "image": "/images/jesuit-thumb.jpg",
           "tags": "Work",
           "categories": "Information architecture",
           "featured": false,
@@ -1541,12 +1446,7 @@
           "title": "Mumsnet design concepts",
           "description": "Concepts for new Mumsnet apps and products.",
           "date": "2019-03-06T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "5f05615e4c24.jpg",
-              "alt": "Mumsnet design concepts"
-            }
-          },
+          "image": "/images/mnc-thumb.jpg",
           "tags": "Work",
           "categories": "User experience",
           "featured": false,
@@ -1564,12 +1464,7 @@
           "title": "Mumsnet site navigation",
           "description": "Increasing click-through rates by 200% by creating a new, consistent, sitewide navigation structure.",
           "date": "2019-03-06T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "5c67bf35f5a3.jpg",
-              "alt": "Mumsnet site navigation"
-            }
-          },
+          "image": "/images/menu-thumb.jpg",
           "tags": "Work",
           "categories": "Information architecture",
           "featured": false,
@@ -1587,12 +1482,7 @@
           "title": "Mumsnet user registration",
           "description": "Doubling user registration by improving the sign-up journey.",
           "date": "2019-03-07T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "de52fd7aa4a8.jpg",
-              "alt": "Mumsnet user registration"
-            }
-          },
+          "image": "/images/reg-thumb.jpg",
           "tags": "Work",
           "categories": "Information architecture",
           "featured": false,
@@ -1610,12 +1500,7 @@
           "title": "New buying experience",
           "description": "Radical new approach to the purchasing journey for AO.com",
           "date": "2021-03-06T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "5f05615e4c24.jpg",
-              "alt": "New buying experience"
-            }
-          },
+          "image": "/images/mnc-thumb.jpg",
           "tags": "Draft",
           "categories": "User experience",
           "featured": false,
@@ -1657,12 +1542,7 @@
           "title": "Royal College of Paediatrics and Child Health",
           "description": "Planning a new site for the UK's leading organisation for paediatricians and child health.",
           "date": "2019-02-01T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "ad6165ab4a8b.jpg",
-              "alt": "Royal College of Paediatrics and Child Health"
-            }
-          },
+          "image": "/images/rcpch-thumb.jpg",
           "tags": "Work",
           "categories": "Information architecture",
           "featured": false,
@@ -1680,18 +1560,8 @@
           "title": "The Illustration Gallery branding and publications",
           "description": "An online gallery dedicated to contemporary illustration.",
           "date": "2011-09-01T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "38483b4e6ff4.jpg",
-              "alt": "The Illustration Gallery branding and publications"
-            }
-          },
-          "logo": {
-            "$media": {
-              "file": "b5c2e2bb989e.jpg",
-              "alt": "The Illustration Gallery branding and publications"
-            }
-          },
+          "image": "/images/gallery.jpg",
+          "logo": "/images/tig-logo.jpg",
           "tags": "Work",
           "categories": "Branding, Design",
           "featured": false,
@@ -1709,12 +1579,7 @@
           "title": "The ultimate checkout",
           "description": "Radical new approach to the purchasing journey for AO.com",
           "date": "2021-03-06T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "5f05615e4c24.jpg",
-              "alt": "The ultimate checkout"
-            }
-          },
+          "image": "/images/mnc-thumb.jpg",
           "tags": "Draft",
           "categories": "User experience",
           "featured": false,
@@ -1782,12 +1647,7 @@
           "title": "CMY/RGB",
           "description": "Abstract artworks with cyan, magenta and yellow.",
           "date": "2021-03-19T00:00:00.000Z",
-          "banner": {
-            "$media": {
-              "file": "b60566d611ce.jpg",
-              "alt": "CMY/RGB"
-            }
-          },
+          "banner": "/images/cmy-banner.jpg",
           "tags": "Artwork",
           "categories": "Abstract",
           "featured": false,
@@ -1829,12 +1689,7 @@
           "title": "Shapes Lines Colours motion",
           "description": "Minimal motion graphics made with an iPhone.",
           "date": "2021-04-01T00:00:00.000Z",
-          "banner": {
-            "$media": {
-              "file": "056650232f9d.jpg",
-              "alt": "Shapes Lines Colours motion"
-            }
-          },
+          "banner": "/images/motion-banner.jpg",
           "tags": "Artwork",
           "categories": "Motion design",
           "featured": false,
@@ -1852,18 +1707,8 @@
           "title": "Shapes Lines Colours",
           "description": "A year of abstract artwork.",
           "date": "2018-12-19T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "d6fa8ee0814d.png",
-              "alt": "Shapes Lines Colours"
-            }
-          },
-          "banner": {
-            "$media": {
-              "file": "5b791f99ab5d.jpg",
-              "alt": "Shapes Lines Colours"
-            }
-          },
+          "image": "/images/slc.png",
+          "banner": "/images/slc1-cover.jpg",
           "tags": "Artwork",
           "categories": "Abstract",
           "featured": false,
@@ -1905,18 +1750,8 @@
           "title": "Surface Detail",
           "description": "Highly detailed drawings with iPad and Pencil.",
           "date": "2020-03-20T00:00:00.000Z",
-          "image": {
-            "$media": {
-              "file": "0e928ea52540.jpg",
-              "alt": "Surface Detail"
-            }
-          },
-          "banner": {
-            "$media": {
-              "file": "caa709d929f2.jpg",
-              "alt": "Surface Detail"
-            }
-          },
+          "image": "/images/sd.jpg",
+          "banner": "/images/sd-banner.jpg",
           "tags": "Artwork",
           "categories": "Drawing",
           "featured": false,
