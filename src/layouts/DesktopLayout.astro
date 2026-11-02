@@ -1,0 +1,45 @@
+---
+import "../styles/main.css";
+import SeoHead from "../components/SeoHead.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: unknown;
+  type?: string;
+}
+
+const { title, description, image, type } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en" class="classic-mono-scrollbars">
+  <head>
+    <SeoHead title={title} description={description} image={image} type={type} />
+  </head>
+  <body class="overflow-hidden bg-white bg-[url('/images/patterns/16.svg')] bg-left-top bg-repeat text-black">
+    <a
+      class="fixed left-2 top-2 z-[1000] -translate-y-[200%] border border-black bg-white px-3 py-2 text-sm text-black focus:translate-y-0"
+      href="#desktop">Skip to desktop</a
+    >
+
+    <SiteHeader currentPath={currentPath} />
+
+    <main
+      id="desktop"
+      class="fixed inset-x-0 bottom-0 top-[37px] overflow-hidden "
+      data-desktop
+      tabindex="-1"
+    >
+      <slot />
+    </main>
+
+    <script
+      is:inline
+      data-goatcounter="https://unltddreamco.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"></script>
+  </body>
+</html>

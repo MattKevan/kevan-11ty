@@ -1,0 +1,215 @@
+---
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+import DesktopLayout from "../layouts/DesktopLayout.astro";
+import Window from "../components/desktop/Window.astro";
+import DesktopIcon from "../components/desktop/DesktopIcon.astro";
+import GridIcon from "../components/desktop/GridIcon.astro";
+import { byDateDescending } from "../lib/content";
+
+const [{ entries: workEntries }, { entries: articleEntries }, { entry: home }] =
+  await Promise.all([
+    getEmDashCollection("work"),
+    getEmDashCollection("articles"),
+    getEmDashEntry("pages", "home"),
+  ]);
+
+const documents = [
+  ...byDateDescending(workEntries).slice(0, 6).map((entry) => ({
+    id: `work-${entry.slug}`,
+    title: entry.data.title ?? entry.slug,
+    href: `/work/${entry.slug}/`,
+  })),
+  ...byDateDescending(articleEntries).slice(0, 6).map((entry) => ({
+    id: `article-${entry.slug}`,
+    title: entry.data.title ?? entry.slug,
+    href: `/articles/${entry.slug}/`,
+  })),
+];
+
+const requestedWindow = Astro.url.searchParams.get("window");
+const isOpen = (id: string) => requestedWindow === id;
+
+const title = "Desktop";
+const description =
+  home?.data.description ??
+  "A desktop-style index of Matt Kevan's work, articles and projects.";
+
+// Crawlable fallback for visitors without JavaScript. The same links are also
+// server-rendered inside the Archive window, so search engines see them either
+// way.
+const fallbackLinks = [
+  { href: "/work/", label: "Work" },
+  { href: "/articles/", label: "Articles" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/about/", label: "About" },
+  ...documents.slice(0, 8).map((doc) => ({
+    href: doc.href,
+    label: doc.title,
+  })),
+];
+---
+
+<DesktopLayout title={title} description={description}>
+  <h1 class="sr-only">Matt Kevan — desktop</h1>
+  <p class="sr-only">
+    {description} Open the Archive to browse case studies and articles.
+  </p>
+
+  <div class="absolute inset-0 overflow-hidden" data-desktop-surface>
+    <ul
+      class="absolute right-4 top-4 m-0 grid max-h-[calc(100%-2rem)] list-none auto-cols-[96px] grid-flow-col grid-rows-[repeat(auto-fill,104px)] gap-1 p-0 max-[720px]:grid-flow-row max-[720px]:grid-cols-[repeat(auto-fill,80px)] max-[720px]:grid-rows-none"
+      aria-label="Desktop items"
+    >
+      <li>
+        <DesktopIcon
+          href="/desktop?window=disk"
+          window="disk"
+          label="Archive"
+          icon="disk"
+        />
+      </li>
+      <li>
+        <DesktopIcon
+          href="/desktop?window=about"
+          window="about"
+          label="About"
+          icon="about"
+        />
+      </li>
+    </ul>
+  </div>
+
+  <div class="pointer-events-none absolute inset-0" data-window-host>
+    <Window
+      id="disk"
+      title="Matt HD"
+      chrome="mac"
+      open={isOpen("disk")}
+      x={96}
+      y={56}
+      width={720}
+      height={480}
+    >
+      
+
+      <ul
+        class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(96px,1fr))] gap-0.5 p-0"
+        data-sortable-grid="archive"
+        aria-label="Matt HD"
+      >
+        <GridIcon
+          id="app-about"
+          href="/desktop?window=about"
+          window="about"
+          label="About"
+          icon="about"
+        />
+        <GridIcon
+          id="app-readme"
+          href="/desktop?window=readme"
+          window="readme"
+          label="Read Me"
+          icon="readme"
+        />
+        <GridIcon
+          id="folder-work"
+          href="/work/"
+          label="Work"
+          icon="folder"
+        />
+        <GridIcon
+          id="folder-articles"
+          href="/articles/"
+          label="Articles"
+          icon="folder"
+        />
+
+        {documents.map((doc) => (
+          <GridIcon
+            id={doc.id}
+            href={doc.href}
+            label={doc.title}
+            icon="doc"
+          />
+        ))}
+      </ul>
+    </Window>
+
+    <Window
+      id="about"
+      title="About"
+      chrome="next"
+      open={isOpen("about")}
+      x={200}
+      y={120}
+      width={470}
+      height={330}
+    >
+      <h2 class="mb-1.5 text-base font-bold">About this desktop</h2>
+      <p class="mb-3">
+        This page is a website wearing a desktop costume, not an operating
+        system. Every icon is a real link, every document is a real page, and
+        all the content is server-rendered.
+      </p>
+      <p class="mb-3">
+        Windows are draggable and resizable, but they never take over the
+        document. Close this one with its close box or the Escape key.
+      </p>
+      <p class="mb-3">
+        <a class="underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="/">Main site</a> ·
+        <a class="underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="/work/">Work</a> ·
+        <a class="underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="/articles/">Articles</a> ·
+        <a class="underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="/about/">About</a>
+      </p>
+    </Window>
+
+    <Window
+      id="readme"
+      title="Read Me"
+      chrome="be"
+      open={isOpen("readme")}
+      x={280}
+      y={170}
+      width={460}
+      height={320}
+    >
+      <h2 class="mb-1.5 text-base font-bold">Read me</h2>
+      <p class="mb-3">
+        The Archive grid can be rearranged: drag an icon by its small handle,
+        or focus the handle and use the arrow keys. The order is saved in your
+        browser.
+      </p>
+      <p class="mb-3">
+        Drag on empty desktop to select icons. Shift, Control or Command
+        selects more than one.
+      </p>
+      <p class="mb-3">
+        <a class="underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="/desktop?window=disk">Open the Archive</a> ·
+        <a class="underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="/">Back to the main site</a>
+      </p>
+    </Window>
+  </div>
+
+  <div class="sr-only" role="status" aria-live="polite" data-window-announcer></div>
+
+  <noscript>
+    <section
+      class="fixed inset-x-0 bottom-0 top-[37px] z-40 overflow-auto bg-white p-6"
+      aria-labelledby="fallback-heading"
+    >
+      <h2 id="fallback-heading" class="mb-2 text-xl font-bold">Browse the archive</h2>
+      <p class="mb-4">
+        Desktop windows need JavaScript. The pages below are the same content.
+      </p>
+      <ul class="list-disc space-y-1 pl-6">
+        {fallbackLinks.map((link) => (
+          <li><a class="underline underline-offset-2" href={link.href}>{link.label}</a></li>
+        ))}
+      </ul>
+    </section>
+  </noscript>
+</DesktopLayout>
+
+<script>
+  import "../scripts/desktop";
+</script>

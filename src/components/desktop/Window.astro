@@ -1,0 +1,124 @@
+---
+import { Square, X } from "@lucide/astro";
+
+interface Props {
+  /** Stable id used by links (`data-open-window`) and the window manager. */
+  id: string;
+  title: string;
+  /** Chrome variant. Add new variants to the map below. */
+  chrome?: "mac" | "next" | "be";
+  /** Rendered open on the server. Used for deep links such as `?window=disk`. */
+  open?: boolean;
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+  class?: string;
+}
+
+const {
+  id,
+  title,
+  chrome = "mac",
+  open = false,
+  x = 80,
+  y = 64,
+  width = 640,
+  height = 440,
+  class: className,
+} = Astro.props;
+
+const hasCustomTitlebar = Astro.slots.has("titlebar");
+const titleId = `window-${id}-title`;
+
+// One place for each chrome variant, all Tailwind.
+const chromeStyles = {
+  mac: {
+    bar: "bg-white text-black",
+    title: "justify-center",
+  },
+  next: {
+    bar: "bg-neutral-800 text-neutral-50",
+    title: "justify-start pl-1",
+  },
+  be: {
+    bar: "bg-neutral-200 text-black",
+    title: "justify-center self-stretch bg-[#f2c200] px-3",
+  },
+}[chrome];
+---
+
+<section
+  id={`window-${id}`}
+  class:list={[
+    "group/window pointer-events-auto absolute flex min-h-[180px] min-w-[280px] flex-col border border-black bg-white text-black data-[active]:shadow-[4px_4px_0_-1px_white,_4px_4px_0_0_black]",
+    "max-[720px]:!left-2 max-[720px]:!top-2 max-[720px]:!h-[calc(100%-1rem)] max-[720px]:!w-[calc(100%-1rem)]",
+    className,
+  ]}
+  data-window
+  data-window-id={id}
+  data-window-title={title}
+  data-chrome={chrome}
+  data-open={open ? "" : undefined}
+  hidden={!open}
+  role="region"
+  aria-labelledby={hasCustomTitlebar ? undefined : titleId}
+  aria-label={hasCustomTitlebar ? title : undefined}
+  tabindex="-1"
+  style={`left:${x}px;top:${y}px;width:${width}px;height:${height}px`}
+>
+  <header
+    class:list={[
+      "flex h-[30px] flex-none touch-none select-none items-center gap-2 border-b border-black px-1.5",
+      chromeStyles.bar,
+    ]}
+    data-window-drag
+  >
+    {hasCustomTitlebar ? (
+      <slot name="titlebar" />
+    ) : (
+      <>
+        <div class="flex flex-none gap-1">
+          <button
+            type="button"
+            class="grid size-[15px] place-items-center border border-current leading-none hover:bg-neutral-400/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"
+            data-window-close
+            aria-label={`Close ${title}`}
+          >
+            <X size={10} strokeWidth={2.5} aria-hidden="true" />
+          </button>
+        </div>
+
+        <span
+          id={titleId}
+          class:list={[
+            "flex min-w-0 flex-1 items-center truncate text-center text-xs font-bold tracking-wide font-geneva",
+            chromeStyles.title,
+          ]}
+        >
+          {title}
+        </span>
+
+        <div class="flex flex-none gap-1">
+          <button
+            type="button"
+            class="grid size-[15px] place-items-center border border-current leading-none hover:bg-neutral-400/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"
+            data-window-maximize
+            aria-label={`Zoom ${title}`}
+          >
+            <Square size={7} strokeWidth={2.5} aria-hidden="true" />
+          </button>
+        </div>
+      </>
+    )}
+  </header>
+
+  <div class="min-h-0 flex-1 overflow-auto bg-white p-3.5 text-sm leading-relaxed">
+    <slot />
+  </div>
+
+  <span
+    class="pointer-events-none absolute bottom-0 right-0 size-4 bg-[repeating-linear-gradient(135deg,currentColor_0_1px,transparent_1px_3px)] opacity-60 group-data-[maximized]/window:hidden"
+    aria-hidden="true"
+  ></span>
+</section>

@@ -1,0 +1,38 @@
+---
+import { BookOpen, FileText, FolderOpen, HardDrive, Info, UserRound } from "@lucide/astro";
+
+interface Props {
+  href: string;
+  label: string;
+  /** If set, the client script opens this window instead of navigating. */
+  window?: string;
+  icon?: "disk" | "about" | "folder" | "doc" | "readme" | "app";
+}
+
+const { href, label, window: openWindow, icon = "doc" } = Astro.props;
+
+const Glyph =
+  icon === "disk"
+    ? HardDrive
+    : icon === "about"
+      ? UserRound
+      : icon === "folder"
+        ? FolderOpen
+        : icon === "readme"
+          ? BookOpen
+          : icon === "app"
+            ? Info
+            : FileText;
+---
+
+<a
+  class="flex w-24 flex-col items-center gap-1.5 border border-transparent p-2 text-center text-xs leading-tight text-black no-underline hover:bg-black/10 focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-black [&.is-selected]:bg-black [&.is-selected]:text-white"
+  href={href}
+  data-selectable
+  data-open-window={openWindow}
+>
+  <span class="grid size-12 place-items-center" aria-hidden="true">
+    <Glyph size={44} strokeWidth={1.4} />
+  </span>
+  <span class="os-icon-label line-clamp-2 [overflow-wrap:anywhere]">{label}</span>
+</a>

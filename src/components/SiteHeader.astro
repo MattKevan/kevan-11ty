@@ -9,7 +9,19 @@ const names: Record<string, string> = {
   artwork: "Artwork",
 };
 const currentLabel = names[section] ?? "Art, design & code";
+const serverNow = new Date();
+const initialClock = new Intl.DateTimeFormat("en-GB", {
+  weekday: "long",
+  day: "numeric",
+  month: "short",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+})
+  .format(serverNow)
+  .replace(",", "");
 import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,7 +37,7 @@ import {
   <div class="flex flex-row justify-between items-center">
   <div  class="flex flex-row  mx-4">
     <DropdownMenu>
-  <DropdownMenuTrigger class={buttonVariants({ variant: "outline" })}>
+  <DropdownMenuTrigger class={cn(buttonVariants({ variant: "outline" }), "rounded-none border-0 shadow-none focus-visible:ring-0 aria-expanded:bg-black aria-expanded:text-white aria-expanded:hover:bg-black aria-expanded:hover:text-white")}>
     <img src="/images/site/kevan2.png" class="h-[20px] w-[40px]"/>
   </DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -43,7 +55,7 @@ import {
 </DropdownMenu>
  
 <DropdownMenu>
-  <DropdownMenuTrigger class={buttonVariants({ variant: "outline" })}>
+  <DropdownMenuTrigger class={cn(buttonVariants({ variant: "outline" }), "rounded-none border-0 shadow-none focus-visible:ring-0 aria-expanded:bg-black aria-expanded:text-white aria-expanded:hover:bg-black aria-expanded:hover:text-white")}>
     File
   </DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -61,7 +73,7 @@ import {
 </DropdownMenu>
 
 <DropdownMenu>
-  <DropdownMenuTrigger class={buttonVariants({ variant: "outline" })}>
+  <DropdownMenuTrigger class={cn(buttonVariants({ variant: "outline" }), "rounded-none border-0 shadow-none focus-visible:ring-0 aria-expanded:bg-black aria-expanded:text-white aria-expanded:hover:bg-black aria-expanded:hover:text-white")}>
     Edit
   </DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -80,7 +92,7 @@ import {
 
 
 <DropdownMenu>
-  <DropdownMenuTrigger class={buttonVariants({ variant: "outline" })}>
+  <DropdownMenuTrigger class={cn(buttonVariants({ variant: "outline" }), "rounded-none border-0 shadow-none focus-visible:ring-0 aria-expanded:bg-black aria-expanded:text-white aria-expanded:hover:bg-black aria-expanded:hover:text-white")}>
     View
   </DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -98,7 +110,7 @@ import {
 </DropdownMenu>
 
 <DropdownMenu>
-  <DropdownMenuTrigger class={buttonVariants({ variant: "outline" })}>
+  <DropdownMenuTrigger class={cn(buttonVariants({ variant: "outline" }), "rounded-none border-0 shadow-none focus-visible:ring-0 aria-expanded:bg-black aria-expanded:text-white aria-expanded:hover:bg-black aria-expanded:hover:text-white")}>
     Go
   </DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -116,7 +128,7 @@ import {
 </DropdownMenu>
 
 <DropdownMenu>
-  <DropdownMenuTrigger class={buttonVariants({ variant: "outline" })}>
+  <DropdownMenuTrigger class={cn(buttonVariants({ variant: "outline" }), "rounded-none border-0 shadow-none focus-visible:ring-0 aria-expanded:bg-black aria-expanded:text-white aria-expanded:hover:bg-black aria-expanded:hover:text-white")}>
     Help
   </DropdownMenuTrigger>
   <DropdownMenuContent>
@@ -137,9 +149,52 @@ import {
     
     
   </div>
-  <div>
-    <p>Friday 30 Oct 21:20</p>
+  <div class="mx-4 whitespace-nowrap">
+    <p class="text-xs">
+      <time datetime={serverNow.toISOString()} data-clock>{initialClock}</time>
+    </p>
   </div>
   </div>
+</nav>
 
+<script>
+  const formatClock = (date: Date) =>
+    new Intl.DateTimeFormat("en-GB", {
+      weekday: "long",
+      day: "numeric",
+      month: "short",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    })
+      .format(date)
+      .replace(",", "");
+
+  const updateClock = () => {
+    const clock = document.querySelector<HTMLTimeElement>("[data-clock]");
+    if (!clock) return;
+
+    const now = new Date();
+    clock.dateTime = now.toISOString();
+    clock.textContent = formatClock(now);
+  };
+
+  let clockTimer: number | undefined;
+
+  const scheduleClock = () => {
+    updateClock();
+    window.clearTimeout(clockTimer);
+    // Re-align to the top of the next minute so the time never drifts.
+    clockTimer = window.setTimeout(
+      scheduleClock,
+      60_000 - (Date.now() % 60_000),
+    );
+  };
+
+  scheduleClock();
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) scheduleClock();
+  });
+</script>
 

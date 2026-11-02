@@ -1,0 +1,53 @@
+---
+import { BookOpen, FileText, FolderOpen, HardDrive, Info, UserRound } from "@lucide/astro";
+
+interface Props {
+  /** Stable id, used to persist the sort order. */
+  id: string;
+  href: string;
+  label: string;
+  /** If set, the client script opens this window instead of navigating. */
+  window?: string;
+  icon?: "disk" | "about" | "folder" | "doc" | "readme" | "app";
+}
+
+const { id, href, label, window: openWindow, icon = "doc" } = Astro.props;
+
+const Glyph =
+  icon === "disk"
+    ? HardDrive
+    : icon === "about"
+      ? UserRound
+      : icon === "folder"
+        ? FolderOpen
+        : icon === "readme"
+          ? BookOpen
+          : icon === "app"
+            ? Info
+            : FileText;
+---
+
+<li class="group/icon relative" data-sortable-item data-icon-id={id}>
+  <a
+    class="flex w-full flex-col items-center gap-1.5 border border-transparent px-1.5 py-2.5 text-center text-xs leading-tight text-black no-underline hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-black"
+    href={href}
+    data-open-window={openWindow}
+  >
+    <span class="grid size-12 place-items-center" aria-hidden="true">
+      <Glyph size={38} strokeWidth={1.4} />
+    </span>
+    <span class="os-icon-label line-clamp-2 [overflow-wrap:anywhere]">{label}</span>
+  </a>
+
+  <!--
+    The drag handle is a real button so keyboard users can reorder with the
+    arrow keys; the desktop script moves the item and announces the new
+    position.
+  -->
+  <button
+    type="button"
+    class="absolute right-0 top-0 grid size-[18px] touch-none place-items-center border-0 bg-transparent p-0 text-xs leading-none opacity-0 group-hover/icon:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-black [@media(hover:none)]:opacity-70"
+    data-sortable-handle
+    aria-label={`Reorder ${label}`}
+  >⠿</button>
+</li>

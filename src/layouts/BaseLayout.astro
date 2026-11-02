@@ -1,8 +1,8 @@
 ---
 import "../styles/main.css";
+import SeoHead from "../components/SeoHead.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
-import { imageUrl } from "../lib/content";
 
 interface Props {
   title?: string;
@@ -18,39 +18,13 @@ const {
   image,
   type = "website",
 } = Astro.props;
-const fullTitle = title === "Matt Kevan" ? title : `${title} | Matt Kevan`;
-const shareImage = imageUrl(image) ?? "https://www.unlimiteddreamco.xyz/assets/UnltdDreamCo.jpg";
-const canonical = new URL(Astro.url.pathname, "https://kevan.tv").href;
 const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
 <html lang="en" class="classic-mono-scrollbars">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>{fullTitle}</title>
-    <meta name="description" content={description} />
-    <meta name="author" content="Matt Kevan" />
-    <link rel="canonical" href={canonical} />
-    <link rel="stylesheet" href="/css/custom.css" />
-    <link rel="alternate" type="application/rss+xml" title="Kevan.tv" href="/feed.xml" />
-    <link rel="shortcut icon" type="image/png" href="/images/site/kevan.png" />
-    <meta property="og:title" content={fullTitle} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={shareImage} />
-    <meta property="og:type" content={type} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@unltd_dream_co" />
-    <meta name="twitter:creator" content="@unltd_dream_co" />
-    <meta name="twitter:title" content={fullTitle} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={shareImage} />
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-</style>
+    <SeoHead title={title} description={description} image={image} type={type} />
   </head>
   <body class="min-h-screen bg-white text-black @container">
     <main class="pb-24">
