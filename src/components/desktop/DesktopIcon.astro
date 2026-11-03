@@ -1,5 +1,5 @@
 ---
-import { BookOpen, FileText, FolderOpen, HardDrive, Info, UserRound } from "@lucide/astro";
+import { BookOpen, FileText, HardDrive, Info, UserRound } from "@lucide/astro";
 
 interface Props {
   href: string;
@@ -16,13 +16,11 @@ const Glyph =
     ? HardDrive
     : icon === "about"
       ? UserRound
-      : icon === "folder"
-        ? FolderOpen
-        : icon === "readme"
-          ? BookOpen
-          : icon === "app"
-            ? Info
-            : FileText;
+      : icon === "readme"
+        ? BookOpen
+        : icon === "app"
+          ? Info
+          : FileText;
 ---
 
 <a
@@ -32,7 +30,27 @@ const Glyph =
   data-open-window={openWindow}
 >
   <span class="grid size-12 place-items-center" aria-hidden="true">
-    <Glyph size={44} strokeWidth={1.4} />
+    {icon === "folder" ? (
+      <img
+        src="/images/icons/folder.svg"
+        alt=""
+        width="31"
+        height="25"
+        decoding="async"
+        class="h-auto w-11 [.is-selected_&]:invert"
+      />
+    ) : icon === "doc" ? (
+      <img
+        src="/images/icons/file.svg"
+        alt=""
+        width="25"
+        height="38"
+        decoding="async"
+        class="h-11 w-auto [.is-selected_&]:invert"
+      />
+    ) : (
+      <Glyph size={44} strokeWidth={1.4} />
+    )}
   </span>
   <span class="os-icon-label line-clamp-2 [overflow-wrap:anywhere]">{label}</span>
 </a>
